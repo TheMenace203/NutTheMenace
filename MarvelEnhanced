@@ -15,6 +15,20 @@ game:GetService("ReplicatedStorage").Network.RemoteFunction:InvokeServer(unpack(
 
 end)
 
+
+MainSection:NewButton("Black Widow's Invisibility off", "Makes you visible", function(currentOption)
+    print(currentOption)
+
+  
+local args = {
+    [1] = "\0BlackWidow_StopCloaking\0\0"
+}
+
+game:GetService("ReplicatedStorage").Network.RemoteEvent:FireServer(unpack(args))
+
+end)
+
+
  MainSection:NewButton("Jean's Flight Aura & Shield ", "Psionic  Glo and Shield", function(currentOption)
 
 local args = {
