@@ -1,0 +1,759 @@
+---- Script Made By Nut The Menace  ----------
+---- Gui Produced by Nut The Menace -------
+
+    if game.PlaceId == 6754315100 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Marvel Uprising GUI + More by Nut The Menace", "Sentinel")
+   
+     -- Character Change
+    local InvisibleWoman = Window:NewTab("Select Character")
+    local InvisibleWomanSection = InvisibleWoman:NewSection("Change Characters")
+     
+    InvisibleWomanSection:NewButton("Dark Phoenix", "", function(txt)
+    print("txt")
+    
+    local args = {
+    [1] = "Dark Phoenix",
+    [2] = "Secret_Piggy_Key"
+}
+
+game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
+   
+  end)
+ 
+ 
+   InvisibleWomanSection:NewButton("Phoenix", "", function(txt)
+    print("txt")
+    
+    local args = {
+    [1] = "Phoenix",
+    [2] = "Secret_Piggy_Key"
+}
+
+game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
+   
+  end)
+
+
+   InvisibleWomanSection:NewButton("Scarlet Witch", "", function(txt)
+    print("txt")
+    
+    local args = {
+    [1] = "Scarlet Witch",
+    [2] = "Secret_Piggy_Key"
+}
+
+game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
+  end)
+
+
+   InvisibleWomanSection:NewButton("Rogue", "", function(txt)
+    print("txt")
+    
+    local args = {
+    [1] = "Rogue",
+    [2] = "Secret_Piggy_Key"
+}
+
+game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
+   
+  end)
+
+   InvisibleWomanSection:NewButton("Wiccan", "", function(txt)
+    print("txt")
+    
+    local args = {
+    [1] = "Wiccan",
+    [2] = "Secret_Piggy_Key"
+}
+
+game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
+   
+  end)
+
+   InvisibleWomanSection:NewButton("Speed", "", function(txt)
+    print("txt")
+    
+    local args = {
+    [1] = "Speed",
+    [2] = "Secret_Piggy_Key"
+}
+
+game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
+   
+   end)
+   
+   InvisibleWomanSection:NewButton("Black Widow", "", function(txt)
+    print("txt")
+    
+    local args = {
+    [1] = "Black Widow",
+    [2] = "Secret_Piggy_Key"
+}
+
+game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
+   
+end)
+
+InvisibleWomanSection:NewButton("Magik", "", function(txt)
+    print("txt")
+    
+    local args = {
+    [1] = "Magik",
+    [2] = "Secret_Piggy_Key"
+}
+
+game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
+   
+end)
+
+
+InvisibleWomanSection:NewButton("Doctor Strange", "", function(txt)
+    print("txt")
+    
+    local args = {
+    [1] = "Doctor Strange",
+    [2] = "Secret_Piggy_Key"
+}
+
+game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
+   
+end)
+
+
+
+
+InvisibleWomanSection:NewButton("Emma Frost", "", function(txt)
+    print("txt")
+    
+    local args = {
+    [1] = "Emma",
+    [2] = "Secret_Piggy_Key"
+}
+
+game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
+   
+  end)
+          
+
+
+
+
+    local Powers = Window:NewTab("Spam Powers")
+    local PowersSection = Powers:NewSection("Jean's Powers & Transoformation")
+
+     PowersSection:NewButton("Surge & Immobilization", "Use both as Normal Jean", function(txt)
+    print("txt")
+    
+    local A_1 = "Immobilization"
+    local A_2 = true
+    local Event = game:GetService("ReplicatedStorage").Events.PhoenixPowers
+    Event:FireServer(A_1, A_2)
+    local A_1 = "Surge"
+    local A_2 = true
+    local Event = game:GetService("ReplicatedStorage").Events.JeanTKPowers
+    Event:FireServer(A_1, A_2)
+
+   
+  end)
+
+
+
+  PowersSection:NewButton("I AM PHOENIX", "Use  Normal Jean & Phoenix", function(txt)
+    print("txt")
+
+    local A_1 = "Dive"
+    local Event = game:GetService("ReplicatedStorage").Events.PhoenixPowers
+    Event:FireServer(A_1)
+
+   
+  end)
+
+
+
+    PowersSection:NewButton("Phoenix Burst", "Use  Normal Jean & Phoenix", function(txt)
+    print("txt")
+
+    local A_1 = "Burst"
+    local Event = game:GetService("ReplicatedStorage").Events.PhoenixPowers
+    Event:FireServer(A_1)
+
+   
+  end)
+
+
+
+
+  PowersSection:NewButton("Phoenix Circle", "Use  Normal Jean & Phoenix", function(txt)
+    print("txt")
+   
+   local A_1 = "Circle"
+   local A_2 = true
+   local Event = game:GetService("ReplicatedStorage").Events.PhoenixPowers
+   Event:FireServer(A_1, A_2)
+
+  
+  end)
+
+
+   PowersSection:NewButton("Phoenix Blaze", "Use  Normal Jean & Phoenix", function(txt)
+    print("txt")
+   local A_1 = "Burn"
+   local Event = game:GetService("ReplicatedStorage").Events.PhoenixPowers
+   Event:FireServer(A_1)
+   
+  
+  end)
+
+
+
+   PowersSection:NewButton("Phoenix Transformation ", "Use  Normal Jean ", function(txt)
+    print("txt")
+
+    local A_1 = "Jean"
+    local A_2 = 1
+    local Event = game:GetService("ReplicatedStorage").Events.PhoenixTransform
+    Event:FireServer(A_1, A_2)
+
+  
+  end)
+
+
+   PowersSection:NewButton("Burst into Phoenix ", "Use Phoenix ", function(txt)
+    print("txt")
+
+    local A_1 = "Phoenix"
+    local A_2 = 1
+    local Event = game:GetService("ReplicatedStorage").Events.PhoenixTransform
+    Event:FireServer(A_1, A_2)
+
+  
+  end)
+
+
+   PowersSection:NewButton("Burst into Dark Phoenix ", "Use  Dark Phoenix ", function(txt)
+    print("txt")
+
+    local A_1 = "Dark Phoenix"
+    local A_2 = 1
+    local Event = game:GetService("ReplicatedStorage").Events.PhoenixTransform
+    Event:FireServer(A_1, A_2)
+
+  
+  end)
+
+
+
+
+   PowersSection:NewButton("Dark Rise & Psi-Wave ", "Use both with Jean ", function(txt)
+    print("txt")
+
+   local A_1 = "Rise"
+   local Event = game:GetService("ReplicatedStorage").Events.PhoenixPowers
+   Event:FireServer(A_1)
+   local A_1 = "AstralWave"
+   local Event = game:GetService("ReplicatedStorage").Event.Power
+   Event:FireServer(A_1)
+
+
+  
+  end)
+
+          PowersSection:NewLabel("Scarlet Witch Powers")
+
+
+
+
+   PowersSection:NewButton("Reality Warp Cube", "Use as Wanda", function(txt)
+    print("txt")
+
+   local A_1 = "Cube"
+   local Event = game:GetService("ReplicatedStorage").Events.WandaChaos
+   Event:FireServer(A_1)
+
+
+
+  
+  end)
+
+   
+    PowersSection:NewButton("Chaos Eruption", "Use as Wanda", function(txt)
+    print("txt")
+
+    local A_1 = "Eruption"
+    local Event = game:GetService("ReplicatedStorage").Events.WandaChaos
+    Event:FireServer(A_1)
+
+  
+  end)
+
+
+
+   PowersSection:NewButton("Probability bomb", "Use as Wanda", function(txt)
+    print("txt")
+   local A_1 = "Glitch"
+   local Event = game:GetService("ReplicatedStorage").Events.WandaChaos
+   Event:FireServer(A_1)
+  
+  end)
+
+
+
+     PowersSection:NewLabel("Rogue's Powers")
+
+
+   PowersSection:NewButton("Area Drain", "Use as Rogue", function(txt)
+    print("txt")
+    local Event = game:GetService("ReplicatedStorage").AOEDrain
+    Event:FireServer()
+
+  end)
+
+
+         PowersSection:NewLabel("Speed's Powers")
+
+
+   PowersSection:NewButton("Tornado Station", "Use as Speed", function(txt)
+    print("txt") 
+    local A_1 = "TornadoStation"
+    local A_2 = true
+    local Event = game:GetService("ReplicatedStorage").Event.Power
+    Event:FireServer(A_1, A_2)
+
+
+  end)
+
+
+   PowersSection:NewButton("Super Speed Effect", "Use as anyone", function(txt)
+    print("txt") 
+    local A_1 = "SuperSpeed"
+    local A_2 = true
+    local Event = game:GetService("ReplicatedStorage").Event.Power
+    Event:FireServer(A_1, A_2)
+   
+
+  end)
+
+
+          PowersSection:NewLabel("Emma Frost's Powers")
+          
+        PowersSection:NewButton("Telepathic Crown", "Use as anyone", function(txt)
+    print("txt") 
+   
+   local ohString1 = "Crown"
+   local ohBoolean2 = true
+   game:GetService("ReplicatedStorage").Events.EmmaTelep:FireServer(ohString1, ohBoolean2)
+
+  end)
+        
+    
+    
+     PowersSection:NewButton("Telepathic Cloaking", "Use as anyone", function(txt)
+    print("txt") 
+   
+   local ohString1 = "Invis"
+   local ohBoolean2 = true
+   game:GetService("ReplicatedStorage").Events.EmmaTelep:FireServer(ohString1, ohBoolean2)
+    
+     end)  
+
+    PowersSection:NewButton("Telepathic Cloaking off", "Use as anyone", function(txt)
+    print("txt") 
+  
+
+    local ohString1 = "Invis"
+    local ohBoolean2 = false
+    local ohTable3 = {
+ 	["Meshes/HBFJNSK___Anim114.001 (1)"] = 0,
+	["LeftFoot"] = 1,
+	["Meshes/HBFJNSK___Anim18.001 (1)"] = 0,
+	["Meshes/HBFJNSK___Anim111.001 (1)"] = 0,
+	["Meshes/HBFJNSK___Anim17.003 (1)"] = 0,
+	["Meshes/HBFJNSK___Anim115.001 (1)"] = 0,
+	["Meshes/HBFJNSK___Anim14.002"] = 0,
+	["RightUpperArm"] = 0,
+	["Head"] = 0,
+	["UpperTorso"] = 0,
+	["Meshes/HBFJNSK___Anim13.001 (1)"] = 0,
+	["Meshes/HBFJNSK___Anim115.002 (1)"] = 0,
+	["LeftHand"] = 9,
+	["Meshes/HBFJNSK___Anim110.001 (1)"] = 0,
+	["RightHeel"] = 0,
+	["LeftLowerArm"] = 1,
+	["Cape"] = 0.50999999046326,
+	["Meshes/HBFJNSK___Anim115.003 (1)"] = 0,
+	["HumanoidRootPart"] = 1,
+	["Meshes/HBFJNSK___Anim17.002 (1)"] = 0,
+	["Meshes/HBFJNSK___Anim117.002"] = 0,
+	["RightLowerLeg"] = 1,
+	["Meshes/HBFJNSK___Anim113.001 (1)"] = 0,
+	["LowerTorso"] = 1,
+	["PivotPart"] = 1,
+	["RightHand"] = 8,
+	["RightFoot"] = 1,
+	["Meshes/HBFJNSK___Anim116.001 (1)"] = 0,
+	["LeftLowerLeg"] = 1,
+	["Meshes/HBFJNSK___Anim118.002"] = 0,
+	["Meshes/HBFJNSK___Anim110.003 (1)"] = 0,
+	["RightUpperLeg"] = 1,
+	["LeftUpperLeg"] = 1,
+	["Handle"] = 0,
+	["RightLowerArm"] = 1,
+	["LeftUpperArm"] = 0,
+	["LEftHeel"] = 0
+}
+
+game:GetService("ReplicatedStorage").Events.EmmaTelep:FireServer(ohString1, ohBoolean2, ohTable3)
+  end)      
+     
+         
+    
+    
+    PowersSection:NewButton("Diamond Form", "Use as anyone", function(txt)
+    print("txt") 
+    game.ReplicatedStorage.Events.DiamondForm:InvokeServer("true")
+   
+    end)
+    
+    
+    
+    
+    PowersSection:NewButton("Diamond Form off", "Use as anyone", function(txt)
+    print("txt") 
+    -- This script was generated by Hydroxide's RemoteSpy: https://github.com/Upbolt/Hydroxide
+
+local ohBoolean1 = false
+local ohTable2 = {
+	["Meshes/HBFJNSK___Anim114.001 (1)"] = {
+		["Color"] = Color3.new(0.972549, 0.972549, 0.972549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["LeftFoot"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Meshes/HBFJNSK___Anim18.001 (1)"] = {
+		["Color"] = Color3.new(0.972549, 0.972549, 0.972549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Meshes/HBFJNSK___Anim111.001 (1)"] = {
+		["Color"] = Color3.new(0.972549, 0.972549, 0.972549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Meshes/HBFJNSK___Anim116.001 (1)"] = {
+		["Color"] = Color3.new(0.972549, 0.972549, 0.972549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["RightFoot"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Meshes/HBFJNSK___Anim14.002"] = {
+		["Color"] = Color3.new(0.972549, 0.972549, 0.972549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["RightUpperArm"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Head"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["UpperTorso"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Meshes/HBFJNSK___Anim13.001 (1)"] = {
+		["Color"] = Color3.new(0.972549, 0.972549, 0.972549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Meshes/HBFJNSK___Anim115.002 (1)"] = {
+		["Color"] = Color3.new(0.921569, 0.933333, 1),
+		["Material"] = Enum.Material.Metal
+	},
+	["LeftHand"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["RightUpperLeg"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["RightHeel"] = {
+		["Color"] = Color3.new(0.972549, 0.972549, 0.972549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["LeftLowerArm"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Cape"] = {
+		["Color"] = Color3.new(0.623529, 0.631373, 0.67451),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Meshes/HBFJNSK___Anim115.003 (1)"] = {
+		["Color"] = Color3.new(0.921569, 0.933333, 1),
+		["Material"] = Enum.Material.Metal
+	},
+	["HumanoidRootPart"] = {
+		["Color"] = Color3.new(0.701961, 0.533333, 0.447059),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Meshes/HBFJNSK___Anim17.002 (1)"] = {
+		["Color"] = Color3.new(0.972549, 0.972549, 0.972549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Handle"] = {
+		["Color"] = Color3.new(0.639216, 0.635294, 0.647059),
+		["Material"] = Enum.Material.Plastic
+	},
+	["RightLowerLeg"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Meshes/HBFJNSK___Anim113.001 (1)"] = {
+		["Color"] = Color3.new(0.972549, 0.972549, 0.972549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["LowerTorso"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["LeftUpperLeg"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["RightLowerArm"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Meshes/HBFJNSK___Anim110.001 (1)"] = {
+		["Color"] = Color3.new(0.972549, 0.972549, 0.972549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Meshes/HBFJNSK___Anim115.001 (1)"] = {
+		["Color"] = Color3.new(0.972549, 0.972549, 0.972549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["LeftUpperArm"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Meshes/HBFJNSK___Anim110.003 (1)"] = {
+		["Color"] = Color3.new(0.921569, 0.933333, 1),
+		["Material"] = Enum.Material.Metal
+	},
+	["Meshes/HBFJNSK___Anim117.002"] = {
+		["Color"] = Color3.new(0.972549, 0.972549, 0.972549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["LEftHeel"] = {
+		["Color"] = Color3.new(0.972549, 0.972549, 0.972549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["RightHand"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["Meshes/HBFJNSK___Anim17.003 (1)"] = {
+		["Color"] = Color3.new(0.921569, 0.933333, 1),
+		["Material"] = Enum.Material.Metal
+	},
+	["Meshes/HBFJNSK___Anim118.002"] = {
+		["Color"] = Color3.new(0.972549, 0.972549, 0.972549),
+		["Material"] = Enum.Material.SmoothPlastic
+	},
+	["LeftLowerLeg"] = {
+		["Color"] = Color3.new(0.917647, 0.721569, 0.572549),
+		["Material"] = Enum.Material.SmoothPlastic
+	}
+}
+
+game:GetService("ReplicatedStorage").Events.DiamondForm:InvokeServer(ohBoolean1, ohTable2)
+ end)
+    
+    
+
+          
+    PowersSection:NewButton("Psionic Bolt is on loop", "Use as anyone", function(txt)
+    print("txt") 
+    
+    while true do wait(0,5)
+        
+    local ohVector31 = 30.818250656128, 6.6024618148804, -0.78811836242676
+    game:GetService("ReplicatedStorage").Events.EmmaBolt:FireServer(ohVector31)
+     end
+    
+    end)
+
+PowersSection:NewLabel("Doctor Strange's Powers")
+
+
+
+
+   PowersSection:NewButton("Strange Shield", "", function(txt)
+    print("txt")
+
+   
+    local args = {
+    [1] = "StrangeShield"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+
+  
+   end)
+
+
+
+PowersSection:NewButton("Spark Portal", "", function(txt)
+    print("txt")
+
+ 
+
+local ohString1 = "StrangePortal"
+local ohCFrame2 = CFrame.new(27.3189526, 0, -60.9464264, -0.422867119, -0.455390126, 0.783456028, 1.49011612e-08, 0.864558816, 0.502531767, -0.906191707, 0.212504178, -0.365593493)
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(ohString1, ohCFrame2)
+
+  
+end)
+
+
+
+
+
+PowersSection:NewButton("Astral Pulling", "", function(txt)
+    print("txt")
+
+
+
+local args = {
+    [1] = "StrangeAstralPulling",
+    [2] = game:GetService("Players").USERNAME.Character.RightUpperArm
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+
+
+  
+  end)
+
+
+
+
+
+
+
+PowersSection:NewButton("Strangulation", "", function(txt)
+    print("txt")
+
+
+local args = {
+    [1] = "Strangulation",
+    [2] = game:GetService("Players").M1N1_JJC.Character
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+  
+end)
+
+
+PowersSection:NewButton("Rune Blast", "", function(txt)
+    print("txt")
+
+local ohString1 = "StrangeBlast"
+local ohNumber2 = 72.637710571289
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(ohString1, ohNumber2)
+  
+end)
+
+
+PowersSection:NewButton("Ancient Vortex", "", function(txt)
+    print("txt")
+
+local ohString1 = "StrangeFall"
+local ohCFrame2 = CFrame.new(124.864487, 0, -54.5582085, -0.0235884413, 0.409499884, -0.912005186, -0, 0.912259102, 0.409613818, 0.999721825, 0.00966215134, -0.0215187687)
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(ohString1, ohCFrame2)
+  
+  end)
+
+
+PowersSection:NewButton("Eye Of Agamotto", "", function(txt)
+    print("txt")
+
+local ohString1 = "StrangeDome"
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(ohString1)
+  
+end)
+
+PowersSection:NewLabel("Psyloke's & Enchantress Powers")
+
+PowersSection:NewButton("Psionic Shield", "", function(txt)
+    print("txt")
+
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "PsylockeShield"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+  
+  end)
+
+
+PowersSection:NewButton("Mist - they shall fall asleep", "", function(txt)
+    print("txt")
+
+    local args = {
+    [1] = "mist",
+    [2] = workspace.Baseplate
+}
+
+game:GetService("ReplicatedStorage").Event.AmoriaSpell:FireServer(unpack(args))
+  
+  end)
+
+
+
+     -- PLAYER
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+    PlayerSection:NewButton("Run fast as speed", "You stole Speed's power", function()
+    print(currentOption)
+    while true do 
+    wait(0,5)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 121
+
+end
+  
+    
+   end)
+   
+     PlayerSection:NewSlider("Jumper Power", "Changes Your JumpPower", 500, 20, function(s)
+       game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+   
+  end)
+
+
+   
+
+   
+    -- Credits Info
+    local Information = Window:NewTab("Info")
+    local InformationSection = Information:NewSection("Information")
+
+
+
+
+    
+end 
