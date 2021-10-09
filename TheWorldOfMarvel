@@ -1,0 +1,301 @@
+---- Script Made By Nut The Menace ----------
+---- Gui Produced by Nut The Menace -------
+
+ if game.PlaceId == 6467279520 then
+ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+ local Window = Library.CreateLib("The World Of Marvel GP Bypass GUI + More by Nut The Menace", "BloodTheme")
+
+-- Character Change
+ local ChangeCharacter = Window:NewTab("Change Character")
+ local ChangeCharacterSection = ChangeCharacter:NewSection("Chaotic Scarlet Witch Pass")
+ChangeCharacterSection:NewButton("Chaotic Scarlet Witch", "GamePass been Bypassed", function(txt)
+ print("txt")
+
+ 
+local A_1 = "WandaHouseOfM"
+ local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+ Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport30.RemoteFunction
+ Event:InvokeServer()
+
+end)
+
+
+ChangeCharacterSection:NewButton("Scarlet Witch from WandaVision", "GamePass been Bypassed", function(txt)
+ print("txt")
+
+ 
+local A_1 = "WandaHOMSkin"
+ local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+ Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport30.RemoteFunction
+ Event:InvokeServer()
+
+ end)
+
+ ChangeCharacterSection:NewLabel("Phoenix Pass")
+
+ChangeCharacterSection:NewButton("Phoenix", "GamePass been Bypassed", function(txt)
+print("txt")
+ local A_1 = "Phoenix"
+ local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+ Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport19.RemoteFunction
+ Event:InvokeServer()
+ 
+ end)
+
+ ChangeCharacterSection:NewButton("Dark Phoenix", "GamePass been Bypassed", function(txt)
+ print("txt") 
+ local A_1 = "DarkPhoenix"
+ local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+ Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport19.RemoteFunction
+ Event:InvokeServer()
+
+ end)
+
+
+
+ChangeCharacterSection:NewLabel("Villain Bundle")
+ 
+ ChangeCharacterSection:NewButton("Thanos", "GamePass been Bypassed", function(txt)
+ print("txt")
+ local A_1 = "Thanos"
+ local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+ Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport18.RemoteFunction
+ Event:InvokeServer() 
+
+ end)
+
+
+ChangeCharacterSection:NewButton("Mephisto", "GamePass been Bypassed", function(txt)
+ print("txt")
+ local A_1 = "Mephisto"
+ local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+ Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport18.RemoteFunction
+ Event:InvokeServer() 
+
+ end)
+
+ ChangeCharacterSection:NewButton("Nightmare", "GamePass been Bypassed", function(txt)
+ print("txt")
+ 
+ local A_1 = "Nightmare"
+local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport18.RemoteFunction
+ Event:InvokeServer() 
+
+ end)
+
+
+
+ ChangeCharacterSection:NewButton("Ultron", "GamePass been Bypassed", function(txt)
+ print("txt")
+ 
+ local A_1 = "Ultron"
+ local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+ Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport18.RemoteFunction
+Event:InvokeServer() 
+
+ end)
+ 
+ 
+ 
+ ---- power spamming
+
+local PowerSpam = Window:NewTab("Power Spam")
+local PowerSpamSection = PowerSpam:NewSection("Chaotic Scarlet Witch Powers")
+ 
+PowerSpamSection:NewButton("No More Mutants", "This is on a loop", function(txt)
+print("It being spammed")
+
+ local Event = game:GetService("Players").HakeemLyon1.PlayerGui.SkillGUI.NoMoreMutants.TextButton.NoMoreMutants.Fires
+ Event:FireServer()
+ local A_1 = Vector3.new(9361.892578125, -5109.2119140625, 744.80749511719)
+ local Event = game:GetService("Players").HakeemLyon1.PlayerGui.SkillGUI.NoMoreMutants.TextButton.NoMoreMutants.Fire
+ Event:FireServer(A_1)
+
+
+
+
+
+
+
+end)
+ 
+
+
+
+
+PowerSpamSection:NewButton("WestView Hex", "This is on a loop", function(txt)
+ print("It being spammed")
+
+
+ local Event = game:GetService("Workspace").HakeemLyon1.Hex.Fires
+ Event:FireServer()
+ local A_1 = Vector3.new(2215.6564941406, 4375.4287109375, -10431.81640625)
+ local Event = game:GetService("Workspace").HakeemLyon1.Hex.Fire
+Event:FireServer(A_1)
+
+
+
+end)  
+
+
+
+
+
+PowerSpamSection:NewButton("Chaos Rope", "This is on a loop", function(txt)
+ print("It being spammed")
+
+ local Event = game:GetService("Workspace").HakeemLyon1.Rope.Fires
+ Event:FireServer()
+local A_1 = Vector3.new(-1267.2049560547, 997.04455566406, -137.99566650391)
+local Event = game:GetService("Workspace").HakeemLyon1.Rope.Fire
+Event:FireServer(A_1)
+
+
+
+ end)
+
+
+
+ PowerSpamSection:NewButton("Mental Attack", "This is on a loop", function(txt)
+
+local Event = game:GetService("Workspace").HakeemLyon1.MentalControl.Fires
+Event:FireServer()
+local A_1 = Vector3.new(-1210.7734375, 1125.4483642578, -179.45602416992)
+local Event = game:GetService("Workspace").HakeemLyon1.MentalControl.Fire
+Event:FireServer(A_1)
+
+
+
+ end)
+ 
+ PowerSpamSection:NewLabel("Random Chaos blast orb lol")
+PowerSpamSection:NewButton("Chaos Blast orb", "This is on a loop", function(txt)
+while true do wait(0,5)
+local ohVector31 = -1566.7010498047, 986.59899902344, -251.27896118164
+workspace.HakeemLyon1.Blast.Fires:FireServer(ohVector31)
+
+end
+ end)
+
+PowerSpamSection:NewLabel("Phoenix's Powers")
+
+
+ PowerSpamSection:NewButton("Phoenix Shock Wave", "This is on a loop", function(txt)
+ 
+ local Event = game:GetService("Workspace").HakeemLyon1.Shockwave.Fires
+ Event:FireServer()
+ local A_1 = Vector3.new(-2746.2761230469, 856.74652099609, 921.00006103516)
+ local Event = game:GetService("Workspace").HakeemLyon1.Shockwave.Fire
+ Event:FireServer(A_1)
+
+
+
+
+ end)
+
+
+
+ PowerSpamSection:NewButton("Telepathy Explosion", "This is on a loop", function(txt)
+ 
+ local Event = game:GetService("Workspace").HakeemLyon1.TelepathyExplosion.Fires
+ Event:FireServer()
+ local A_1 = Vector3.new(-4090.357421875, 2669.2404785156, -8632.1005859375)
+ local Event = game:GetService("Workspace").HakeemLyon1.TelepathyExplosion.Fire
+ Event:FireServer(A_1)
+
+
+
+ end)
+
+
+PowerSpamSection:NewButton("Phoenix Force", "This is on a loop", function(txt)
+ 
+local Event = game:GetService("Workspace").HakeemLyon1.Phoenix.Fires
+Event:FireServer()
+local A_1 = Vector3.new(-2859.2736816406, 1142.7858886719, 871.29418945313)
+local Event = game:GetService("Workspace").HakeemLyon1.Phoenix.Fire
+Event:FireServer(A_1)
+
+
+
+ end)
+
+
+
+
+PowerSpamSection:NewButton("Phoenix Claws", "This is on a loop", function(txt)
+
+local Event = game:GetService("Workspace").HakeemLyon1.Craw.Fires
+Event:FireServer()
+local A_1 = Vector3.new(-2723.6108398438, 859.23773193359, 824.10803222656)
+local Event = game:GetService("Workspace").HakeemLyon1.Craw.Fire
+Event:FireServer(A_1)
+
+
+
+
+ end)
+
+
+
+
+
+PowerSpamSection:NewButton("Phoenix Flames", "This is on a loop", function(txt)
+
+local Event = game:GetService("Workspace").HakeemLyon1.Hell.Fires
+ Event:FireServer()
+ local A_1 = Vector3.new(-7435.0561523438, 3075.076171875, -3714.2585449219)
+ local Event = game:GetService("Workspace").HakeemLyon1.Hell.Fire
+ Event:FireServer(A_1)
+
+
+
+ end)
+
+
+PowerSpamSection:NewLabel("Random Phoenix orb lol")
+PowerSpamSection:NewButton("Phoenix orb", "This is on a loop", function(txt)
+while true do wait(0,5)
+
+local ohVector31 = -2765.4641113281, 856.74652099609, 915.01568603516
+
+workspace.HakeemLyon1.Blast.Fire:FireServer(ohVector31)
+
+end
+ end)
+
+
+
+
+
+
+
+
+-- PLAYER
+local Player = Window:NewTab("Player")
+ local PlayerSection = Player:NewSection("Player")
+PlayerSection:NewSlider("Speed's Power", "Changes Your WalkSpeed", 200, 16, function(s)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+ 
+end)
+
+PlayerSection:NewSlider("Jumper Power", "Changes Your JumpPower", 500, 20, function(s)
+ game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+
+ end)
+
+ -- Credits Info
+ local Information = Window:NewTab("Info")
+ local InformationSection = Information:NewSection("Information")
+
+ 
+end
