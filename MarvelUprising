@@ -9,7 +9,7 @@
     local InvisibleWoman = Window:NewTab("Select Character")
     local InvisibleWomanSection = InvisibleWoman:NewSection("Change Characters")
      
-    InvisibleWomanSection:NewButton("Dark Phoenix", "", function(txt)
+    InvisibleWomanSection:NewButton("Dark Phoenix", "Enjoy", function(txt)
     print("txt")
     
     local args = {
@@ -22,7 +22,7 @@ game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
   end)
  
  
-   InvisibleWomanSection:NewButton("Phoenix", "", function(txt)
+   InvisibleWomanSection:NewButton("Phoenix", "Enjoy", function(txt)
     print("txt")
     
     local args = {
@@ -35,7 +35,7 @@ game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
   end)
 
 
-   InvisibleWomanSection:NewButton("Scarlet Witch", "", function(txt)
+   InvisibleWomanSection:NewButton("Scarlet Witch", "Enjoy", function(txt)
     print("txt")
     
     local args = {
@@ -47,7 +47,7 @@ game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
   end)
 
 
-   InvisibleWomanSection:NewButton("Rogue", "", function(txt)
+   InvisibleWomanSection:NewButton("Rogue", "Enjoy", function(txt)
     print("txt")
     
     local args = {
@@ -59,7 +59,7 @@ game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
    
   end)
 
-   InvisibleWomanSection:NewButton("Wiccan", "", function(txt)
+   InvisibleWomanSection:NewButton("Wiccan", "Enjoy", function(txt)
     print("txt")
     
     local args = {
@@ -71,7 +71,7 @@ game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
    
   end)
 
-   InvisibleWomanSection:NewButton("Speed", "", function(txt)
+   InvisibleWomanSection:NewButton("Speed", "Enjoy", function(txt)
     print("txt")
     
     local args = {
@@ -83,7 +83,7 @@ game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
    
    end)
    
-   InvisibleWomanSection:NewButton("Black Widow", "", function(txt)
+   InvisibleWomanSection:NewButton("Black Widow", "Enjoy", function(txt)
     print("txt")
     
     local args = {
@@ -95,7 +95,7 @@ game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
    
 end)
 
-InvisibleWomanSection:NewButton("Magik", "", function(txt)
+InvisibleWomanSection:NewButton("Magik", "Enjoy", function(txt)
     print("txt")
     
     local args = {
@@ -108,7 +108,7 @@ game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
 end)
 
 
-InvisibleWomanSection:NewButton("Doctor Strange", "", function(txt)
+InvisibleWomanSection:NewButton("Doctor Strange", "Enjoy", function(txt)
     print("txt")
     
     local args = {
@@ -123,15 +123,16 @@ end)
 
 
 
-InvisibleWomanSection:NewButton("Emma Frost", "", function(txt)
+InvisibleWomanSection:NewButton("Emma Frost", "Enjoy", function(txt)
     print("txt")
-    
+
     local args = {
-    [1] = "Emma",
+    [1] = "Emma Frost",
     [2] = "Secret_Piggy_Key"
 }
 
 game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
+
    
   end)
           
