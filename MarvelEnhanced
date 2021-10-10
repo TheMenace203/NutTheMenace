@@ -40,7 +40,7 @@ end)
 
 
 
- MainSection:NewButton("Grenade Spam ", "Use BlackWidow", function(currentOption)
+ MainSection:NewButton("Black Widow's Grenade Spam ", "Use BlackWidow", function(currentOption)
 
 while true do wait(0,5)
 local args = {
