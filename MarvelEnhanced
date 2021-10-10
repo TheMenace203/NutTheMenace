@@ -37,6 +37,25 @@ end)
 
 
 
+
+
+
+ MainSection:NewButton("Grenade Spam ", "Use BlackWidow", function(currentOption)
+
+while true do wait(0,5)
+local args = {
+[1] = "\0BlackWidow_EquipGrenade\0\0"
+}
+
+game:GetService("ReplicatedStorage").Network.RemoteFunction:InvokeServer(unpack(args))
+
+end
+
+
+end)
+
+
+
     local Free = Window:NewTab("Paid-Outfits")
     local FreeSection = Free:NewSection("PAID OUTFITS = FREE  hide guis after selection")
     FreeSection:NewButton("Jean's 90s Outfit", "Enjoy your OutFit", function(currentOption)
