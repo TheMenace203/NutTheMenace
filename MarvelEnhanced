@@ -54,7 +54,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Network.RemoteFunction:InvokeServer(unpack(args))
-
+ end
 
 
 end)
