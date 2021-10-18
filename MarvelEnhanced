@@ -48,10 +48,13 @@ end)
  MainSection:NewButton("Black Widow's Grenade Spam ", "Use BlackWidow", function(currentOption)
 
 while true do wait(0,5)
-local A_1 = "\0\66\108\97\99\107\87\105\100\111\119\95\69\113\117\105\112\71\114\101\110\97\100\101\0\0"
-local Event = game:GetService("ReplicatedStorage").Network.RemoteFunction
-Event:InvokeServer(A_1)
-end
+
+local args = {
+[1] = "\0BlackWidow_EquipGrenade\0\0"
+}
+
+game:GetService("ReplicatedStorage").Network.RemoteFunction:InvokeServer(unpack(args))
+
 
 
 end)
