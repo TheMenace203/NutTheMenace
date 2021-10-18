@@ -1,1 +1,1032 @@
-if game.PlaceId==6571467225 then local a=loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()local b=a.CreateLib("Marvel Enhanced GUI by Nut The Menace","Midnight")local c=b:NewTab("Main")local d=c:NewSection("Semi-Rogue + More soon ")d:NewButton("Speed's Speed","Run Fast as Speed",function()print(currentOption)while true do wait(0,5)game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=121 end end)d:NewButton("Black Widow's Invisibility","Makes you Invisible",function(currentOption)print(currentOption)local e={[1]="\0BlackWidow_StartCloaking\0\0"}game:GetService("ReplicatedStorage").Network.RemoteFunction:InvokeServer(unpack(e))end)d:NewButton("Jean's Flight Aura & Shield ","Psionic  Glo and Shield",function(currentOption)local e={[1]="\0Jean Grey Shield Start\0\0"}game:GetService("ReplicatedStorage").Network.RemoteEvent:FireServer(unpack(e))local e={[1]="\0Jean Grey Fly Start\0\0"}game:GetService("ReplicatedStorage").Network.RemoteEvent:FireServer(unpack(e))end)d:NewButton("Black Widow's Grenade Spam ","Use BlackWidow",function(currentOption)while true do wait(0,5)local e={[1]="\0BlackWidow_EquipGrenade\0\0"}game:GetService("ReplicatedStorage").Network.RemoteFunction:InvokeServer(unpack(e))end end)d:NewLabel("Use Jean Grey For Best Results")local f=b:NewTab("Paid-Outfits")local g=f:NewSection("PAID OUTFITS = FREE  hide guis after selection")g:NewButton("Jean's 90s Outfit","Enjoy your OutFit",function(currentOption)print(currentOption)local h="Jean Grey"local i="90s"game:GetService("ReplicatedStorage").Remotes.CharacterSelection:InvokeServer(h,i)end)g:NewButton("Jean's Phoenix Outfit","Enjoy, Embrace the Phoenix within",function(currentOption)print(currentOption)local h="Jean Grey"local i="Phoenix"game:GetService("ReplicatedStorage").Remotes.CharacterSelection:InvokeServer(h,i)end)g:NewLabel("Use Infinite Yield & Click GuiDelete")g:NewButton("Execute Infinite Yield","Read Infinite Yield instructions to remove Gui",function(currentOption)print(currentOption)loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source',true))()end)d:NewDropdown("Quick Reset","Makes you reset",{"RESET"},function(currentOption)print(currentOption)game.ReplicatedStorage.Remotes.Reset:FireServer()game.VisibilityStateChanged:FireServer("true")end)local j=b:NewTab("Player")local k=j:NewSection("Player Menu")k:NewButton("TK Space (try Tk on someone after click)","Your Tk allow you to take people to space",function()print(currentOption)local l=loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()local m=game:GetService("Players").LocalPlayer.PlayerScripts["Private Server Handler"]local n="Unnamed function"local o=1;local p={[1]="BodyMover",[2]="IsA",[3]="table",[4]="find",[6]="Name",[8]="game"}local q=l.searchClosure(m,n,o,p)local r=9999999999999;local s=9;debug.getupvalue(q,o)[s]=r end)k:NewDropdown("Fix Tk","Telekinesis Fixed after click",{"Switch back to Normal Tk"},function(currentOption)print(currentOption)local l=loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()local m=game:GetService("Players").LocalPlayer.PlayerScripts["Private Server Handler"]local n="Unnamed function"local o=1;local p={[1]="BodyMover",[2]="IsA",[3]="table",[4]="find",[6]="Name",[8]="game"}local q=l.searchClosure(m,n,o,p)local r="TKBODYPOSITION"local s=9;debug.getupvalue(q,o)[s]=r end)k:NewButton("Bypass Fly (Fly Really Fast after click)","Fly been bypassed Enjoy",function()print(currentOption)local l=loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()local m=game:GetService("Players").LocalPlayer.PlayerScripts["Private Server Handler"]local n="Unnamed function"local o=1;local p={[1]="BodyMover",[2]="IsA",[3]="table",[4]="find",[6]="Name",[8]="game"}local q=l.searchClosure(m,n,o,p)local r=99999999999;local s=17;debug.getupvalue(q,o)[s]=r;game.Players.LocalPlayer.Character.Humanoid.HipHeight=50;game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=121 end)k:NewDropdown("Normal Fly","Bypass Removed",{"Switch back to Normal Fly"},function(currentOption)print(currentOption)local l=loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()local m=game:GetService("Players").LocalPlayer.PlayerScripts["Private Server Handler"]local n="Unnamed function"local o=1;local p={[1]="BodyMover",[2]="IsA",[3]="table",[4]="find",[6]="Name",[8]="game"}local q=l.searchClosure(m,n,o,p)local r="__FlightVelocity__xdlul"local s=17;debug.getupvalue(q,o)[s]=r;game.Players.LocalPlayer.Character.Humanoid.HipHeight=2;game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=15 end)k:NewButton("0  Cooldown BEING FIXED","Cooldown been bypassed Enjoy",function()print(currentOption)end)local t=b:NewTab("Troll")local u=t:NewSection("Manipulate Your Character")u:NewButton("Block-Head","LOL head is a block",function(currentOption)print(currentOption)while true do wait(0,5)game.Players.LocalPlayer.Character.Head.Mesh:destroy()end end)u:NewButton("Spinner","LMAOO YOU Fidget Spinner",function(currentOption)print(currentOption)repeat AnimationId="754658275"local v=Instance.new("Animation")v.AnimationId="rbxassetid://"..AnimationId;local w=game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(v)w:Play()w:AdjustSpeed(2.2)wait(0.1)local x=game.Players.LocalPlayer.Character.Humanoid;local y=x:GetPlayingAnimationTracks()for z,A in pairs(y)do A:Stop()end;wait()until game.Players.LocalPlayer.Character.Humanoid.Health==0 end)u:NewButton("Fling Arms","LML Arms BROKEN lol",function(currentOption)print(currentOption)repeat AnimationId="754656200"local v=Instance.new("Animation")v.AnimationId="rbxassetid://"..AnimationId;local w=game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(v)w:Play()w:AdjustSpeed(3)wait(0.1)local x=game.Players.LocalPlayer.Character.Humanoid;local y=x:GetPlayingAnimationTracks()for z,A in pairs(y)do A:Stop()end;wait()until game.Players.LocalPlayer.Character.Humanoid.Health==0 end)u:NewLabel("RESET TO BE NORMAL")u:NewLabel("CHAT BYPASS pre-words made")u:NewButton("Fuck","Say how you really feel",function(currentOption)print(currentOption)local e={[1]="ff\240\144\140\145\240\144\140\145\240\144\140\145u\240\144\140\145\240\144\140\145\240\144\140\145c".."\240\144\140\145\240\144\140\145\240\144\140\145k ",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Faggot","Say how you really feel",function(currentOption)print(currentOption)local e={[1]="ff \240\144\140\145 \205\156 \205\163 agg \240\144\140\145 \205\156 \205\163 ot ",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Queer","Say how you really feel",function(currentOption)print(currentOption)local e={[1]=" Qu \240\144\140\145 \205\156 \205\163 ee  \240\144\140\145 \205\156 \205\163 r ",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Shit","Say how you really feel",function(currentOption)print(currentOption)local e={[1]=" Sh \240\144\140\145 \205\156 \205\163 it ",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Cunt","Say how you really feel",function(currentOption)print(currentOption)local e={[1]="c \240\144\140\145 \205\156 \205\163 unt ",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Bitch","Say how you really feel",function(currentOption)print(currentOption)local e={[1]=" Bi \240\144\140\145 \205\156 \205\163 tc  \240\144\140\145 \205\156 \205\163 h ",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Fuck You","Say how you really feel",function(currentOption)print(currentOption)local e={[1]="ff\240\144\140\145\240\144\140\145\240\144\140\145u\240\144\140\145\240\144\140\145\240\144\140\145c".."\240\144\140\145\240\144\140\145\240\144\140\145k  Yo  \240\144\140\145 \205\156 \205\163".." u ",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Nigger","Say how you really feel",function(currentOption)print(currentOption)local e={[1]="ni \240\144\140\145 \205\156 \205\163 gge \240\144\140\145 \205\156 \205\163 r ",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Piss","Say how you really feel",function(currentOption)print(currentOption)local e={[1]=" Pi \240\144\140\145 \205\156 \205\163 ss ",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Boobs","Say how you really feel",function(currentOption)print(currentOption)local e={[1]=" Bo \240\144\140\145 \205\156 \205\163 ob  \240\144\140\145 \205\156 \205\163 s ",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Gay Niggers","Say how you really feel",function(currentOption)print(currentOption)local e={[1]=" Ga  \240\144\140\145 \205\156 \205\163 y n \240\144\140\145 \205\156 \205\163 igg \240\144\140\145 ".."\205\156 \205\163 ers ",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Tits","Say how you really feel",function(currentOption)print(currentOption)local e={[1]=" Ti \240\144\140\145 \205\156 \205\163 ts ",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Dick","Say how you really feel",function(currentOption)print(currentOption)local e={[1]=" Di \240\144\140\145 \205\156 \205\163 ck ",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewLabel("Emoji Art")u:NewButton("$5 Bill Emoji","Say how you really feel",function(currentOption)print(currentOption)local e={[1]="[\204\178\204\133$\204\178\204\133(\204\178\204\1335\204\178\204\133)\204\178\204\133$\204\178\204\133".."]",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Nazi Emoji","Say how you really feel",function(currentOption)print(currentOption)local e={[1]="\226\154\170\240\159\148\180\240\159\148\180\226\154\170\226\154\170\226\154\170\226\154\170",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))local e={[1]="\226\154\170\240\159\148\180\240\159\148\180\226\154\170\240\159\148\180\240\159\148\180\240\159\148".."\180",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))local e={[1]="\226\154\170\240\159\148\180\240\159\148\180\226\154\170\240\159\148\180\240\159\148\180\240\159\148".."\180",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))local e={[1]="\226\154\170\226\154\170\226\154\170\226\154\170\226\154\170\226\154\170\226\154\170",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))local e={[1]="\240\159\148\180\240\159\148\180\240\159\148\180\226\154\170\240\159\148\180\240\159\148\180\226\154".."\170",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))local e={[1]="\240\159\148\180\240\159\148\180\240\159\148\180\226\154\170\240\159\148\180\240\159\148\180\226\154".."\170",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))local e={[1]="\226\154\170\226\154\170\226\154\170\226\154\170\240\159\148\180\240\159\148\180\226\154\170",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("BBC Emoji","Say how you really feel",function(currentOption)print(currentOption)local e={[1]="\226\154\171",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))local e={[1]="\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\240\159\148\180",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))local e={[1]="\226\154\171",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Black Face Emoji","Say how you really feel",function(currentOption)print(currentOption)local e={[1]="\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))local e={[1]="\226\154\171\226\154\171\226\154\170\226\154\171\226\154\170\226\154\171\226\154\171",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))local e={[1]="\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))local e={[1]="\226\154\171\240\159\148\180\240\159\148\180\240\159\148\180\240\159\148\180\240\159\148\180\226\154".."\171",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))local e={[1]="\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Table Flip Emoji","Say how you really feel",function(currentOption)print(currentOption)local e={[1]="(\226\149\175\194\176\226\150\161\194\176\239\188\137\226\149\175\239\184\181 \226\148\187\226\148\129".."\226\148\187",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)u:NewButton("Lenny Emoji","Say how you really feel",function(currentOption)print(currentOption)local e={[1]="( \205\161\194\176 \205\156\202\150 \205\161\194\176)",[2]="All"}game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(e))end)local B=b:NewTab("Misc")local C=B:NewSection("Misc Options")C:NewDropdown("Turn Music Off","Reset character after you spawned for it to work",{"No Music"},function(currentOption)print(currentOption)local l=loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()local m=game:GetService("ReplicatedStorage").Helpers.Content;local n="generatesound"local o=1;local p={[1]="rawget",[3]="Sound",[4]="Name",[5]="pairs",[7]="type",[9]="table"}local q=l.searchClosure(m,n,o,p)local r=0;local s="Marvel Enhanced: Music"debug.getupvalue(q,o)[s]=r;local l=loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()local m=game:GetService("ReplicatedStorage").Helpers.Content;local n="generatesound"local o=1;local p={[1]="rawget",[3]="Sound",[4]="Name",[5]="pairs",[7]="type",[9]="table"}local q=l.searchClosure(m,n,o,p)local r=0;local s="Playing Music 1"debug.getupvalue(q,o)[s]=r;local l=loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()local m=game:GetService("ReplicatedStorage").Helpers.Content;local n="generatesound"local o=1;local p={[1]="rawget",[3]="Sound",[4]="Name",[5]="pairs",[7]="type",[9]="table"}local q=l.searchClosure(m,n,o,p)local r=0;local s="Playing Music 2"debug.getupvalue(q,o)[s]=r end)end
+if game.PlaceId == 6571467225 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Marvel Enhanced GUI by Nut The Menace", "Midnight")
+     -- MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Semi-Rogue + More soon ")
+    
+    MainSection:NewButton("Speed's Speed", "Run Fast as Speed", function()
+    print(currentOption)
+    while true do 
+    wait(0,5)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 121
+
+end
+  
+    
+   end)
+
+
+
+  MainSection:NewButton("Black Widow's Invisibility", "Makes you Invisible", function(currentOption)
+    print(currentOption)
+
+    local args = {
+    [1] = "\0BlackWidow_StartCloaking\0\0"
+}
+
+game:GetService("ReplicatedStorage").Network.RemoteFunction:InvokeServer(unpack(args))
+
+end)
+
+
+
+ MainSection:NewButton("Jean's Flight Aura & Shield ", "Psionic  Glo and Shield", function(currentOption)
+
+local args = {
+    [1] = "\0Jean Grey Shield Start\0\0"
+}
+
+game:GetService("ReplicatedStorage").Network.RemoteEvent:FireServer(unpack(args))
+
+
+local args = {
+    [1] = "\0Jean Grey Fly Start\0\0"
+}
+
+game:GetService("ReplicatedStorage").Network.RemoteEvent:FireServer(unpack(args))
+
+
+end)
+
+----- Objects
+plr = game.Players.LocalPlayer
+ControlGui = Instance.new("ScreenGui")
+Frame = Instance.new("Frame")
+TextButton = Instance.new("TextButton")
+TextBox = Instance.new("TextBox")
+
+-- Properties
+
+ControlGui.Name = "ControlGui"
+ControlGui.Parent = plr.PlayerGui
+
+Frame.Parent = ControlGui
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.Position = UDim2.new(0, 300, 0, 200)
+Frame.Size = UDim2.new(0, 300, 0, 150)
+Frame.Active = true
+Frame.Draggable = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton.Position = UDim2.new(0, 50, 0, 90)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.FontSize = Enum.FontSize.Size32
+TextButton.Text = "Control"
+TextButton.TextSize = 30
+TextButton.MouseButton1Down:connect(function()
+	if TextButton.Text == "Control" then
+	TextButton.Text = "UnControl"	
+	workspace[TextBox.Text].Humanoid.PlatformStand = true
+	W1 = Instance.new("Weld",workspace)
+	W1.Name = "Weld1"
+	W1.Part0 = plr.Character.Torso
+	W1.Part1 = workspace[TextBox.Text].Torso
+	W2 = Instance.new("Weld",workspace)
+	W2.Name = "Weld2"
+	W2.Part0 = plr.Character.Head
+	W2.Part1 = workspace[TextBox.Text].Head
+	W3 = Instance.new("Weld",workspace)
+	W3.Name = "Weld3"
+	W3.Part0 = plr.Character.HumanoidRootPart
+	W3.Part1 = workspace[TextBox.Text].HumanoidRootPart
+	W4 = Instance.new("Weld",workspace)
+	W4.Name = "Weld4"
+	W4.Part0 = plr.Character["Left Arm"]
+	W4.Part1 = workspace[TextBox.Text]["Left Arm"]
+	W5 = Instance.new("Weld",workspace)
+	W5.Name = "Weld5"
+	W5.Part0 = plr.Character["Left Leg"]
+	W5.Part1 = workspace[TextBox.Text]["Left Leg"]
+	W6 = Instance.new("Weld",workspace)
+	W6.Name = "Weld6"
+	W6.Part0 = plr.Character["Right Arm"]
+	W6.Part1 = workspace[TextBox.Text]["Right Arm"]
+	W7 = Instance.new("Weld",workspace)
+	W7.Name = "Weld7"
+	W7.Part0 = plr.Character["Right Leg"]
+	W7.Part1 = workspace[TextBox.Text]["Right Leg"]
+	for i,v in pairs(plr.Character:GetChildren()) do
+			if v.ClassName == "Part" then
+				v.Transparency = 1
+			end
+			plr.Character.HumanoidRootPart.Transparency = 1
+			if v.ClassName == "Accessory" then
+				v.Handle.Transparency = 1
+			end
+			plr.Character.Humanoid.NameOcclusion = "NoOcclusion"
+	end
+	elseif TextButton.Text == "UnControl" then
+	TextButton.Text = "Control"
+	workspace[TextBox.Text].Humanoid.PlatformStand = false
+	workspace.Weld1:Remove()
+	workspace.Weld2:Remove()
+	workspace.Weld3:Remove()
+	workspace.Weld4:Remove()
+	workspace.Weld5:Remove()
+	workspace.Weld6:Remove()
+	workspace.Weld7:Remove()
+	for i,v in pairs(plr.Character:GetChildren()) do
+			if v.ClassName == "Part" then
+				v.Transparency = 0
+			end
+			plr.Character.HumanoidRootPart.Transparency = 1
+			if v.ClassName == "Accessory" then
+				v.Handle.Transparency = 0
+			end
+			plr.Character.Humanoid.NameOcclusion = "OccludeAll"
+	end
+end
+end)
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox.Position = UDim2.new(0, 50, 0, 20)
+TextBox.Size = UDim2.new(0, 200, 0, 30)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.FontSize = Enum.FontSize.Size28
+TextBox.Text = "Name"
+TextBox.TextSize = 25
+
+
+
+ MainSection:NewButton("Black Widow's Grenade Spam ", "Use BlackWidow", function(currentOption)
+
+while true do wait(0,5)
+local args = {
+[1] = "\0BlackWidow_EquipGrenade\0\0"
+}
+
+game:GetService("ReplicatedStorage").Network.RemoteFunction:InvokeServer(unpack(args))
+
+end
+
+
+end)
+
+                MainSection:NewLabel("Use Jean Grey For Best Results")
+
+
+    local Free = Window:NewTab("Paid-Outfits")
+    local FreeSection = Free:NewSection("PAID OUTFITS = FREE  hide guis after selection")
+    FreeSection:NewButton("Jean's 90s Outfit", "Enjoy your OutFit", function(currentOption)
+    print(currentOption)
+    
+   local ohString1 = "Jean Grey"
+   local ohString2 = "90s"
+
+   game:GetService("ReplicatedStorage").Remotes.CharacterSelection:InvokeServer(ohString1, ohString2)
+
+end)
+
+FreeSection:NewButton("Jean's Phoenix Outfit", "Enjoy, Embrace the Phoenix within", function(currentOption)
+    print(currentOption)
+    
+   local ohString1 = "Jean Grey"
+   local ohString2 = "Phoenix"
+
+   game:GetService("ReplicatedStorage").Remotes.CharacterSelection:InvokeServer(ohString1, ohString2)
+
+end)
+
+         FreeSection:NewLabel("Use Infinite Yield & Click GuiDelete")
+
+FreeSection:NewButton("Execute Infinite Yield", "Read Infinite Yield instructions to remove Gui", function(currentOption)
+    print(currentOption)
+     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+
+end)
+
+
+
+---- RESET CHARACTER
+    MainSection:NewDropdown("Quick Reset", "Makes you reset", { "RESET"}, function(currentOption)
+    print(currentOption)
+
+    game.ReplicatedStorage.Remotes.Reset:FireServer()
+    game.VisibilityStateChanged:FireServer("true")
+   
+end)
+
+
+
+
+     -- PLAYER
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player Menu")
+
+
+    PlayerSection:NewButton("TK Space (try Tk on someone after click)", "Your Tk allow you to take people to space", function()
+    print(currentOption)
+    
+
+local aux = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()
+
+local scriptPath = game:GetService("Players").LocalPlayer.PlayerScripts["Private Server Handler"]
+local closureName = "Unnamed function"
+local upvalueIndex = 1
+local closureConstants = {
+	[1] = "BodyMover",
+	[2] = "IsA",
+	[3] = "table",
+	[4] = "find",
+	[6] = "Name",
+	[8] = "game"
+}
+
+local closure = aux.searchClosure(scriptPath, closureName, upvalueIndex, closureConstants)
+local value = 9999999999999
+local elementIndex = 9
+
+debug.getupvalue(closure, upvalueIndex)[elementIndex] = value
+  
+    
+end)
+
+ PlayerSection:NewDropdown("Fix Tk", "Telekinesis Fixed after click", {"Switch back to Normal Tk"}, function(currentOption)
+    print(currentOption)
+
+-- Generated by Hydroxide's Upvalue Scanner: https://github.com/Upbolt/Hydroxide
+
+local aux = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()
+
+local scriptPath = game:GetService("Players").LocalPlayer.PlayerScripts["Private Server Handler"]
+local closureName = "Unnamed function"
+local upvalueIndex = 1
+local closureConstants = {
+	[1] = "BodyMover",
+	[2] = "IsA",
+	[3] = "table",
+	[4] = "find",
+	[6] = "Name",
+	[8] = "game"
+}
+
+local closure = aux.searchClosure(scriptPath, closureName, upvalueIndex, closureConstants)
+local value = "TKBODYPOSITION"
+local elementIndex = 9
+
+
+-- DO NOT RELY ON THIS FEATURE TO PRODUCE 100% FUNCTIONAL SCRIPTS
+debug.getupvalue(closure, upvalueIndex)[elementIndex] = value
+
+
+end)
+
+
+
+PlayerSection:NewButton("Bypass Fly (Fly Really Fast after click)", "Fly been bypassed Enjoy", function()
+    print(currentOption)
+  
+--Fly becomes glitched to bypass  
+-- Generated by Hydroxide's Upvalue Scanner: https://github.com/Upbolt/Hydroxide
+
+local aux = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()
+
+local scriptPath = game:GetService("Players").LocalPlayer.PlayerScripts["Private Server Handler"]
+local closureName = "Unnamed function"
+local upvalueIndex = 1
+local closureConstants = {
+	[1] = "BodyMover",
+	[2] = "IsA",
+	[3] = "table",
+	[4] = "find",
+	[6] = "Name",
+	[8] = "game"
+}
+
+local closure = aux.searchClosure(scriptPath, closureName, upvalueIndex, closureConstants)
+local value = 99999999999
+local elementIndex = 17
+
+
+-- DO NOT RELY ON THIS FEATURE TO PRODUCE 100% FUNCTIONAL SCRIPTS
+debug.getupvalue(closure, upvalueIndex)[elementIndex] = value
+
+-- HipHeight
+game.Players.LocalPlayer.Character.Humanoid.HipHeight = 50 
+
+-- Speed
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 121
+    
+end)
+
+
+
+ PlayerSection:NewDropdown("Normal Fly", "Bypass Removed", {"Switch back to Normal Fly"}, function(currentOption)
+    print(currentOption)
+
+-- Fixes Fly
+local aux = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()
+
+local scriptPath = game:GetService("Players").LocalPlayer.PlayerScripts["Private Server Handler"]
+local closureName = "Unnamed function"
+local upvalueIndex = 1
+local closureConstants = {
+	[1] = "BodyMover",
+	[2] = "IsA",
+	[3] = "table",
+	[4] = "find",
+	[6] = "Name",
+	[8] = "game"
+}
+
+local closure = aux.searchClosure(scriptPath, closureName, upvalueIndex, closureConstants)
+local value = "__FlightVelocity__xdlul"
+local elementIndex = 17
+
+
+debug.getupvalue(closure, upvalueIndex)[elementIndex] = value
+
+--HipHeight
+game.Players.LocalPlayer.Character.Humanoid.HipHeight = 2
+
+
+-- Speed
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 15
+
+end)
+
+
+
+    PlayerSection:NewButton("0  Cooldown BEING FIXED", "Cooldown been bypassed Enjoy", function()
+    print(currentOption)
+ 
+
+    
+end)
+
+
+
+
+
+    local Troll = Window:NewTab("Troll")
+    local TrollSection = Troll:NewSection("Manipulate Your Character")
+    TrollSection:NewButton("Block-Head", "LOL head is a block", function(currentOption)
+    print(currentOption)
+    while true do wait(0,5)
+     game.Players.LocalPlayer.Character.Head.Mesh:destroy()
+
+     end
+end)
+
+TrollSection:NewButton("Spinner", "LMAOO YOU Fidget Spinner", function(currentOption)
+    print(currentOption)
+    --- SPINNER ANIMATION
+repeat
+AnimationId = "754658275"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(2.2)
+wait(0.1)
+local Humanoid = game.Players.LocalPlayer.Character.Humanoid
+ 
+local ActiveTracks = Humanoid:GetPlayingAnimationTracks()
+ 
+for _,v in pairs(ActiveTracks)
+do v:Stop()
+end
+wait()
+until game.Players.LocalPlayer.Character.Humanoid.Health == 0
+
+
+end)
+
+
+
+
+TrollSection:NewButton("Fling Arms", "LML Arms BROKEN lol", function(currentOption)
+    print(currentOption)
+    --- Fling Arms Anim
+
+repeat
+AnimationId = "754656200"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(3)
+wait(0.1)
+local Humanoid = game.Players.LocalPlayer.Character.Humanoid
+ 
+local ActiveTracks = Humanoid:GetPlayingAnimationTracks()
+ 
+for _,v in pairs(ActiveTracks)
+do v:Stop()
+end
+wait()
+until game.Players.LocalPlayer.Character.Humanoid.Health == 0
+
+end)
+
+
+
+
+        TrollSection:NewLabel("RESET TO BE NORMAL")
+
+           TrollSection:NewLabel("CHAT BYPASS pre-words made")
+            
+
+   TrollSection:NewButton("Fuck", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    
+    --- Fuck
+    local args = {
+    [1] = "ff\240\144\140\145\240\144\140\145\240\144\140\145u\240\144\140\145\240\144\140\145\240\144\140\145c" ..
+        "\240\144\140\145\240\144\140\145\240\144\140\145k ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+    TrollSection:NewButton("Faggot", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    --- Faggot
+    local args = {
+    [1] = "ff \240\144\140\145 \205\156 \205\163 agg \240\144\140\145 \205\156 \205\163 ot ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+   TrollSection:NewButton("Queer", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    --- Queer
+    local args = {
+    [1] = " Qu \240\144\140\145 \205\156 \205\163 ee  \240\144\140\145 \205\156 \205\163 r ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+   TrollSection:NewButton("Shit", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    
+    --- Shit 
+    local args = {
+    [1] = " Sh \240\144\140\145 \205\156 \205\163 it ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+       TrollSection:NewButton("Cunt", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+    --- Cunt
+    local args = {
+    [1] = "c \240\144\140\145 \205\156 \205\163 unt ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+TrollSection:NewButton("Bitch", "Say how you really feel", function(currentOption)
+       print(currentOption)
+     
+    --- Bitch
+    local args = {
+    [1] = " Bi \240\144\140\145 \205\156 \205\163 tc  \240\144\140\145 \205\156 \205\163 h ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+   
+end)
+
+
+
+
+TrollSection:NewButton("Fuck You", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+    --- Fuck You
+    local args = {
+    [1] = "ff\240\144\140\145\240\144\140\145\240\144\140\145u\240\144\140\145\240\144\140\145\240\144\140\145c" ..
+        "\240\144\140\145\240\144\140\145\240\144\140\145k  Yo  \240\144\140\145 \205\156 \205\163" ..
+        " u ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+TrollSection:NewButton("Nigger", "Say how you really feel", function(currentOption)
+       print(currentOption)
+   
+    --- Nigger
+    local args = {
+    [1] = "ni \240\144\140\145 \205\156 \205\163 gge \240\144\140\145 \205\156 \205\163 r ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+TrollSection:NewButton("Piss", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+    --- Piss
+    local args = {
+    [1] = " Pi \240\144\140\145 \205\156 \205\163 ss ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+TrollSection:NewButton("Boobs", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+     --- Boobs
+    local args = {
+    [1] = " Bo \240\144\140\145 \205\156 \205\163 ob  \240\144\140\145 \205\156 \205\163 s ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+TrollSection:NewButton("Gay Niggers", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+    --- Gay Niggers 
+    local args = {
+    [1] = " Ga  \240\144\140\145 \205\156 \205\163 y n \240\144\140\145 \205\156 \205\163 igg \240\144\140\145 " ..
+        "\205\156 \205\163 ers ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+TrollSection:NewButton("Tits", "Say how you really feel", function(currentOption)
+       print(currentOption)
+   
+    --- Tits 
+    local args = {
+    [1] = " Ti \240\144\140\145 \205\156 \205\163 ts ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+   
+end)
+
+
+
+
+TrollSection:NewButton("Dick", "Say how you really feel", function(currentOption)
+       print(currentOption)
+       
+   ---Dick
+     local args = {
+    [1] = " Di \240\144\140\145 \205\156 \205\163 ck ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+TrollSection:NewButton("Slut", "Say how you really feel", function(currentOption)
+       print(currentOption)
+       
+-- Slut
+
+local args = {
+    [1] = " Sl \240\144\140\145 \205\156 \205\163 ut ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+   
+end)
+
+
+
+TrollSection:NewButton("Hoe", "Say how you really feel", function(currentOption)
+       print(currentOption)
+       
+  -- Hoe
+
+local args = {
+    [1] = " Ho  \240\144\140\145 \205\156 \205\163 e ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+
+TrollSection:NewButton("Titties", "Say how you really feel", function(currentOption)
+       print(currentOption)
+      
+ -- Titties
+
+local args = {
+    [1] = " Ti \240\144\140\145 \205\156 \205\163 tt \240\144\140\145 \205\156 \205\163 ie  \240\144\140\145 \205" ..
+        "\156 \205\163 s ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+  
+end)
+
+
+TrollSection:NewButton("Clit", "Say how you really feel", function(currentOption)
+       print(currentOption)
+    
+  --Clit
+
+local args = {
+    [1] = " Cl \240\144\140\145 \205\156 \205\163 it ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+
+                           TrollSection:NewLabel("Emoji Art")
+
+TrollSection:NewButton("$5 Bill Emoji", "Say how you really feel", function(currentOption)
+       print(currentOption)
+   
+   --- $5 Bill
+
+local args = {
+    [1] = "[\204\178\204\133$\204\178\204\133(\204\178\204\1335\204\178\204\133)\204\178\204\133$\204\178\204\133" ..
+        "]",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+TrollSection:NewButton("Nazi Emoji", "Say how you really feel", function(currentOption)
+       print(currentOption)
+   
+    local args = {
+    [1] = "\226\154\170\240\159\148\180\240\159\148\180\226\154\170\226\154\170\226\154\170\226\154\170",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+
+local args = {
+    [1] = "\226\154\170\240\159\148\180\240\159\148\180\226\154\170\240\159\148\180\240\159\148\180\240\159\148" ..
+        "\180",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+
+local args = {
+    [1] = "\226\154\170\240\159\148\180\240\159\148\180\226\154\170\240\159\148\180\240\159\148\180\240\159\148" ..
+        "\180",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+
+
+local args = {
+    [1] = "\226\154\170\226\154\170\226\154\170\226\154\170\226\154\170\226\154\170\226\154\170",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+
+
+local args = {
+    [1] = "\240\159\148\180\240\159\148\180\240\159\148\180\226\154\170\240\159\148\180\240\159\148\180\226\154" ..
+        "\170",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+
+local args = {
+    [1] = "\240\159\148\180\240\159\148\180\240\159\148\180\226\154\170\240\159\148\180\240\159\148\180\226\154" ..
+        "\170",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+
+local args = {
+    [1] = "\226\154\170\226\154\170\226\154\170\226\154\170\240\159\148\180\240\159\148\180\226\154\170",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+   
+end)
+
+
+
+TrollSection:NewButton("BBC Emoji", "Say how you really feel", function(currentOption)
+       print(currentOption)
+   
+   --- BBC
+   local args = {
+    [1] = "\226\154\171",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+local args = {
+    [1] = "\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\240\159\148\180",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+
+local args = {
+    [1] = "\226\154\171",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+   
+end)
+
+
+TrollSection:NewButton("Black Face Emoji", "Say how you really feel", function(currentOption)
+       print(currentOption)
+   
+   local args = {
+    [1] = "\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+local args = {
+    [1] = "\226\154\171\226\154\171\226\154\170\226\154\171\226\154\170\226\154\171\226\154\171",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+
+local args = {
+    [1] = "\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+local args = {
+    [1] = "\226\154\171\240\159\148\180\240\159\148\180\240\159\148\180\240\159\148\180\240\159\148\180\226\154" ..
+        "\171",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+local args = {
+    [1] = "\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171\226\154\171",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+TrollSection:NewButton("Table Flip Emoji", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+    local args = {
+    [1] = "(\226\149\175\194\176\226\150\161\194\176\239\188\137\226\149\175\239\184\181 \226\148\187\226\148\129" ..
+        "\226\148\187",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+TrollSection:NewButton("Lenny Emoji", "Say how you really feel", function(currentOption)
+       print(currentOption)
+       
+local args = {
+    [1] = "( \205\161\194\176 \205\156\202\150 \205\161\194\176)",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+   
+end)
+
+
+
+
+
+
+
+
+
+    local Misc = Window:NewTab("Misc")
+    local MiscSection = Misc:NewSection("Misc Options")
+    MiscSection:NewDropdown("Turn Music Off", "Reset character after you spawned for it to work", { "No Music"}, function(currentOption)
+    print(currentOption)
+    
+    -- Generated by Hydroxide's Upvalue Scanner: https://github.com/Upbolt/Hydroxide
+
+local aux = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()
+
+local scriptPath = game:GetService("ReplicatedStorage").Helpers.Content
+local closureName = "generatesound"
+local upvalueIndex = 1
+local closureConstants = {
+	[1] = "rawget",
+	[3] = "Sound",
+	[4] = "Name",
+	[5] = "pairs",
+	[7] = "type",
+	[9] = "table"
+}
+
+local closure = aux.searchClosure(scriptPath, closureName, upvalueIndex, closureConstants)
+local value = 0
+local elementIndex = "Marvel Enhanced: Music"
+
+
+-- DO NOT RELY ON THIS FEATURE TO PRODUCE 100% FUNCTIONAL SCRIPTS
+debug.getupvalue(closure, upvalueIndex)[elementIndex] = value
+
+
+ -- Generated by Hydroxide's Upvalue Scanner: https://github.com/Upbolt/Hydroxide
+
+local aux = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()
+
+local scriptPath = game:GetService("ReplicatedStorage").Helpers.Content
+local closureName = "generatesound"
+local upvalueIndex = 1
+local closureConstants = {
+	[1] = "rawget",
+	[3] = "Sound",
+	[4] = "Name",
+	[5] = "pairs",
+	[7] = "type",
+	[9] = "table"
+}
+
+local closure = aux.searchClosure(scriptPath, closureName, upvalueIndex, closureConstants)
+local value = 0
+local elementIndex = "Playing Music 1"
+
+
+-- DO NOT RELY ON THIS FEATURE TO PRODUCE 100% FUNCTIONAL SCRIPTS
+debug.getupvalue(closure, upvalueIndex)[elementIndex] = value
+
+
+
+  -- Generated by Hydroxide's Upvalue Scanner: https://github.com/Upbolt/Hydroxide
+
+local aux = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()
+
+local scriptPath = game:GetService("ReplicatedStorage").Helpers.Content
+local closureName = "generatesound"
+local upvalueIndex = 1
+local closureConstants = {
+	[1] = "rawget",
+	[3] = "Sound",
+	[4] = "Name",
+	[5] = "pairs",
+	[7] = "type",
+	[9] = "table"
+}
+
+local closure = aux.searchClosure(scriptPath, closureName, upvalueIndex, closureConstants)
+local value = 0
+local elementIndex = "Playing Music 2"
+
+
+-- DO NOT RELY ON THIS FEATURE TO PRODUCE 100% FUNCTIONAL SCRIPTS
+debug.getupvalue(closure, upvalueIndex)[elementIndex] = value
+   
+end)
+
+
+
+
+MiscSection:NewDropdown("Press to Join Different Server", "Server Hop", { "Takes you to another server"}, function(currentOption)
+    print(currentOption)
+    
+    local DelaySeconds = 1
+local ServerListLimit = 100
+
+function RejoinNewServer(teleportDelay: number?,serverLimit: number?)
+	teleportDelay = teleportDelay or 1
+	serverLimit = serverLimit or 100
+	local url = ("https://games.roblox.com/v1/games/%s/servers/Public?sortOrder=Asc&limit=%s"):format(game.PlaceId,tostring(serverLimit))
+
+	local Response = syn.request({
+		Url = url,
+		Method = "GET"
+	})
+
+	local currJobId = game.JobId
+	local newJobId = nil
+	local justInCase = 0
+	local respJson = game:GetService("HttpService"):JSONDecode(Response.Body)
+	for i,v in pairs(respJson) do
+		if (i == "data" and v and #v > 0) then
+			while (justInCase < serverLimit and (newJobId == nil or newJobId == currJobId)) do
+				justInCase = justInCase + 1
+				local sel = math.random(1,#v)
+				newJobId = v[sel].id
+			end
+		end
+	end
+
+	if (newJobId ~= nil) then
+		local ts = game:GetService('TeleportService')
+		local p = nil
+		pcall(function()
+			p = game:GetService("Players").LocalPlayer
+			p:Kick(('Rejoining to new server instance in %ss.'):format(tostring(teleportDelay)))
+		end)
+		if (teleportDelay > 0) then
+			wait(teleportDelay)
+		end
+		ts:TeleportToPlaceInstance(game.PlaceId,newJobId,p)
+		print("teleported")
+	else
+		print("failed to get new jobid")
+	end
+end
+
+RejoinNewServer(DelaySeconds,ServerListLimit)
+    
+end)
+
+
+end 
