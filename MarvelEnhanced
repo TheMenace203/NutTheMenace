@@ -934,4 +934,4 @@ end)
 
 
 end 
-wait(1.5)game.StarterGui:SetCore("SendNotification",{Title="Nut The Menace <3",Text="Marvel Enhanced GUI                       ~~~~ Now Active ~~~~",Icon="rbxthumb://type=Asset&id=7770638479&w=150&h=150",Duration="30",Button1="Enjoy :)"})
+wait(1)game.StarterGui:SetCore("SendNotification",{Title="Nut The Menace <3",Text="Marvel Enhanced GUI                       ~~~~ Now Active ~~~~",Icon="rbxthumb://type=Asset&id=7770638479&w=150&h=150",Duration="30",Button1="Enjoy :)"})
