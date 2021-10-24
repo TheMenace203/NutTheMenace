@@ -10,7 +10,19 @@ end)d:NewButton("Enchantress Shield (Attack Protection)","Protection",function()
 }
 
 game:GetService("ReplicatedStorage").EnchantressShield:FireServer(unpack(args))
-end)d:NewButton("Use Bobby's Powers & Freeze All ","Freezes All",function(currentOption)print(currentOption)local e={[1]="IceStormExecute"}game:GetService("ReplicatedStorage").IcemanAbilities:InvokeServer(unpack(e))end)d:NewButton("Ice Slide","On",function(currentOption)local e={[1]="IceSlideStart"}game:GetService("ReplicatedStorage").IcemanAbilities:InvokeServer(unpack(e))end)d:NewButton("Ice Slide End","Off",function(currentOption)local e={[1]="IceSlideEnd"}game:GetService("ReplicatedStorage").IcemanAbilities:InvokeServer(unpack(e))end)d:NewButton("Self Heal","Heals you",function(currentOption) local args = {
+end)d:NewButton("Use Bobby's Powers & Freeze All ","Freezes All",function(currentOption)print(currentOption)local e={[1]="IceStormExecute"}game:GetService("ReplicatedStorage").IcemanAbilities:InvokeServer(unpack(e))
+local args = {
+    [1] = "IceStormStart"
+}
+
+game:GetService("ReplicatedStorage").IcemanAbilities:InvokeServer(unpack(args)) wait(10)
+
+local args = {
+    [1] = "IceStormEnd"
+}
+
+game:GetService("ReplicatedStorage").IcemanAbilities:InvokeServer(unpack(args))end)
+ d:NewButton("Ice Slide","On",function(currentOption)local e={[1]="IceSlideStart"}game:GetService("ReplicatedStorage").IcemanAbilities:InvokeServer(unpack(e))end)d:NewButton("Ice Slide End","Off",function(currentOption)local e={[1]="IceSlideEnd"}game:GetService("ReplicatedStorage").IcemanAbilities:InvokeServer(unpack(e))end)d:NewButton("Self Heal","Heals you",function(currentOption) local args = {
     [1] = "SelfHeal",
     [2] = true
 }
