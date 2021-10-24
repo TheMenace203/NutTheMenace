@@ -26,3 +26,11 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").AngelAbilities:InvokeServer(unpack(args)) end)d:NewButton("Stone Wave","Turns people into stone",function(currentOption)local e={[1]="StoneWave"}game:GetService("ReplicatedStorage").EnchantressAbilities:InvokeServer(unpack(e))end)d:NewDropdown("Quick Reset","Makes you reset",{"RESET"},function(currentOption)print(currentOption)game.ReplicatedStorage.Remotes.Reset:FireServer()game.VisibilityStateChanged:FireServer("true")end)local f=b:NewTab("Troll")local g=f:NewSection("Manipulate Your Character")g:NewButton("Block-Head","LOL head is a block",function(currentOption)print(currentOption)while true do wait(0,5)game.Players.LocalPlayer.Character.Head.Mesh:destroy()end end)g:NewButton("Spinner","LMAOO YOU Fidget Spinner",function(currentOption)print(currentOption)repeat AnimationId="754658275"local h=Instance.new("Animation")h.AnimationId="rbxassetid://"..AnimationId;local i=game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(h)i:Play()i:AdjustSpeed(2.2)wait(0.1)local j=game.Players.LocalPlayer.Character.Humanoid;local k=j:GetPlayingAnimationTracks()for l,m in pairs(k)do m:Stop()end;wait()until game.Players.LocalPlayer.Character.Humanoid.Health==0 end)g:NewButton("Fling Arms","LML Arms BROKEN lol",function(currentOption)print(currentOption)repeat AnimationId="754656200"local h=Instance.new("Animation")h.AnimationId="rbxassetid://"..AnimationId;local i=game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(h)i:Play()i:AdjustSpeed(3)wait(0.1)local j=game.Players.LocalPlayer.Character.Humanoid;local k=j:GetPlayingAnimationTracks()for l,m in pairs(k)do m:Stop()end;wait()until game.Players.LocalPlayer.Character.Humanoid.Health==0 end)g:NewLabel("RESET TO BE NORMAL")end
+wait(1)
+game.StarterGui:SetCore("SendNotification", { 
+    Title = "Nut The Menace <3";
+    Text = "Heroes Beta 2.0 GUI                       ~~~~ Now Active ~~~~";
+    Icon = "rbxthumb://type=Asset&id=7770638479&w=150&h=150";
+    Duration = "30";
+    Button1 = "Enjoy :)";
+})
