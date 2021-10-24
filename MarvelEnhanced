@@ -47,7 +47,7 @@ end)
 
 
 
- MainSection:NewButton("Black Widow's Grenade Spam ", "Use BlackWidow", function(currentOption)
+ MainSection:NewButton("Black Widow's Grenade (Spam click if you want)", "Use BlackWidow", function(currentOption)
 
 
 
