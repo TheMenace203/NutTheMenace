@@ -15,7 +15,7 @@ local args = {
     [1] = "IceStormStart"
 }
 
-game:GetService("ReplicatedStorage").IcemanAbilities:InvokeServer(unpack(args)) wait(10)
+game:GetService("ReplicatedStorage").IcemanAbilities:InvokeServer(unpack(args)) wait(30)
 
 local args = {
     [1] = "IceStormEnd"
