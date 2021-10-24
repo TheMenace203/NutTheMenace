@@ -1,4 +1,11 @@
-if game.PlaceId==4564965542 then local a=loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()local b=a.CreateLib("Heroes: BETA 2.0 GUI by Nut The Menace","Ocean")local c=b:NewTab("Main")local d=c:NewSection("Semi-Rogue")d:NewButton("QuickSilver's Speed","Run Fast as Speed",function()print(currentOption)while true do wait(0,5)game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=121 end end)d:NewButton("Enchantress Shield (Attack Protection)","Protection",function()print(currentOption) local args = {
+if game.PlaceId==4564965542 then local a=loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()local b=a.CreateLib("Heroes: BETA 2.0 GUI by Nut The Menace","Ocean")local c=b:NewTab("Main")local d=c:NewSection("Semi-Rogue")d:NewButton("QuickSilver's Speed","Run Fast as Speed",function()print(currentOption)while true do wait(0,5)game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=121 end
+
+local args = {
+    [1] = "FlashOn"
+}
+
+game:GetService("ReplicatedStorage").QuickAbilities:InvokeServer(unpack(args))
+end)d:NewButton("Enchantress Shield (Attack Protection)","Protection",function()print(currentOption) local args = {
     [1] = true
 }
 
