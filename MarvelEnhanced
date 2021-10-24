@@ -16,19 +16,7 @@ end
     
    end)
 
-
-
-  MainSection:NewButton("Black Widow's Invisibility", "Makes you Invisible", function(currentOption)
-    print(currentOption)
-
- local A_1 = "\0\66\108\97\99\107\87\105\100\111\119\95\83\116\97\114\116\67\108\111\97\107\105\110\103\0\0"
-local Event = game:GetService("ReplicatedStorage").Network.RemoteFunction
-Event:InvokeServer(A_1)   
-end)
-
-
-
- MainSection:NewButton("Jean's Flight Aura & Shield ", "Psionic  Glo and Shield", function(currentOption)
+MainSection:NewButton("Jean's Flight Aura & Shield ", "Psionic  Glo and Shield", function(currentOption)
 
 local A_1 = "\0\74\101\97\110\32\71\114\101\121\32\70\108\121\32\83\116\97\114\116\0\0"
 local Event = game:GetService("ReplicatedStorage").Network.RemoteEvent
@@ -40,23 +28,29 @@ Event:FireServer(A_1)
 
 end)
 
+  MainSection:NewButton("Black Widow's Invisibility", "Makes you Invisible", function(currentOption)
+    print(currentOption)
+
+    local args = {
+    [1] = "\0BlackWidow_StartCloaking\0\0"
+}
+
+game:GetService("ReplicatedStorage").Network.RemoteFunction:InvokeServer(unpack(args))
+
+end)
 
 
-
-
-
- MainSection:NewButton("Black Widow's Grenade (Spam click if you want)", "Use BlackWidow", function(currentOption)
-
-
+ MainSection:NewButton("Black Widow's Grenade Spam ", "Use BlackWidow", function(currentOption)
 
 local args = {
 [1] = "\0BlackWidow_EquipGrenade\0\0"
 }
 
 game:GetService("ReplicatedStorage").Network.RemoteFunction:InvokeServer(unpack(args))
- 
 
 
+
+end)
 
                 MainSection:NewLabel("Use Jean Grey For Best Results")
 
@@ -921,16 +915,4 @@ RejoinNewServer(DelaySeconds,ServerListLimit)
 end)
 
 
-
-
 end 
-
-wait(1)
-game.StarterGui:SetCore("SendNotification", { 
-    Title = "Nut The Menace <3";
-    Text = "Marvel Enhanced GUI                       ~~~~ Now Active ~~~~";
-    Icon = "rbxthumb://type=Asset&id=7770638479&w=150&h=150";
-    Duration = "30";
-    Button1 = "Enjoy :)";
-})
-
