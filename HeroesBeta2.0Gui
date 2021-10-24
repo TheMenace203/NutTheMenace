@@ -10,7 +10,7 @@ end)d:NewButton("Enchantress Shield (Attack Protection)","Protection",function()
 }
 
 game:GetService("ReplicatedStorage").EnchantressShield:FireServer(unpack(args))
-end)d:NewButton("Use Bobby's Powers & Freeze All ","Freezes All",function(currentOption)print(currentOption)local e={[1]="IceStormExecute"}game:GetService("ReplicatedStorage").IcemanAbilities:InvokeServer(unpack(e))
+end)d:NewButton("Ice Man's Powers Freeze All ","Freezes All",function(currentOption)print(currentOption)local e={[1]="IceStormExecute"}game:GetService("ReplicatedStorage").IcemanAbilities:InvokeServer(unpack(e))
 local args = {
     [1] = "IceStormStart"
 }
