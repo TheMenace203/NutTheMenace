@@ -10,7 +10,7 @@ end)d:NewButton("Use Bobby's Powers & Freeze All ","Freezes All",function(curren
 
 game:GetService("ReplicatedStorage").AngelAbilities:InvokeServer(unpack(args))
 
-wait(9)
+wait(5)
 
 
 local args = {
