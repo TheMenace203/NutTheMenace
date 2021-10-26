@@ -915,11 +915,11 @@ RejoinNewServer(DelaySeconds,ServerListLimit)
 end)
 
  local Credits = Window:NewTab("Credits")
- local CreditsSection = Credits:NewSection("Credits")
+ local CreditsSection = Credits:NewSection("~~ Credits ~~")
  CreditsSection:NewLabel("Created by Nut The Menace")
- CreditsSection:NewLabel("Discord JeanSupremacy#2774")
- CreditsSection:NewLabel("TikTok @DatExploiter")
- CreditsSection:NewLabel("Twitter @DatExploiter")
+ CreditsSection:NewLabel("Discord: JeanSupremacy#2774")
+ CreditsSection:NewLabel("TikTok: @DatExploiter")
+ CreditsSection:NewLabel("Twitter: @DatExploiter")
  
 end 
 
