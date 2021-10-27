@@ -7672,8 +7672,8 @@ getgenv().F_A = {
 Utils.Notify(LocalPlayer, "Loaded", format("script loaded in %.3f seconds", (tick()) - start));
 Utils.Notify(LocalPlayer, "Welcome", "'cmds' to see all of the commands");
 if (debug.info(2, "f") == nil) then
-	Utils.Notify(LocalPlayer, "Outdated Script", "use the loadstring to get latest updates (https://fatesc/fates-admin)", 10);
+	Utils.Notify(LocalPlayer, "Reminder", "Check out my TikTok @DatExploiter for Updates and Other content", 10);
 end
 local LatestCommit = JSONDecode(Services.HttpService, game.HttpGetAsync(game, "https://api.github.com/repos/fatesc/fates-admin/commits?per_page=1&path=main.lua"))[1]
 wait(1);
-Utils.Notify(LocalPlayer, "Newest Update", format("%s - %s", LatestCommit.commit.message, LatestCommit.commit.author.name));
+Utils.Notify(LocalPlayer, "Newest Update", "LOADED Enjoy :)");
