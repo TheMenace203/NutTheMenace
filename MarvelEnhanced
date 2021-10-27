@@ -85,11 +85,11 @@ FreeSection:NewButton("Execute Infinite Yield", "Read Infinite Yield instruction
 
 end)
 
-    FreeSection:NewLabel("Fate's Admin you can fly like a admin")
+    FreeSection:NewLabel("Nut The Menace's Admin you can fly like a admin")
 
-FreeSection:NewButton("Execute Fates Admin", "Prefix ; and say ;fly2", function(currentOption)
+FreeSection:NewButton("Execute Nut The Menace's Admin", "Prefix ; and say ;fly2", function(currentOption)
     print(currentOption)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TheAdminUKnow/NutTheMenace/main/NutTheMenaceAdmin",true))();
 end)
 
 
