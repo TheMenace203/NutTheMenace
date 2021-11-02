@@ -251,8 +251,30 @@ end)
     
 end)
 
+    local Mask = Window:NewTab("Decals")
+    local MaskSection = Mask:NewSection("Play with Decals")
+    
+    
+    MaskSection:NewButton("Take Mask off", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Mask:destroy()
 
+    
+end)
 
+MaskSection:NewButton("Take off face", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Decal:destroy()
+
+    
+end)
+    
+    
+    
+    
+    
 
     local Troll = Window:NewTab("Troll")
     local TrollSection = Troll:NewSection("Troll the Server")
@@ -285,7 +307,7 @@ end)
      game.Players.LocalPlayer.Character.Head.HAIR_03:destroy()
      game.Players.LocalPlayer.Character.UpperTorso.Shirt:destroy()
      game.Players.LocalPlayer.Character.LowerTorso.Skirt:destroy()
-     
+     game.Players.LocalPlayer.Character.UpperTorso.Body:destroy()
 end)
 
 TrollSection:NewButton("Spinner", "LMAOO YOU Fidget Spinner", function(currentOption)
