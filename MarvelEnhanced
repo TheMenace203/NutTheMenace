@@ -281,6 +281,26 @@ MaskSection:NewButton("Take off the hair", "Enjoy", function()
  
 end)
     
+    MaskSection:NewButton("Take off Shirt", "Enjoy", function()
+    print(currentOption)
+    
+     game.Players.LocalPlayer.Character.UpperTorso.Shirt:destroy()
+ 
+end)
+    
+    MaskSection:NewButton("Take off Skirt", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.LowerTorso.Skirt:destroy()
+ 
+end)
+
+  MaskSection:NewButton("Take off Pants", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.LowerTorso.Pants:destroy()
+ 
+end)
     
     
     
