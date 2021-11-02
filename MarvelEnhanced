@@ -850,13 +850,7 @@ end)
 
     local Misc = Window:NewTab("Misc")
     local MiscSection = Misc:NewSection("Misc Options")
-    MiscSection:NewDropdown("Turn Music Off", "Reset character after you spawned for it to work", { "No Music"}, function(currentOption)
-    print(currentOption)
-    
-    
-    
-    
-    
+   
    MiscSection:NewButton("Destory Teleport Barriers", "Breaks The Barriers that teleport you back", function(currentOption)
        print(currentOption)
        
@@ -864,10 +858,10 @@ end)
        
    
 end)
-
-
-
-
+   
+   
+   MiscSection:NewDropdown("Turn Music Off", "Reset character after you spawned for it to work", { "No Music"}, function(currentOption)
+    print(currentOption)
 
 
 local aux = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()
