@@ -854,8 +854,7 @@ end)
    MiscSection:NewButton("Destory Teleport Barriers", "Breaks The Barriers that teleport you back", function(currentOption)
        print(currentOption)
        
-       game.WakSpace.Barriers:Destroy()
-       
+       game.WakSpace.Barriers:Destroy()       
    
 end)
    
