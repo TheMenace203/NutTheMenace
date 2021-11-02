@@ -278,9 +278,7 @@ MaskSection:NewButton("Take off the hair", "Enjoy", function()
      game.Players.LocalPlayer.Character.Head.HAIR_01:destroy()
      game.Players.LocalPlayer.Character.Head.HAIR_02:destroy()
      game.Players.LocalPlayer.Character.Head.HAIR_03:destroy()
-
-
-    
+ 
 end)
     
     
