@@ -253,7 +253,9 @@ end)
 
     local Mask = Window:NewTab("Decals")
     local MaskSection = Mask:NewSection("Play with Decals")
-    
+   
+     MaskSection:NewLabel("Jean Grey Decals")
+
     
     MaskSection:NewButton("Take Mask off", "Enjoy", function()
     print(currentOption)
@@ -302,6 +304,7 @@ end)
  
 end)
     
+    MaskSection:NewLabel("Jean Grey 90s Decals coming soon..")
     
     
     
