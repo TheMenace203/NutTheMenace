@@ -270,6 +270,18 @@ MaskSection:NewButton("Take off face", "Enjoy", function()
 
     
 end)
+
+
+MaskSection:NewButton("Take off the hair", "Enjoy", function()
+    print(currentOption)
+    
+     game.Players.LocalPlayer.Character.Head.HAIR_01:destroy()
+     game.Players.LocalPlayer.Character.Head.HAIR_02:destroy()
+     game.Players.LocalPlayer.Character.Head.HAIR_03:destroy()
+
+
+    
+end)
     
     
     
