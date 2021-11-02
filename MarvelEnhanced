@@ -263,7 +263,7 @@ end)
     
 end)
 
-MaskSection:NewButton("Take off face", "Enjoy", function()
+MaskSection:NewButton("Take off Face", "Enjoy", function()
     print(currentOption)
     
     game.Players.LocalPlayer.Character.Head.Decal:destroy()
@@ -272,7 +272,7 @@ MaskSection:NewButton("Take off face", "Enjoy", function()
 end)
 
 
-MaskSection:NewButton("Take off the hair", "Enjoy", function()
+MaskSection:NewButton("Take off the Hair", "Enjoy", function()
     print(currentOption)
     
      game.Players.LocalPlayer.Character.Head.HAIR_01:destroy()
