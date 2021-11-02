@@ -308,6 +308,13 @@ end)
      game.Players.LocalPlayer.Character.UpperTorso.Shirt:destroy()
      game.Players.LocalPlayer.Character.LowerTorso.Skirt:destroy()
      game.Players.LocalPlayer.Character.UpperTorso.Body:destroy()
+     game.Players.LocalPlayer.Character.UpperTorso.Beltloops_Back:destroy()
+     game.Players.LocalPlayer.Character.UpperTorso.Buckle:destroy()
+     game.Players.LocalPlayer.Character.UpperTorso.Ring:destroy()
+     game.Players.LocalPlayer.Character.UpperTorso.X:destroy()
+     game.Players.LocalPlayer.Character.UpperTorso.Beltloops_Front:destroy()
+     game.Players.LocalPlayer.Character.UpperTorso.Belt:destroy()
+     
 end)
 
 TrollSection:NewButton("Spinner", "LMAOO YOU Fidget Spinner", function(currentOption)
