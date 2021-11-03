@@ -111,43 +111,6 @@ game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
 game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
    
    end)
-   
-   InvisibleWomanSection:NewButton("Black Widow", "Enjoy", function(txt)
-    print("txt")
-    
-    local args = {
-    [1] = "Black Widow",
-    [2] = "STOP_EXPLOITING"
-}
-
-game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
-   
-end)
-
-InvisibleWomanSection:NewButton("Magik", "Enjoy", function(txt)
-    print("txt")
-    
-    local args = {
-    [1] = "Magik",
-    [2] = "STOP_EXPLOITING"
-}
-
-game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
-   
-end)
-
-
-InvisibleWomanSection:NewButton("Doctor Strange", "Enjoy", function(txt)
-    print("txt")
-    
-    local args = {
-    [1] = "Doctor Strange",
-    [2] = "STOP_EXPLOITING"
-}
-
-game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
-   
-end)
 
 
 
