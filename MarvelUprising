@@ -7,7 +7,7 @@
    
      -- Character Change
     local InvisibleWoman = Window:NewTab("Select Character")
-    local InvisibleWomanSection = InvisibleWoman:NewSection("Change Characters")
+    local InvisibleWomanSection = InvisibleWoman:NewSection("Game Pass & Skins")
      
     InvisibleWomanSection:NewButton("Dark Phoenix (Classic)", "Enjoy", function(txt)
     print("txt")
@@ -61,6 +61,17 @@ InvisibleWomanSection:NewButton("Gwen (From Ben 10)", "Enjoy", function(txt)
 
 game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
 
+  end)
+  
+   InvisibleWomanSection:NewButton("Pixies Strawberry Shortcake skin", "Enjoy", function(txt)
+    print("txt")
+    
+    local args = {
+    [1] = "Strawberry Shortcake",
+    [2] = "STOP_EXPLOITING"
+}
+
+game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
   end)
 
 
@@ -133,11 +144,43 @@ game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
 
 
     local Powers = Window:NewTab("Spam Powers")
-    local PowersSection = Powers:NewSection("Gwen's Power")
+    local PowersSection = Powers:NewSection("Pixie's Stawberry Powers")
     
+    
+     PowersSection:NewButton("Strawberry Shot", "Use on anyone", function(txt)
+    print("txt")
+    
+
+local args = {
+    [1] = "StrawberryShot"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+
+   
+  end)
+  
+  
+   PowersSection:NewButton("Become a Strawberry", "Use on anyone", function(txt)
+    print("txt")
+    
+
+local args = {
+    [1] = "StrawberryRoll"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+
+   
+  end)
+    
+    
+    PowersSection:NewLabel("Gwen's Powers")
                 
     
-    PowersSection:NewButton("Gwen's Flight Aura", "Use on anyone", function(txt)
+    PowersSection:NewButton("Flight Aura", "Use on anyone", function(txt)
     print("txt")
     
    
@@ -154,7 +197,7 @@ game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
   
   
   
-  PowersSection:NewButton("Gwen's Mystic Lightning", "Use on anyone", function(txt)
+  PowersSection:NewButton("Mystic Lightning", "Use on anyone", function(txt)
     print("txt")  
 
 
@@ -172,7 +215,7 @@ game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
   
   
   
-    PowersSection:NewButton("Gwen's Astral Projection (Create Clones", "Use on anyone", function(txt)
+    PowersSection:NewButton("Astral Projection (Create Clones", "Use on anyone", function(txt)
     print("txt")  
 
 
