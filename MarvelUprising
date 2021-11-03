@@ -667,7 +667,7 @@ PowersSection:NewButton("Astral Pulling", "", function(txt)
 
 local args = {
     [1] = "StrangeAstralPulling",
-    [2] = game:GetService("Players").USERNAME.Character.RightUpperArm
+    [2] = game:GetService("Players").awsm_94BBGEO.Character.RightUpperArm
 }
 
 game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
@@ -689,7 +689,7 @@ PowersSection:NewButton("Strangulation", "", function(txt)
 
 local args = {
     [1] = "Strangulation",
-    [2] = game:GetService("Players").M1N1_JJC.Character
+    [2] = game:GetService("Players").awsm_94BBGEO.Character
 }
 
 game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
