@@ -1438,7 +1438,25 @@ end)
        game.Players.LocalPlayer.Character.Outfit:destroy()
 end)
     
-    
+    InformationssSection:NewButton("Remove Safe Zone", "Enjoy", function(currentOption)
+       print(currentOption)
+   
+         game.Workspace.SafeZone:Destroy()  
+end)
+
+
+   InformationssSection:NewButton("Remove Every Structure", "Enjoy", function(currentOption)
+       print(currentOption)
+   
+         game.Workspace.BuildingStuff:Destroy()    
+end)
+
+
+InformationssSection:NewButton("Remove Adonis Loader", "Enjoy", function(currentOption)
+       print(currentOption)
+   
+         game.Workspace.Adonis_Loader:Destroy()  
+end)
     
     
     
