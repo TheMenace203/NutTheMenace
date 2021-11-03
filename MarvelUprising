@@ -133,9 +133,9 @@ game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
 
 
     local Powers = Window:NewTab("Spam Powers")
-    local PowersSection = Powers:NewSection("Power Spamming")
+    local PowersSection = Powers:NewSection("Gwen's Power")
     
-                PowersSection:NewLabel("Gwen's Powers")
+                
     
     PowersSection:NewButton("Gwen's Flight Aura", "Use on anyone", function(txt)
     print("txt")
