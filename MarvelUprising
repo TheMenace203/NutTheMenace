@@ -950,7 +950,7 @@ end
 
    
     -- Credits Info
-    local Information = Window:NewTab("Misc")
+    local Information = Window:NewTab("Random")
     local InformationSection = Information:NewSection("Random Characters Abilities")
    
   
@@ -1405,6 +1405,45 @@ local args = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
 end)
+
+
+local Informationss = Window:NewTab("Misc")
+local InformationssSection = Informationss:NewSection("Decals & More")
+    
+    
+   InformationssSection:NewButton("Remove your Name Tag", "Enjoy", function(currentOption)
+       print(currentOption)
+   
+        game.Players.LocalPlayer.Character.Head.NameTag:destroy()
+end)
+
+
+InformationssSection:NewButton("Remove Face", "Enjoy", function(currentOption)
+       print(currentOption)
+   
+        game.Players.LocalPlayer.Character.Head.Face:destroy()
+end)
+    
+    
+    InformationssSection:NewButton("Remove Hair", "Enjoy", function(currentOption)
+       print(currentOption)
+   
+        game.Players.LocalPlayer.Character.JeanHair.SpecialMesh:destroy()
+end)
+    
+    
+    InformationssSection:NewButton("Remove Clothes", "Enjoy", function(currentOption)
+       print(currentOption)
+   
+       game.Players.LocalPlayer.Character.Outfit:destroy()
+end)
+    
+    
+    
+    
+    
+    
+    
 
 
  local Credits = Window:NewTab("Credits")
