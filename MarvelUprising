@@ -875,7 +875,26 @@ end)
 
 PowersSection:NewLabel("Black Widow's Powers")
 
-PowersSection:NewButton("Spam Grenades", "", function(txt)
+
+PowersSection:NewButton("Real Grenades", "", function(txt)
+    print("txt")
+
+
+
+local args = {
+    [1] = "GrenadeThrow",
+    [2] = Vector3.new(40.765289306641, 0, 17.389600753784)
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+
+
+end)
+
+
+
+PowersSection:NewButton("Decoy Grenades", "", function(txt)
     print("txt")
 
 
@@ -914,10 +933,15 @@ end)
 PowersSection:NewButton("Widow's Tazer Bite", "", function(txt)
     print("txt")
 
-local ohVector31 = 32.100666046143, 3.8777360916138, -18.586833953857
-local ohString2 = "Left"
 
-game:GetService("ReplicatedStorage").Events.WidowBite:FireServer(ohVector31, ohString2)
+local args = {
+    [1] = Vector3.new(45.615791320801, 1.9626262187958, -0.50000011920929),
+    [2] = "Left"
+}
+
+game:GetService("ReplicatedStorage").Events.WidowBite:FireServer(unpack(args))
+
+
 
 end)
 
