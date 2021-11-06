@@ -808,7 +808,7 @@ PowersSection:NewButton("Astral Pulling", "", function(txt)
 
 local args = {
     [1] = "StrangeAstralPulling",
-    [2] = game:GetService("Players").awsm_94BBGEO.Character.RightUpperArm
+    [2] = game:GetService("Players").awsm_AUN0Q87.Character.RightUpperArm
 }
 
 game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
@@ -830,7 +830,7 @@ PowersSection:NewButton("Strangulation", "", function(txt)
 
 local args = {
     [1] = "Strangulation",
-    [2] = game:GetService("Players").awsm_94BBGEO.Character
+    [2] = game:GetService("Players").awsm_AUN0Q87.Character
 }
 
 game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
@@ -1060,18 +1060,6 @@ Event:FireServer(A_1, A_2)
   end)
 
 
-
-
-
-
-InformationSection:NewButton("FireWork Show", "", function(txt)
-    print("txt")
-
-
-
-
-
-  end)
 
 
 InformationSection:NewButton("Psionic Shield", "", function(txt)
