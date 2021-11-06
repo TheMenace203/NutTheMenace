@@ -215,7 +215,7 @@ game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
   
   
   
-    PowersSection:NewButton("Astral Projection (Create Clones", "Use on anyone", function(txt)
+    PowersSection:NewButton("Astral Projection (Create Clones)", "Use on anyone", function(txt)
     print("txt")  
 
 
