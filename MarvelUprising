@@ -394,8 +394,51 @@ game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
   end)
 
           PowersSection:NewLabel("Scarlet Witch Powers")
+	  
+	  
+	  
+	   PowersSection:NewButton("Wanda Bolt Barrage (Moves)", "Use as Wanda", function(txt)
+    print("txt")
 
 
+local args = {
+    [1] = Vector3.new(10.574668884277, 0, 67.553100585938)
+}
+
+game:GetService("ReplicatedStorage").Events.WandaBarrage:FireServer(unpack(args))
+
+
+  
+  end)
+  
+  
+   PowersSection:NewButton("Wanda Bolt Barrage (spam to leave trail)", "Use as Wanda", function(txt)
+    print("txt")
+
+
+local args = {
+    [1] = true
+}
+
+game:GetService("ReplicatedStorage").Events.WandaBarrage:FireServer(unpack(args))
+
+
+ 
+  
+  end)
+
+ PowersSection:NewButton("Wanda Telport Aura", "Use as Wanda", function(txt)
+    print("txt")
+
+   local args = {
+    [1] = true
+}
+
+game:GetService("ReplicatedStorage").Events.WandaTeleport:FireServer(unpack(args))
+
+ 
+  
+  end)
 
 
    PowersSection:NewButton("Reality Warp Cube", "Use as Wanda", function(txt)
@@ -404,8 +447,6 @@ game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
    local A_1 = "Cube"
    local Event = game:GetService("ReplicatedStorage").Events.WandaChaos
    Event:FireServer(A_1)
-
-
 
   
   end)
@@ -442,6 +483,35 @@ game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
     Event:FireServer()
 
   end)
+
+
+
+              PowersSection:NewLabel("Wiccan's Powers")
+
+PowersSection:NewButton("Chaos Channeling", "Use anyone", function(txt)
+  
+
+local args = {
+    [1] = "ChannelingAura",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Events.WiccanPowers:FireServer(unpack(args))
+
+
+
+local args = {
+    [1] = "ChannelingFire",
+    [2] = true,
+    [3] = Vector3.new(-0.27325412631035, -0.4187236726284, -0.86602699756622)
+}
+
+game:GetService("ReplicatedStorage").Events.WiccanPowers:FireServer(unpack(args))
+
+
+  end)
+  
+
 
 
          PowersSection:NewLabel("Speed's Powers")
