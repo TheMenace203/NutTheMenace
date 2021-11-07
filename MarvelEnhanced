@@ -14,7 +14,8 @@ if game.PlaceId == 6571467225 then
 end
   
     
-   end)
+    end)
+
 
 MainSection:NewButton("Jean's Flight Aura & Shield ", "Psionic  Glo and Shield", function(currentOption)
 
@@ -27,6 +28,8 @@ local Event = game:GetService("ReplicatedStorage").Network.RemoteEvent
 Event:FireServer(A_1)
 
 end)
+
+
 
   MainSection:NewButton("Black Widow's Invisibility", "Makes you Invisible", function(currentOption)
     print(currentOption)
@@ -52,7 +55,7 @@ game:GetService("ReplicatedStorage").Network.RemoteFunction:InvokeServer(unpack(
 
 end)
 
-                MainSection:NewLabel("Use Jean Grey For Best Results")
+                MainSection:NewLabel("Use Jean")
 
 
     local Free = Window:NewTab("Paid-Outfits")
@@ -304,9 +307,222 @@ end)
  
 end)
     
-    MaskSection:NewLabel("Jean Grey 90s Decals coming soon..")
+    MaskSection:NewLabel("Jean Grey 90s Decals")
+  
+MaskSection:NewButton("Take Mask off", "Enjoy", function()
+    print(currentOption)
     
+    game.Players.LocalPlayer.Character.Head.Mask:destroy()
+
     
+end)
+
+MaskSection:NewButton("Take off Hair", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Hair:destroy()
+    game.Players.LocalPlayer.Character.Head.Ponytail:destroy()
+    game.Players.LocalPlayer.Character.Head.Rubber:destroy()
+    
+end)
+
+
+MaskSection:NewButton("Take off Chest Piece", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.UpperTorso.Chestplate:destroy()
+    
+end)
+
+
+MaskSection:NewLabel("Black Widow's Decal")
+
+MaskSection:NewButton("Take off Body", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.UpperTorso.Body:destroy()
+      
+end) 
+
+
+    
+   MaskSection:NewButton("Take off Hair", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Hair:destroy()
+      
+end) 
+
+
+MaskSection:NewButton("Take off Face", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.face:destroy()
+      
+end) 
+
+
+MaskSection:NewButton("Take off Suit", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.UpperTorso.Suit:destroy()
+    game.Players.LocalPlayer.Character.LeftUpperLeg.Suit:destroy()
+    game.Players.LocalPlayer.Character.RightUpperLeg.Suit:destroy() 
+end) 
+
+
+
+MaskSection:NewButton("Take off Boots", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.LeftLowerLeg.Boot:destroy()
+    game.Players.LocalPlayer.Character.RightLowerLeg.Boot:destroy()
+    game.Players.LocalPlayer.Character.LeftUpperLeg.Boot:destroy()
+    game.Players.LocalPlayer.Character.RightUpperLeg.Boot:destroy()  
+end) 
+
+
+MaskSection:NewLabel("Spider Woman's Decal")
+
+MaskSection:NewButton("Take off Face", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Face:destroy()
+      
+end)
+
+
+
+
+MaskSection:NewButton("Take off Mask", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Mask:destroy()
+      
+end)
+
+
+
+MaskSection:NewButton("Take off Hair", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Hair01:destroy()
+    game.Players.LocalPlayer.Character.Head.Hair02:destroy()
+    game.Players.LocalPlayer.Character.Head.Hair03:destroy()
+      
+end)
+
+
+MaskSection:NewButton("Take off Suit", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.UpperTorso.Suit:destroy()
+    game.Players.LocalPlayer.Character.UpperTorso.Wings_Torso:destroy()
+    game.Players.LocalPlayer.Character.LowerTorso.Suit:destroy()
+    game.Players.LocalPlayer.Character.RightUpperLeg.Suit:destroy()
+    game.Players.LocalPlayer.Character.LeftUpperLeg.Suit:destroy()
+    game.Players.LocalPlayer.Character.LeftUpperArm.Suit:destroy()
+    game.Players.LocalPlayer.Character.RightUpperArm.Suit:destroy()
+    game.Players.LocalPlayer.Character.RightUpperArm.Glove:destroy()
+    game.Players.LocalPlayer.Character.LeftUpperArm.Glove:destroy()
+    game.Players.LocalPlayer.Character.Head.Diamond:destroy()
+    game.Players.LocalPlayer.Character.Head.Collar:destroy()
+      
+end)
+
+
+
+MaskSection:NewLabel("Cylops's Decal")
+
+
+MaskSection:NewButton("Take off Face", "Enjoy", function()
+    print(currentOption)
+    
+   game.Players.LocalPlayer.Character.Head.DefaultEyes:destroy()
+   
+end)
+
+
+MaskSection:NewButton("Take off Mask", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Mask:destroy()
+    game.Players.LocalPlayer.Character.Head.Cowl:destroy()
+    game.Players.LocalPlayer.Character.Head.Laser:destroy()
+    game.Players.LocalPlayer.Character.Head.Visor:destroy()
+      
+end)
+
+
+
+
+MaskSection:NewButton("Take off Suit", "Enjoy", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.UpperTorso.Suit:destroy()
+    game.Players.LocalPlayer.Character.UpperTorso.Detailing:destroy()
+    game.Players.LocalPlayer.Character.LowerTorso.Detailing:destroy()
+    game.Players.LocalPlayer.Character.LowerTorso.Suit:destroy()
+    game.Players.LocalPlayer.Character.RightUpperArm.Suit:destroy()
+    game.Players.LocalPlayer.Character.RightUpperArm.Detailing:destroy()
+    game.Players.LocalPlayer.Character.LeftUpperArm.Suit:destroy()
+    game.Players.LocalPlayer.Character.LeftUpperArm.Detailing:destroy()
+    game.Players.LocalPlayer.Character.LeftLowerArm.Bracer:destroy()
+    game.Players.LocalPlayer.Character.RightLowerArm.Bracer:destroy()
+    game.Players.LocalPlayer.Character.LeftLowerArm.Suit:destroy()
+    game.Players.LocalPlayer.Character.RightLowerArm.Suit:destroy()
+   
+end)
+
+
+
+    MaskSection:NewLabel("Vision's Decal")
+
+
+MaskSection:NewButton("Take off Face", "Enjoy", function()
+    print(currentOption)
+    
+   game.Players.LocalPlayer.Character.Head.Face:destroy()
+   
+end)
+
+
+MaskSection:NewButton("Take off Mask", "Enjoy", function()
+    print(currentOption)
+    
+   game.Players.LocalPlayer.Character.Head.Mask:destroy()
+   
+end)
+
+
+MaskSection:NewButton("Take off Suit", "Enjoy", function()
+    print(currentOption)
+    
+   game.Players.LocalPlayer.Character.UpperTorso.SUIT:destroy()
+   game.Players.LocalPlayer.Character.UpperTorso.ARMOR:destroy()
+   game.Players.LocalPlayer.Character.UpperTorso.DETAILING_01:destroy()
+   game.Players.LocalPlayer.Character.UpperTorso.DETAILING_02:destroy()
+   game.Players.LocalPlayer.Character.UpperTorso.DETAILING_03:destroy()
+   game.Players.LocalPlayer.Character.UpperTorso.CAPE:destroy()
+   game.Players.LocalPlayer.Character.LowerTorso.SUIT:destroy()
+   game.Players.LocalPlayer.Character.LowerTorso.DETAIL_01:destroy()
+   game.Players.LocalPlayer.Character.RightLowerArm.SUIT:destroy()
+   game.Players.LocalPlayer.Character.LeftLowerArm.SUIT:destroy()
+   game.Players.LocalPlayer.Character.RightUpperArm.SUIT:destroy()
+   game.Players.LocalPlayer.Character.LeftUpperArm.SUIT:destroy()
+   game.Players.LocalPlayer.Character.RightUpperLeg.SUIT:destroy()
+   game.Players.LocalPlayer.Character.LeftUpperLeg.SUIT:destroy()
+   game.Players.LocalPlayer.Character.RightLowerLeg.SUIT:destroy()
+   game.Players.LocalPlayer.Character.LeftLowerLeg.SUIT:destroy()
+   
+end)
+
+
+
+
+
+
+
     
 
     local Troll = Window:NewTab("Troll")
