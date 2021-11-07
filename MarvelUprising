@@ -557,9 +557,24 @@ game:GetService("ReplicatedStorage").Events.DC.RavenFlight:FireServer(unpack(arg
 
 
   end)
+  
+  
+  
+  PowersSection:NewButton("Invisibility Fog", "Use as anyone", function(txt)
+    print("txt") 
 
 
-PowersSection:NewButton("Lightning flurry", "Use as anyone", function(txt)
+local args = {
+    [1] = "Invis",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Events.StormFog:FireServer(unpack(args))
+
+  end)
+
+
+PowersSection:NewButton("Lightning Flurry", "Use as anyone", function(txt)
     print("txt") 
    
 
