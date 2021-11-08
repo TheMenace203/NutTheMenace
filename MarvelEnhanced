@@ -308,7 +308,7 @@ end)
 end)
 
 
- MaskSection:NewButton("Suit Revamp", "Enjoy", function()
+ MaskSection:NewButton("The Bald Effect Suit", "Enjoy", function()
     print(currentOption)
     
    game.Players.LocalPlayer.Character.UpperTorso.Belt:destroy()
@@ -323,6 +323,9 @@ game.Players.LocalPlayer.Character.RightUpperArm.Sleeve:destroy()
 game.Players.LocalPlayer.Character.LeftUpperArm.Sleeve:destroy()
 game.Players.LocalPlayer.Character.RightLowerLeg.Boot:destroy()
 game.Players.LocalPlayer.Character.LeftLowerLeg.Boot:destroy()
+game.Players.LocalPlayer.Character.Head.HAIR_01:destroy()
+game.Players.LocalPlayer.Character.Head.HAIR_02:destroy()
+game.Players.LocalPlayer.Character.Head.HAIR_03:destroy()
  
 end)
     
