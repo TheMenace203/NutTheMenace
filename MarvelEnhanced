@@ -311,7 +311,7 @@ end)
  MaskSection:NewButton("The Bald Effect Suit", "Enjoy", function()
     print(currentOption)
     
-   game.Players.LocalPlayer.Character.UpperTorso.Belt:destroy()
+game.Players.LocalPlayer.Character.UpperTorso.Belt:destroy()
 game.Players.LocalPlayer.Character.UpperTorso.Beltloops_Back:destroy()
 game.Players.LocalPlayer.Character.UpperTorso.X:destroy()
 game.Players.LocalPlayer.Character.UpperTorso.Buckle:destroy()
