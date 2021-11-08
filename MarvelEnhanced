@@ -328,6 +328,9 @@ game.Players.LocalPlayer.Character.Head.HAIR_02:destroy()
 game.Players.LocalPlayer.Character.Head.HAIR_03:destroy()
  
 end)
+
+
+         
     
     MaskSection:NewLabel("Jean Grey 90s Decals")
   
@@ -355,6 +358,173 @@ MaskSection:NewButton("Take off Chest Piece", "Enjoy", function()
     game.Players.LocalPlayer.Character.UpperTorso.Chestplate:destroy()
     
 end)
+
+
+
+
+MaskSection:NewLabel("Scarlet Witch's Decals")
+
+
+        MaskSection:NewButton("Take off Face", "Enjoy", function()
+       print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Face:destroy()
+
+    
+end)
+
+
+       MaskSection:NewButton("Take off Crown", "Enjoy", function()
+       print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Crown:destroy()
+
+    
+end)
+
+
+
+MaskSection:NewButton("Take off Hair", "Enjoy", function()
+       print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Handle:destroy()
+
+    
+end)
+
+MaskSection:NewButton("Take off Cape", "Enjoy", function()
+       print(currentOption)
+    
+    game.Players.LocalPlayer.Character.UpperTorso.Cape:destroy()
+
+    
+end)
+
+
+
+MaskSection:NewButton("Bald & Sexy", "Enjoy", function()
+       print(currentOption)
+    
+game.Players.LocalPlayer.Character.LowerTorso.Nylon:destroy()
+game.Players.LocalPlayer.Character.UpperTorso.Nylon:destroy()
+game.Players.LocalPlayer.Character.RightUpperArm.Nylon:destroy()
+game.Players.LocalPlayer.Character.LeftUpperArm.Nylon:destroy()
+game.Players.LocalPlayer.Character.RightLowerArm.Glove:destroy()
+game.Players.LocalPlayer.Character.LeftLowerArm.Glove:destroy()
+game.Players.LocalPlayer.Character.RightLowerArm.Nylon:destroy()
+game.Players.LocalPlayer.Character.LeftLowerArm.Nylon:destroy()
+game.Players.LocalPlayer.Character.RightLowerLeg.Boot:destroy()
+game.Players.LocalPlayer.Character.LeftLowerLeg.Boot:destroy()
+game.Players.LocalPlayer.Character.RightLowerLeg.Nylon:destroy()
+game.Players.LocalPlayer.Character.LeftLowerLeg.Nylon:destroy()
+game.Players.LocalPlayer.Character.RightUpperLeg.Nylon:destroy()
+game.Players.LocalPlayer.Character.LeftUpperLeg.Nylon:destroy()
+game.Players.LocalPlayer.Character.Head.Handle:destroy()
+    
+end)
+
+
+
+MaskSection:NewLabel("Wiccan's Decals")
+
+
+MaskSection:NewButton("Take off Face", "Enjoy", function()
+       print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Face:destroy()
+
+    
+end)
+
+
+
+MaskSection:NewButton("Take off Hair", "Enjoy", function()
+       print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Hair:destroy()
+    wait()
+    game.Players.LocalPlayer.Character.Head.Hair:destroy()
+
+    
+end)
+
+
+
+
+
+MaskSection:NewButton("Take off Head Piece", "Enjoy", function()
+       print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Crown:destroy()
+
+    
+end)
+
+
+
+
+
+MaskSection:NewButton("Bald & Fine", "Enjoy", function()
+       print(currentOption)
+    
+    game.Players.LocalPlayer.Character.Head.Hair:destroy()
+    wait()
+    game.Players.LocalPlayer.Character.Head.Hair:destroy()
+    game.Players.LocalPlayer.Character.UpperTorso.SHIRT:destroy()
+    game.Players.LocalPlayer.Character.UpperTorso.HOOD:destroy()
+    game.Players.LocalPlayer.Character.UpperTorso.PIN_01:destroy()
+    game.Players.LocalPlayer.Character.UpperTorso.PIN_02:destroy()
+    game.Players.LocalPlayer.Character.RightLowerArm.JACKET:destroy()
+    game.Players.LocalPlayer.Character.LeftLowerArm.JACKET:destroy()
+    game.Players.LocalPlayer.Character.RightLowerLeg.PANTS:destroy()
+    game.Players.LocalPlayer.Character.LeftLowerLeg.PANTS:destroy()
+    
+end)
+
+
+
+
+MaskSection:NewButton("NAKED", "Enjoy", function()
+       print(currentOption)
+    
+game.Players.LocalPlayer.Character.UpperTorso.SHIRT:destroy()
+game.Players.LocalPlayer.Character.UpperTorso.HOOD:destroy() 
+game.Players.LocalPlayer.Character.UpperTorso.PIN_01:destroy() 
+game.Players.LocalPlayer.Character.UpperTorso.PIN_02:destroy()
+game.Players.LocalPlayer.Character.UpperTorso.JACKET:destroy()
+game.Players.LocalPlayer.Character.LowerTorso.JACKET:destroy()
+game.Players.LocalPlayer.Character.LowerTorso.PANTS:destroy()
+game.Players.LocalPlayer.Character.LowerTorso.SHIRT:destroy()
+game.Players.LocalPlayer.Character.RightLowerArm.JACKET:destroy()
+game.Players.LocalPlayer.Character.LeftLowerArm.JACKET:destroy()
+game.Players.LocalPlayer.Character.RightUpperArm.JACKET:destroy()
+game.Players.LocalPlayer.Character.LeftUpperArm.JACKET:destroy()
+game.Players.LocalPlayer.Character.RightLowerLeg.BOOT:destroy()
+game.Players.LocalPlayer.Character.LeftLowerLeg.BOOT:destroy()
+game.Players.LocalPlayer.Character.RightLowerLeg.PANTS:destroy()
+game.Players.LocalPlayer.Character.LeftLowerLeg.PANTS:destroy()
+game.Players.LocalPlayer.Character.RightUpperLeg.PANTS:destroy()
+game.Players.LocalPlayer.Character.LeftUpperLeg.PANTS:destroy()
+
+    
+end)
+
+
+
+        MaskSection:NewLabel("Speed's Decal Soon..")
+
+
+            
+MaskSection:NewButton("Take off ....", "Enjoy", function()
+    print(currentOption)
+    
+    
+      
+end) 
+
+
+
+
 
 
 MaskSection:NewLabel("Black Widow's Decal")
