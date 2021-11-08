@@ -326,8 +326,51 @@ game.Players.LocalPlayer.Character.LeftLowerLeg.Boot:destroy()
 game.Players.LocalPlayer.Character.Head.HAIR_01:destroy()
 game.Players.LocalPlayer.Character.Head.HAIR_02:destroy()
 game.Players.LocalPlayer.Character.Head.HAIR_03:destroy()
- 
+
+wait()
+local args = {
+    [1] = "\0Jean Grey Fly Start\0\0"
+}
+
+game:GetService("ReplicatedStorage").Network.RemoteEvent:FireServer(unpack(args))
+
+
 end)
+
+MaskSection:NewButton("Aura Manipulation", "Enjoy", function()
+    print(currentOption)
+    
+ game.Players.LocalPlayer.Character.UpperTorso.TkAura:destroy()
+game.Players.LocalPlayer.Character.LowerTorso.TkAura:destroy()
+game.Players.LocalPlayer.Character.RightUpperArm.TkAura:destroy()
+game.Players.LocalPlayer.Character.LeftUpperArm.TkAura:destroy()
+game.Players.LocalPlayer.Character.RightUpperLeg.TkAura:destroy()
+game.Players.LocalPlayer.Character.LeftUpperLeg.TkAura:destroy()
+game.Players.LocalPlayer.Character.RightLowerArm.TkAura:destroy()
+game.Players.LocalPlayer.Character.LeftLowerArm.TkAura:destroy()
+ wait()
+ 
+
+game.Players.LocalPlayer.Character.RightFoot.TkAura:destroy()
+game.Players.LocalPlayer.Character.LeftFoot.TkAura:destroy()
+game.Players.LocalPlayer.Character.RightHand.TkAura:destroy()
+game.Players.LocalPlayer.Character.LeftHand.TkAura:destroy()
+game.Players.LocalPlayer.Character.Head.TkAura:destroy()
+game.Players.LocalPlayer.Character.LeftLowerLeg.TkAura:destroy()
+game.Players.LocalPlayer.Character.RightLowerLeg.TkAura:destroy()
+wait()
+game.Players.LocalPlayer.Character.RightHand.JeanHandsAuraCore:destroy()
+game.Players.LocalPlayer.Character.LeftHand.JeanHandsAuraCore:destroy()
+
+
+end)
+
+
+
+
+
+
+
 
 
          
