@@ -1433,7 +1433,7 @@ end)
  local Credits = Window:NewTab("Credits")
  local CreditsSection = Credits:NewSection("~~ Credits ~~")
  CreditsSection:NewLabel("Created by Nut The Menace")
- CreditsSection:NewLabel("Discord: JeanSupremacy#2774")
+ CreditsSection:NewLabel("Discord: Claudev0#8849")
  CreditsSection:NewLabel("TikTok: @DatExploiter")
  CreditsSection:NewLabel("Twitter: @DatExploiter")
  
