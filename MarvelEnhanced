@@ -58,8 +58,8 @@ end)
                 MainSection:NewLabel("Use Jean")
 
 
-    local Free = Window:NewTab("Paid-Outfits")
-    local FreeSection = Free:NewSection("PAID OUTFITS = FREE  hide guis after selection")
+    local Free = Window:NewTab("GamePass & Skins")
+    local FreeSection = Free:NewSection("Avatar With GamePass Heroes Powers & Skins")
     FreeSection:NewButton("Jean's 90s Outfit", "Enjoy your OutFit", function(currentOption)
     print(currentOption)
     
@@ -79,6 +79,52 @@ FreeSection:NewButton("Jean's Phoenix Outfit", "Enjoy, Embrace the Phoenix withi
    game:GetService("ReplicatedStorage").Remotes.CharacterSelection:InvokeServer(ohString1, ohString2)
 
 end)
+
+
+
+                    FreeSection:NewLabel(Custom Avatar With GamePass Heroes Powers)
+		    
+		    
+FreeSection:NewButton("Storm Powererd Avatar", "Enjoy your OutFit", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Storm")
+
+end)
+	
+
+FreeSection:NewButton("Scarlet Witch Powererd Avatar", "Enjoy your OutFit", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Scarlet Witch")
+
+end)
+
+
+FreeSection:NewButton("Wiccan Powererd Avatar", "Enjoy your OutFit", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Wiccan")
+
+end)
+
+
+FreeSection:NewButton("Speed Powererd Avatar", "Enjoy your OutFit", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Speed")
+
+end)
+
+
+
+
+
+
+
+
+
+
 
          FreeSection:NewLabel("Infinite Yield Admin & Click GuiDelete")
 
