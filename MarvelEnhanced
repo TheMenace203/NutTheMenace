@@ -117,15 +117,6 @@ FreeSection:NewButton("Speed Powererd Avatar", "Enjoy your OutFit", function(cur
 end)
 
 
-
-
-
-
-
-
-
-
-
          FreeSection:NewLabel("Infinite Yield Admin & Click GuiDelete")
 
 FreeSection:NewButton("Execute Infinite Yield", "Read Infinite Yield instructions to remove Gui", function(currentOption)
