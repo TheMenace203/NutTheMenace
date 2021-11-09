@@ -99,7 +99,7 @@ Event:FireServer(A_1)
  local A_1 = "Ultron"
  local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
  Event:FireServer(A_1)
- local Event = game:GetService("Workspace").Teleport18.RemoteFunction
+ local Event = game:GetService("Workspace").Teleport15.RemoteFunction
 Event:InvokeServer() 
 
  end)
@@ -284,8 +284,74 @@ game:GetService("Players").LocalPlayer.Character.Portal.RemoteEvent:FireServer(u
  end)
 
 
+PowerSpamSection:NewLabel("Mephisto's Powers")
+
+PowerSpamSection:NewButton("Hell Flames", "This is on a loop", function(txt)
+
+local args = {
+    [1] = Vector3.new(-1567.7585449219, 982.7529296875, 1014.475769043)
+}
+
+game:GetService("Players").LocalPlayer.Character.Hell.Fire:FireServer(unpack(args))
 
 
+ end)
+
+
+
+PowerSpamSection:NewLabel("Nightmare's Powers")
+
+
+PowerSpamSection:NewButton("Nightmare Aura", "This is on a loop", function(txt)
+
+local args = {
+    [1] = Vector3.new(-1532.9345703125, 982.7529296875, -218.49087524414)
+}
+
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("Nightmare Aura").Fire:FireServer(unpack(args))
+
+
+ end)
+
+
+PowerSpamSection:NewButton("Phantoms", "This is on a loop", function(txt)
+
+local args = {
+    [1] = Vector3.new(-1513.7542724609, 982.7529296875, -231.57536315918)
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.SkillGUI.Phantoms.TextButton.NPhantoms.Fire:FireServer(unpack(args))
+
+
+ end)
+
+
+
+
+PowerSpamSection:NewLabel("Ultron's Powers")
+
+PowerSpamSection:NewButton("Rock", "This is on a loop", function(txt)
+
+local args = {
+    [1] = Vector3.new(-3157.8247070313, 857.67279052734, 506.71044921875)
+}
+
+game:GetService("Players").LocalPlayer.Character.Rock.Fire:FireServer(unpack(args))
+
+
+ end)
+
+
+PowerSpamSection:NewButton("Rock", "This is on a loop", function(txt)
+
+local args = {
+    [1] = Vector3.new(-3157.8247070313, 857.67279052734, 506.71044921875)
+}
+
+game:GetService("Players").LocalPlayer.Character.Rock.Fire:FireServer(unpack(args))
+
+
+ end)
 
 
 
