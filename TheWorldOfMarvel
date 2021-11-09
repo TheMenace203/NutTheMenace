@@ -1,1 +1,327 @@
-if game.PlaceId==6467279520 then local a=loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()local b=a.CreateLib("The World Of Marvel GP Bypass GUI + More by Nut The Menace","BloodTheme")local c=b:NewTab("Change Character")local d=c:NewSection("Chaotic Scarlet Witch Pass")d:NewButton("Chaotic Scarlet Witch","GamePass been Bypassed",function(e)print("txt")local f="WandaHouseOfM"local g=game:GetService("ReplicatedStorage").ChangePlayerCharacter;g:FireServer(f)local g=game:GetService("Workspace").Teleport30.RemoteFunction;g:InvokeServer()end)d:NewButton("Scarlet Witch from WandaVision","GamePass been Bypassed",function(e)print("txt")local f="WandaHOMSkin"local g=game:GetService("ReplicatedStorage").ChangePlayerCharacter;g:FireServer(f)local g=game:GetService("Workspace").Teleport30.RemoteFunction;g:InvokeServer()end)d:NewLabel("Phoenix Pass")d:NewButton("Phoenix","GamePass been Bypassed",function(e)print("txt")local f="Phoenix"local g=game:GetService("ReplicatedStorage").ChangePlayerCharacter;g:FireServer(f)local g=game:GetService("Workspace").Teleport19.RemoteFunction;g:InvokeServer()end)d:NewButton("Dark Phoenix","GamePass been Bypassed",function(e)print("txt")local f="DarkPhoenix"local g=game:GetService("ReplicatedStorage").ChangePlayerCharacter;g:FireServer(f)local g=game:GetService("Workspace").Teleport19.RemoteFunction;g:InvokeServer()end)d:NewLabel("Villain Bundle")d:NewButton("Thanos","GamePass been Bypassed",function(e)print("txt")local f="Thanos"local g=game:GetService("ReplicatedStorage").ChangePlayerCharacter;g:FireServer(f)local g=game:GetService("Workspace").Teleport18.RemoteFunction;g:InvokeServer()end)d:NewButton("Mephisto","GamePass been Bypassed",function(e)print("txt")local f="Mephisto"local g=game:GetService("ReplicatedStorage").ChangePlayerCharacter;g:FireServer(f)local g=game:GetService("Workspace").Teleport18.RemoteFunction;g:InvokeServer()end)d:NewButton("Nightmare","GamePass been Bypassed",function(e)print("txt")local f="Nightmare"local g=game:GetService("ReplicatedStorage").ChangePlayerCharacter;g:FireServer(f)local g=game:GetService("Workspace").Teleport18.RemoteFunction;g:InvokeServer()end)d:NewButton("Ultron","GamePass been Bypassed",function(e)print("txt")local f="Ultron"local g=game:GetService("ReplicatedStorage").ChangePlayerCharacter;g:FireServer(f)local g=game:GetService("Workspace").Teleport18.RemoteFunction;g:InvokeServer()end)local h=b:NewTab("Power Spam")local i=h:NewSection("Chaotic Scarlet Witch Powers")i:NewButton("No More Mutants","This is on a loop",function(e)print("It being spammed")local g=game:GetService("Players").HakeemLyon1.PlayerGui.SkillGUI.NoMoreMutants.TextButton.NoMoreMutants.Fires;g:FireServer()local f=Vector3.new(9361.892578125,-5109.2119140625,744.80749511719)local g=game:GetService("Players").HakeemLyon1.PlayerGui.SkillGUI.NoMoreMutants.TextButton.NoMoreMutants.Fire;g:FireServer(f)end)i:NewButton("WestView Hex","This is on a loop",function(e)print("It being spammed")local g=game:GetService("Workspace").HakeemLyon1.Hex.Fires;g:FireServer()local f=Vector3.new(2215.6564941406,4375.4287109375,-10431.81640625)local g=game:GetService("Workspace").HakeemLyon1.Hex.Fire;g:FireServer(f)end)i:NewButton("Chaos Rope","This is on a loop",function(e)print("It being spammed")local g=game:GetService("Workspace").HakeemLyon1.Rope.Fires;g:FireServer()local f=Vector3.new(-1267.2049560547,997.04455566406,-137.99566650391)local g=game:GetService("Workspace").HakeemLyon1.Rope.Fire;g:FireServer(f)end)i:NewButton("Mental Attack","This is on a loop",function(e)local g=game:GetService("Workspace").HakeemLyon1.MentalControl.Fires;g:FireServer()local f=Vector3.new(-1210.7734375,1125.4483642578,-179.45602416992)local g=game:GetService("Workspace").HakeemLyon1.MentalControl.Fire;g:FireServer(f)end)i:NewLabel("Random Chaos blast orb lol")i:NewButton("Chaos Blast orb","This is on a loop",function(e)while true do wait(0,5)local j=-1566.7010498047,986.59899902344,-251.27896118164;workspace.HakeemLyon1.Blast.Fires:FireServer(j)end end)i:NewLabel("Phoenix's Powers")i:NewButton("Phoenix Shock Wave","This is on a loop",function(e)local g=game:GetService("Workspace").HakeemLyon1.Shockwave.Fires;g:FireServer()local f=Vector3.new(-2746.2761230469,856.74652099609,921.00006103516)local g=game:GetService("Workspace").HakeemLyon1.Shockwave.Fire;g:FireServer(f)end)i:NewButton("Telepathy Explosion","This is on a loop",function(e)local g=game:GetService("Workspace").HakeemLyon1.TelepathyExplosion.Fires;g:FireServer()local f=Vector3.new(-4090.357421875,2669.2404785156,-8632.1005859375)local g=game:GetService("Workspace").HakeemLyon1.TelepathyExplosion.Fire;g:FireServer(f)end)i:NewButton("Phoenix Force","This is on a loop",function(e)local g=game:GetService("Workspace").HakeemLyon1.Phoenix.Fires;g:FireServer()local f=Vector3.new(-2859.2736816406,1142.7858886719,871.29418945313)local g=game:GetService("Workspace").HakeemLyon1.Phoenix.Fire;g:FireServer(f)end)i:NewButton("Phoenix Claws","This is on a loop",function(e)local g=game:GetService("Workspace").HakeemLyon1.Craw.Fires;g:FireServer()local f=Vector3.new(-2723.6108398438,859.23773193359,824.10803222656)local g=game:GetService("Workspace").HakeemLyon1.Craw.Fire;g:FireServer(f)end)i:NewButton("Phoenix Flames","This is on a loop",function(e)local g=game:GetService("Workspace").HakeemLyon1.Hell.Fires;g:FireServer()local f=Vector3.new(-7435.0561523438,3075.076171875,-3714.2585449219)local g=game:GetService("Workspace").HakeemLyon1.Hell.Fire;g:FireServer(f)end)i:NewLabel("Random Phoenix orb lol")i:NewButton("Phoenix orb","This is on a loop",function(e)while true do wait(0,5)local j=-2765.4641113281,856.74652099609,915.01568603516;workspace.HakeemLyon1.Blast.Fire:FireServer(j)end end)local k=b:NewTab("Player")local l=k:NewSection("Player")l:NewSlider("Speed's Power","Changes Your WalkSpeed",200,16,function(m)game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=m end)l:NewSlider("Jumper Power","Changes Your JumpPower",500,20,function(m)game.Players.LocalPlayer.Character.Humanoid.JumpPower=m end)local n=b:NewTab("Info")local o=n:NewSection("Information")end;wait(1)game.StarterGui:SetCore("SendNotification",{Title="Nut The Menace <3",Text="The World Of Marvel GUI                       ~~~~~ Now Active ~~~~~",Icon="rbxthumb://type=Asset&id=7770638479&w=150&h=150",Duration="30",Button1="Enjoy :)"})
+---- Script Made By Nut The Menace ----------
+---- Gui Produced by Nut The Menace -------
+
+ if game.PlaceId == 6467279520 then
+ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+ local Window = Library.CreateLib("The World Of Marvel GP Bypass + More by Nut The Menace", "BloodTheme")
+
+-- Character Change
+ local ChangeCharacter = Window:NewTab("Change Character")
+ local ChangeCharacterSection = ChangeCharacter:NewSection("Chaotic Scarlet Witch Pass")
+ChangeCharacterSection:NewButton("Chaotic Scarlet Witch", "GamePass been Bypassed", function(txt)
+ print("txt")
+
+ 
+local A_1 = "WandaHouseOfM"
+ local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+ Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport30.RemoteFunction
+ Event:InvokeServer()
+
+end)
+
+
+ChangeCharacterSection:NewButton("Scarlet Witch from WandaVision", "GamePass been Bypassed", function(txt)
+ print("txt")
+
+ 
+local A_1 = "WandaHOMSkin"
+ local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+ Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport30.RemoteFunction
+ Event:InvokeServer()
+
+ end)
+
+ ChangeCharacterSection:NewLabel("Phoenix Pass")
+
+ChangeCharacterSection:NewButton("Phoenix", "GamePass been Bypassed", function(txt)
+print("txt")
+ local A_1 = "Phoenix"
+ local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+ Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport19.RemoteFunction
+ Event:InvokeServer()
+ 
+ end)
+
+ ChangeCharacterSection:NewButton("Dark Phoenix", "GamePass been Bypassed", function(txt)
+ print("txt") 
+ local A_1 = "DarkPhoenix"
+ local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+ Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport19.RemoteFunction
+ Event:InvokeServer()
+
+ end)
+
+
+
+ChangeCharacterSection:NewLabel("Villain Bundle")
+ 
+ ChangeCharacterSection:NewButton("Thanos", "GamePass been Bypassed", function(txt)
+ print("txt")
+ local A_1 = "Thanos"
+ local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+ Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport12.RemoteFunction
+ Event:InvokeServer() 
+
+ end)
+
+
+ChangeCharacterSection:NewButton("Mephisto", "GamePass been Bypassed", function(txt)
+ print("txt")
+ local A_1 = "Mephisto"
+ local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+ Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport14.RemoteFunction
+ Event:InvokeServer() 
+
+ end)
+
+ ChangeCharacterSection:NewButton("Nightmare", "GamePass been Bypassed", function(txt)
+ print("txt")
+ 
+ local A_1 = "Nightmare"
+local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport13.RemoteFunction
+ Event:InvokeServer() 
+
+ end)
+
+
+
+ ChangeCharacterSection:NewButton("Ultron", "GamePass been Bypassed", function(txt)
+ print("txt")
+ 
+ local A_1 = "Ultron"
+ local Event = game:GetService("ReplicatedStorage").ChangePlayerCharacter
+ Event:FireServer(A_1)
+ local Event = game:GetService("Workspace").Teleport18.RemoteFunction
+Event:InvokeServer() 
+
+ end)
+ 
+ 
+ 
+ ---- power spamming
+
+local PowerSpam = Window:NewTab("Power Spam")
+local PowerSpamSection = PowerSpam:NewSection("Chaotic Scarlet Witch Powers")
+ 
+PowerSpamSection:NewButton("No More Mutants", "This is on a loop", function(txt)
+print("It being spammed")
+
+local args = {
+    [1] = Vector3.new(3991.5778808594, 28149.111328125, -956.24041748047)
+}
+
+game:GetService("Players").LocalPlayer.Character.NoMoreMutants.Fire:FireServer(unpack(args))
+
+
+
+
+end)
+ 
+
+
+
+
+PowerSpamSection:NewButton("WestView Hex", "This is on a loop", function(txt)
+ print("It being spammed")
+
+
+local args = {
+    [1] = Vector3.new(-1575.4593505859, 982.95666503906, -249.8578338623)
+}
+
+game:GetService("Players").LocalPlayer.Character.Hex.Fire:FireServer(unpack(args))
+
+
+
+end)  
+
+
+
+
+
+PowerSpamSection:NewButton("Chaos Rope", "This is on a loop", function(txt)
+ print("It being spammed")
+
+local args = {
+    [1] = Vector3.new(-1517.8361816406, 982.7529296875, -228.5884552002)
+}
+
+game:GetService("Players").LocalPlayer.Character.Rope.Fire:FireServer(unpack(args))
+
+
+
+
+ end)
+
+
+
+ PowerSpamSection:NewButton("Mental Attack", "This is on a loop", function(txt)
+
+
+local args = {
+    [1] = Vector3.new(4006.3986816406, 28149.111328125, -930.09106445313)
+}
+
+game:GetService("Players").LocalPlayer.Character.MentalControl.Fire:FireServer(unpack(args))
+
+
+
+ end)
+
+
+PowerSpamSection:NewLabel("Phoenix's Powers")
+
+
+ PowerSpamSection:NewButton("Phoenix Shock Wave", "This is on a loop", function(txt)
+
+
+local args = {
+    [1] = Vector3.new(-2763.4248046875, 856.74652099609, 932.71600341797)
+}
+
+game:GetService("Players").LocalPlayer.Character.Shockwave.Fire:FireServer(unpack(args))
+
+
+ end)
+
+
+
+ PowerSpamSection:NewButton("Telepathy Explosion", "This is on a loop", function(txt)
+
+local args = {
+    [1] = Vector3.new(-2731.8889160156, 966.70916748047, 997.77734375)
+}
+
+game:GetService("Players").LocalPlayer.Character.TelepathyExplosion.Fire:FireServer(unpack(args))
+
+
+
+ end)
+
+
+PowerSpamSection:NewButton("Phoenix Force", "This is on a loop", function(txt)
+ 
+local args = {
+    [1] = Vector3.new(-2162.4833984375, 856.67242431641, 181.7841796875)
+}
+
+game:GetService("Players").LocalPlayer.Character.Phoenix.Fire:FireServer(unpack(args))
+
+
+
+
+ end)
+
+
+
+
+PowerSpamSection:NewButton("Phoenix Claws", "This is on a loop", function(txt)
+
+local args = {
+    [1] = Vector3.new(-2856.1674804688, 858.712890625, 865.09002685547)
+}
+
+game:GetService("Players").LocalPlayer.Character.Craw.Fire:FireServer(unpack(args))
+
+
+ end)
+
+
+
+
+
+PowerSpamSection:NewButton("Phoenix Flames", "This is on a loop", function(txt)
+
+local args = {
+    [1] = Vector3.new(-2304.0751953125, 856.67242431641, 1281.7639160156)
+}
+
+game:GetService("Players").LocalPlayer.Character.Hell.Fire:FireServer(unpack(args))
+
+
+
+
+ end)
+
+
+      PowerSpamSection:NewLabel("Thanos's Powers")
+
+
+PowerSpamSection:NewButton("Time Stone", "This is on a loop", function(txt)
+
+local args = {
+    [1] = Vector3.new(-3109.1791992188, 862.85845947266, -193.10430908203)
+}
+
+game:GetService("Players").LocalPlayer.Character.TimeStop.Fire:FireServer(unpack(args))
+
+
+
+ end)
+
+
+
+PowerSpamSection:NewButton("Portal", "This is on a loop", function(txt)
+
+
+
+local args = {
+    [1] = CFrame.new(Vector3.new(-3032.1330566406, 857.67279052734, 358.97619628906), Vector3.new(-0.94173896312714, -0.14936707913876, 0.30135890841484)),
+    [2] = Vector3.new(-3032.1330566406, 857.67279052734, 358.97619628906)
+}
+
+game:GetService("Players").LocalPlayer.Character.Portal.RemoteEvent:FireServer(unpack(args))
+
+
+ end)
+
+
+
+
+
+
+
+
+
+-- PLAYER
+local Player = Window:NewTab("Player")
+ local PlayerSection = Player:NewSection("Player")
+PlayerSection:NewSlider("Speed's Power", "Changes Your WalkSpeed", 200, 16, function(s)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+ 
+end)
+
+PlayerSection:NewSlider("Jumper Power", "Changes Your JumpPower", 500, 20, function(s)
+ game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+
+ end)
+
+ -- Credits Info
+ local Credits = Window:NewTab("Credits")
+ local CreditsSection = Credits:NewSection("~~ Credits ~~")
+ CreditsSection:NewLabel("Created by Nut The Menace")
+ CreditsSection:NewLabel("Discord: Claudev0#8849")
+ CreditsSection:NewLabel("TikTok: @DatExploiter")
+ CreditsSection:NewLabel("Twitter: @DatExploiter")
+ 
+end 
+
+
+wait(1)
+game.StarterGui:SetCore("SendNotification", { 
+    Title = "Nut The Menace <3";
+    Text = "The World of Marvel                      ~~~~ Now Active ~~~~";
+    Icon = "rbxthumb://type=Asset&id=7770638479&w=150&h=150";
+    Duration = "30";
+    Button1 = "Enjoy :)";
+})
+ 
+end
