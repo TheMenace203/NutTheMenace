@@ -82,7 +82,7 @@ end)
 
 
 
-                    FreeSection:NewLabel(Custom Avatar With GamePass Heroes Powers)
+                    FreeSection:NewLabel("Custom Avatar With GamePass Heroes Powers")
 		    
 		    
 FreeSection:NewButton("Storm Powererd Avatar", "Enjoy your OutFit", function(currentOption)
