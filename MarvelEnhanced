@@ -61,7 +61,7 @@ end)
     local Free = Window:NewTab("GamePass & Skins")
     local FreeSection = Free:NewSection("Avatar With GamePass Heroes Powers & Skins")
     
-    FreeSection:NewButton("Click TO REMOVE Main Screen & Use GamePass or Skins", "Enjoy your OutFit", function(currentOption)
+    FreeSection:NewButton("Remove Main Screen & Use GamePass or Skins", "Enjoy your OutFit", function(currentOption)
     print(currentOption)
    
        game.ReplicatedStorage.Ui.MainScreen:destroy()
@@ -69,7 +69,7 @@ end)
 end)
 
     
-                    FreeSection:NewLabel("After you remove MainScreen Click the Skin or Custom GP twice")
+                    FreeSection:NewLabel("After removal click the Skin or Custom GP twice")
     
                                 FreeSection:NewLabel("Skins")
     
