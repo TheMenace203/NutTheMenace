@@ -123,21 +123,6 @@ FreeSection:NewButton("Speed Powererd Avatar", "Enjoy your OutFit", function(cur
 end)
 
 
-         FreeSection:NewLabel("Infinite Yield Admin & Click GuiDelete")
-
-FreeSection:NewButton("Execute Infinite Yield", "Read Infinite Yield instructions to remove Gui", function(currentOption)
-    print(currentOption)
-     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
-
-end)
-
-    FreeSection:NewLabel("Nut The Menace's Admin you can fly like a admin")
-
-FreeSection:NewButton("Execute Nut The Menace's Admin", "Prefix ; and say ;fly2", function(currentOption)
-    print(currentOption)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/TheAdminUKnow/NutTheMenace/main/NutTheMenaceAdmin",true))();
-end)
-
 
 
 ---- RESET CHARACTER
@@ -296,6 +281,30 @@ end)
 
     
 end)
+
+
+   local Admin = Window:NewTab("Admin")
+    local AdminSection = Admin:NewSection("Nut The Menace Admin")
+    
+    AdminSection:NewButton("NTM Admin (Fly Admin Bypass)", "Enjoy", function()
+    print(currentOption)
+    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TheAdminUKnow/NutTheMenace/main/NutTheMenaceAdmin",true))()
+    
+end)
+
+
+     AdminSection:NewLabel("Other Admin Scripts")
+
+    AdminSection:NewButton("Infinite Yield", "Enjoy", function()
+    print(currentOption)
+    
+     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+
+end)
+
+
+
 
     local Mask = Window:NewTab("Decals")
     local MaskSection = Mask:NewSection("Play with Decals")
