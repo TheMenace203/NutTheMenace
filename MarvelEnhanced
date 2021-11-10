@@ -59,7 +59,7 @@ end)
 
 
     local Free = Window:NewTab("GamePass & Skins")
-    local FreeSection = Free:NewSection("Avatar With GamePass Heroes Powers & Skins")
+    local FreeSection = Free:NewSection("Avatar With GamePass Heroes Powers & Skin")
     
     FreeSection:NewButton("Remove Main Screen & Use GamePass or Skins", "Enjoy your OutFit", function(currentOption)
     print(currentOption)
