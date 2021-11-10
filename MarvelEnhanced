@@ -60,6 +60,19 @@ end)
 
     local Free = Window:NewTab("GamePass & Skins")
     local FreeSection = Free:NewSection("Avatar With GamePass Heroes Powers & Skins")
+    
+    FreeSection:NewButton("Click TO REMOVE Main Screen & Use GamePass or Skins", "Enjoy your OutFit", function(currentOption)
+    print(currentOption)
+   
+       game.ReplicatedStorage.Ui.MainScreen:destroy()
+
+end)
+
+    
+                    FreeSection:NewLabel("After you remove MainScreen Click the Skin or Custom GP twice")
+    
+                                FreeSection:NewLabel("Skins")
+    
     FreeSection:NewButton("Jean's 90s Outfit", "Enjoy your OutFit", function(currentOption)
     print(currentOption)
     
@@ -70,15 +83,8 @@ end)
 
 end)
 
-FreeSection:NewButton("Jean's Phoenix Outfit", "Enjoy, Embrace the Phoenix within", function(currentOption)
-    print(currentOption)
-    
-   local ohString1 = "Jean Grey"
-   local ohString2 = "Phoenix"
 
-   game:GetService("ReplicatedStorage").Remotes.CharacterSelection:InvokeServer(ohString1, ohString2)
 
-end)
 
 
 
