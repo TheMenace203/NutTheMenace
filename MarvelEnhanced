@@ -69,7 +69,7 @@ end)
 end)
 
     
-                    FreeSection:NewLabel("After removal click the Skin or Custom GP twice")
+                    FreeSection:NewLabel("After Removal Click The Skin or Custom GP Twice")
     
                                 FreeSection:NewLabel("Skins")
     
