@@ -65,6 +65,7 @@ end)
     print(currentOption)
    
        game.ReplicatedStorage.Ui.MainScreen:destroy()
+       game.WakSpace.Selection_Background:destroy()
 
 end)
 
