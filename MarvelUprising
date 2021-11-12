@@ -124,6 +124,19 @@ game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
    end)
 
 
+InvisibleWomanSection:NewButton("Emma Frost", "Enjoy", function(txt)
+    print("txt")
+
+    local args = {
+    [1] = "Storm",
+    [2] = "STOP_EXPLOITING"
+}
+
+game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
+
+   
+  end)
+
 
 
 InvisibleWomanSection:NewButton("Emma Frost", "Enjoy", function(txt)
