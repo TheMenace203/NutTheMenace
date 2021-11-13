@@ -850,7 +850,26 @@ end)
 
 
 
+local imp = Window:NewTab("Important")
+ local impSection = imp:NewSection("Important Bypass")
+    
+    impSection:NewButton("Remove Character Controller", "Bypasses alot of sutff", function()
+    print(currentOption)
+    
+    game.Players.LocalPlayer.Character.CharacterController:destroy()
 
+end)
+
+
+impSection:NewLabel("Once Removed Your Powers Won't Work")
+impSection:NewLabel("But you can do alot of other exploits")
+impSection:NewLabel("Like Max Walkspeed Jumpower & Etc")
+impSection:NewLabel("Once you reset Character Controller is fixed")
+
+            
+            
+            
+            
 
 
 
