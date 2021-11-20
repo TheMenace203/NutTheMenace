@@ -110,12 +110,27 @@ game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
 game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
    
   end)
+  
+  
+  
+ InvisibleWomanSection:NewButton("Speed", "Enjoy", function(txt)
+    print("txt")
+    
+    local args = {
+    [1] = "Speed",
+    [2] = "STOP_EXPLOITING"
+}
+
+game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
+   
+   end)
+   
 
    InvisibleWomanSection:NewButton("Speed", "Enjoy", function(txt)
     print("txt")
     
     local args = {
-    [1] = "Speed",
+    [1] = "Doctor Strange",
     [2] = "STOP_EXPLOITING"
 }
 
