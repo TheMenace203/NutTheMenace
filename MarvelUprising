@@ -126,7 +126,7 @@ game:GetService("ReplicatedStorage").SetSubject:FireServer(unpack(args))
    end)
    
 
-   InvisibleWomanSection:NewButton("Speed", "Enjoy", function(txt)
+   InvisibleWomanSection:NewButton("Dr. Strange", "Enjoy", function(txt)
     print("txt")
     
     local args = {
@@ -998,15 +998,33 @@ PowersSection:NewLabel("Doctor Strange's Powers")
     print("txt")
 
    
-    local args = {
+local args = {
     [1] = "StrangeShield"
 }
 
 game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
 
 
+
   
    end)
+   
+   
+   
+  PowersSection:NewButton("Health Loop", "", function(txt)
+    print("txt")
+
+ 
+local args = {
+    [1] = "HealthLoop",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+
+  
+end)
 
 
 
