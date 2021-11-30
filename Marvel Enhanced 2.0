@@ -835,20 +835,7 @@ end)
     local Troll = Window:NewTab("Troll")
     local TrollSection = Troll:NewSection("Troll the Server")
     
-    TrollSection:NewButton("Flight Sound Spam (for Jean only) ", "Use only Jean and this takes your flight aura to", function(currentOption)
-    print(currentOption)
     
-    while true do wait()
-
-
-    local args = {
-    [1] = "\0Jean Grey Fly End\0\0"
-}
-
-game:GetService("ReplicatedStorage").Network.RemoteEvent:FireServer(unpack(args))
- end
-    
-end)
        
                  TrollSection:NewLabel("Character Manipulation")
     
