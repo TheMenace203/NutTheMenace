@@ -167,7 +167,7 @@ end)
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player Menu")
     
-    PlayerSection:NewButton("TK Warp (Tk Warp is being Looped)", "Instant Kills Anyone & Warps Body", function()
+    PlayerSection:NewButton("TK Warp (Still Working on it)", "Instant Kills Anyone & Warps Body", function()
     print(currentOption)
     
     
