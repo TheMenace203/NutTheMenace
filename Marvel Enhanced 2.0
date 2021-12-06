@@ -3541,13 +3541,6 @@ end)
        game.WakSpace.Barriers:Destroy()       
    
 end)
-
-MiscSection:NewButton("Destory Tree House", "Deletes tree house", function(currentOption)
-       print(currentOption)
-       
-       game.WakSpace.Map.Treehouse:Destroy()       
-   
-end)
    
    
    MiscSection:NewDropdown("Turn Music Off", "Reset character after you spawned for it to work", { "No Music"}, function(currentOption)
