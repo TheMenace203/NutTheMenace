@@ -1271,34 +1271,114 @@ Event:FireServer(A_1, A_2)
 
 
   end)
-
-
-
-InformationSection:NewButton("Blinding Light", "", function(txt)
+  
+  InformationSection:NewButton("Firework Show", "", function(txt)
     print("txt")
 
-local A_1 = "\66\108\105\110\100\105\110\103\76\105\103\104\116"
-local Event = game:GetService("ReplicatedStorage").Event.Power
-Event:FireServer(A_1)
+local args = {
+    [1] = "FireworkShot"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+
+
+  end)
+  
+  
+  InformationSection:NewButton("Sparks Fly", "", function(txt)
+    print("txt")
+
+
+local args = {
+    [1] = "Sparkfly"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+
+  end)
+
+
+InformationSection:NewButton("Jubilee Shield", "", function(txt)
+    print("txt")
+
+local args = {
+    [1] = "JubileeShield"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+
+
+  end)
+  
+  InformationSection:NewButton("Jubilee Shield off", "", function(txt)
+    print("txt")
+
+
+local args = {
+    [1] = "JubileeShieldDestroy"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+
+  end)
+  
+  
+  
+  InformationSection:NewButton("FireWork Lift Aura, "", function(txt)
+    print("txt")
+
+
+local args = {
+    [1] = "FlightLift"
+}
+
+game:GetService("ReplicatedStorage").Events.DC.JubileeFlight:FireServer(unpack(args))
+
+
+
+
+  end)
+  
+  
+  
+  
+  
+
+
+InformationSection:NewButton("FireSpark", "", function(txt)
+    print("txt")
+
+local args = {
+    [1] = "Firespark"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
 
 
 
   end)
 
 
-InformationSection:NewButton("FireWork Show", "", function(txt)
+InformationSection:NewButton("FireWork Concetrate, "", function(txt)
     print("txt")
 
+local args = {
+    [1] = "FireworkConcen"
+}
 
-local A_1 = "\70\105\114\101\119\111\114\107\83\104\111\119"
-local Event = game:GetService("ReplicatedStorage").Event.Power
-Event:FireServer(A_1)
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+local args = {
+    [1] = "FireworkConcenOff"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
 
 
-local A_1 = "\65\115\116\114\97\108\80\117\108\108\105\110\103"
-local A_2 = game:GetService("Workspace").Baseplate
-local Event = game:GetService("ReplicatedStorage").Event.Power
-Event:FireServer(A_1, A_2)
 
 
   end)
