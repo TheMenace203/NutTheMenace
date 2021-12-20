@@ -1408,7 +1408,7 @@ InformationSection:NewButton("Mist - they shall fall asleep", "", function(txt)
 
 local args = {
     [1] = "mist",
-    [2] = workspace.Map.Streets.Street.Sidewalk.MeshPart
+    [2] = workspace
 }
 
 game:GetService("ReplicatedStorage").Event.AmoriaSpell:FireServer(unpack(args))
