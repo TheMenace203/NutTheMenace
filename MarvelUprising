@@ -1404,12 +1404,15 @@ game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
 InformationSection:NewButton("Mist - they shall fall asleep", "", function(txt)
     print("txt")
 
-    local args = {
+    
+
+local args = {
     [1] = "mist",
-    [2] = workspace.Baseplate
+    [2] = workspace.Map.Streets.Street.Sidewalk.MeshPart
 }
 
 game:GetService("ReplicatedStorage").Event.AmoriaSpell:FireServer(unpack(args))
+
   
   end)
 
