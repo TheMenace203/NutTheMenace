@@ -1328,7 +1328,7 @@ game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
   
   
   
-  InformationSection:NewButton("FireWork Lift Aura", "", function(txt)
+InformationSection:NewButton("FireWork Lift Aura", "", function(txt)
     print("txt")
 
 
@@ -1363,7 +1363,7 @@ game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
   end)
 
 
-InformationSection:NewButton("FireWork Concetrate, "", function(txt)
+InformationSection:NewButton("FireWork Concetrate", "", function(txt)
     print("txt")
 
 local args = {
