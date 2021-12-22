@@ -586,7 +586,7 @@ local args = {
 
 game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
 
-  
+  end)
   
   
   
