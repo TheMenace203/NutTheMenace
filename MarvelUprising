@@ -248,7 +248,21 @@ local args = {
 game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
    
   end)
+  
+  
     
+    PowersSection:NewButton("Limbo Wrath", "Use on anyone", function(txt)
+    print("txt")
+      
+local args = {
+    [1] = "LimboWrath"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+   
+  end)
+  
+  
     
     
     PowersSection:NewButton("LimboLock", "Use on anyone", function(txt)
