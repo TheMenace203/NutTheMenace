@@ -219,6 +219,67 @@ game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
    
   end)
     
+    PowersSection:NewLabel("Magik's Powers")
+    
+    
+     PowersSection:NewButton("Spawn Limbo Demons", "Use on anyone", function(txt)
+    print("txt")
+      
+local args = {
+    [1] = "DemonPortal"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+
+   
+  end)
+    
+    
+      PowersSection:NewButton("Limbo Portal", "Use on anyone", function(txt)
+    print("txt")
+      
+
+local args = {
+    [1] = "LimboPortal",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+   
+  end)
+    
+    
+    
+    PowersSection:NewButton("LimboLock", "Use on anyone", function(txt)
+    print("txt")
+      
+local args = {
+    [1] = "LimboLock"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+   
+  end)
+    
+    
+    
+    PowersSection:NewButton("Magik Forcefield", "Use on anyone", function(txt)
+    print("txt")
+      
+ local args = {
+    [1] = "MagikFF"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+   
+  end)
+    
+    
+    
+    
     
     PowersSection:NewLabel("Gwen's Powers")
                 
