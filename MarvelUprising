@@ -234,9 +234,20 @@ game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
 
    
   end)
+  
+   PowersSection:NewButton("Limbo Wrath", "Use on anyone", function(txt)
+    print("txt")
+      
+local args = {
+    [1] = "LimboWrath"
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+   
+  end)
     
     
-      PowersSection:NewButton("Limbo Portal", "Use on anyone", function(txt)
+      PowersSection:NewButton("Limbo Portal In", "Use on anyone", function(txt)
     print("txt")
       
 
@@ -247,6 +258,12 @@ local args = {
 
 game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
 
+   
+  end)
+  
+  PowersSection:NewButton("Limbo Portal Out", "Use on anyone", function(txt)
+    print("txt")
+      
 
 local args = {
     [1] = "LimboPortal",
@@ -259,17 +276,7 @@ game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
   end)
   
   
-    
-    PowersSection:NewButton("Limbo Wrath", "Use on anyone", function(txt)
-    print("txt")
-      
-local args = {
-    [1] = "LimboWrath"
-}
-
-game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
-   
-  end)
+ 
   
   
     
