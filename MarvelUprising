@@ -246,6 +246,15 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
+
+local args = {
+    [1] = "LimboPortal",
+    [2] = CFrame.new(Vector3.new(21.688722610474, -7.1132078170776, 120.40442657471), Vector3.new(-0.42536804080009, -1.2807600313636e-08, 0.90502047538757))
+}
+
+game:GetService("ReplicatedStorage").Event.Power:FireServer(unpack(args))
+
    
   end)
   
