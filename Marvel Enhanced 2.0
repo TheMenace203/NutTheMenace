@@ -917,10 +917,11 @@ end)
 
         TrollSection:NewLabel("RESET TO BE NORMAL")
 
-           TrollSection:NewLabel("CHAT BYPASS pre-words made")
+      local Chat = Window:NewTab("Chat Bypass")
+    local ChatSection = Chat:NewSection("Chat Bypasser")
             
 
-   TrollSection:NewButton("Fuck", "Say how you really feel", function(currentOption)
+   ChatSection:NewButton("Fuck", "Say how you really feel", function(currentOption)
     print(currentOption)
     
     --- Fuck
@@ -936,7 +937,7 @@ end)
 
 
 
-    TrollSection:NewButton("Faggot", "Say how you really feel", function(currentOption)
+    ChatSection:NewButton("Faggot", "Say how you really feel", function(currentOption)
     print(currentOption)
     --- Faggot
     local args = {
@@ -948,7 +949,7 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
 
 end)
 
-   TrollSection:NewButton("Queer", "Say how you really feel", function(currentOption)
+  ChatSection:NewButton("Queer", "Say how you really feel", function(currentOption)
     print(currentOption)
     --- Queer
     local args = {
@@ -962,7 +963,7 @@ end)
 
 
 
-   TrollSection:NewButton("Shit", "Say how you really feel", function(currentOption)
+   ChatSection:NewButton("Shit", "Say how you really feel", function(currentOption)
     print(currentOption)
     
     --- Shit 
@@ -976,7 +977,7 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
 end)
 
 
-       TrollSection:NewButton("Cunt", "Say how you really feel", function(currentOption)
+       ChatSection:NewButton("Cunt", "Say how you really feel", function(currentOption)
        print(currentOption)
 
     --- Cunt
@@ -991,7 +992,7 @@ end)
 
 
 
-TrollSection:NewButton("Bitch", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("Bitch", "Say how you really feel", function(currentOption)
        print(currentOption)
      
     --- Bitch
@@ -1007,7 +1008,7 @@ end)
 
 
 
-TrollSection:NewButton("Fuck You", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("Fuck You", "Say how you really feel", function(currentOption)
        print(currentOption)
 
     --- Fuck You
@@ -1023,7 +1024,7 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
 end)
 
 
-TrollSection:NewButton("Nigger", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("Nigger", "Say how you really feel", function(currentOption)
        print(currentOption)
    
     --- Nigger
@@ -1038,7 +1039,7 @@ end)
 
 
 
-TrollSection:NewButton("Piss", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("Piss", "Say how you really feel", function(currentOption)
        print(currentOption)
 
     --- Piss
@@ -1053,7 +1054,7 @@ end)
 
 
 
-TrollSection:NewButton("Boobs", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("Boobs", "Say how you really feel", function(currentOption)
        print(currentOption)
 
      --- Boobs
@@ -1068,7 +1069,7 @@ end)
 
 
 
-TrollSection:NewButton("Gay Niggers", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("Gay Niggers", "Say how you really feel", function(currentOption)
        print(currentOption)
 
     --- Gay Niggers 
@@ -1083,7 +1084,7 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
 end)
 
 
-TrollSection:NewButton("Tits", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("Tits", "Say how you really feel", function(currentOption)
        print(currentOption)
    
     --- Tits 
@@ -1099,7 +1100,7 @@ end)
 
 
 
-TrollSection:NewButton("Dick", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("Dick", "Say how you really feel", function(currentOption)
        print(currentOption)
        
    ---Dick
@@ -1114,7 +1115,7 @@ end)
 
 
 
-TrollSection:NewButton("Slut", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("Slut", "Say how you really feel", function(currentOption)
        print(currentOption)
        
 -- Slut
@@ -1131,7 +1132,7 @@ end)
 
 
 
-TrollSection:NewButton("Hoe", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("Hoe", "Say how you really feel", function(currentOption)
        print(currentOption)
        
   -- Hoe
@@ -1143,48 +1144,34 @@ local args = {
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
-end)
+end)     
+            
 
+   
 
-
-
-TrollSection:NewButton("Titties", "Say how you really feel", function(currentOption)
+                           ChatSection:NewLabel("Emoji Art& Emojis")
+			   
+			   
+ChatSection:NewButton("Laugh Cry Emoji", "Say how you really feel", function(currentOption)
        print(currentOption)
-      
- -- Titties
-
+   
 local args = {
-    [1] = " Ti \240\144\140\145 \205\156 \205\163 tt \240\144\140\145 \205\156 \205\163 ie  \240\144\140\145 \205" ..
-        "\156 \205\163 s ",
+    [1] = "\240\159\152\130\240\159\152\130\240\159\152\130",
     [2] = "All"
 }
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
-  
-end)
+end)			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
 
-
-TrollSection:NewButton("Clit", "Say how you really feel", function(currentOption)
-       print(currentOption)
-    
-  --Clit
-
-local args = {
-    [1] = " Cl \240\144\140\145 \205\156 \205\163 it ",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-end)
-
-
-
-
-                           TrollSection:NewLabel("Emoji Art")
-
-TrollSection:NewButton("$5 Bill Emoji", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("$5 Bill Emoji", "Say how you really feel", function(currentOption)
        print(currentOption)
    
    --- $5 Bill
@@ -1200,7 +1187,7 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
 end)
 
 
-TrollSection:NewButton("Nazi Emoji", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("Nazi Emoji", "Say how you really feel", function(currentOption)
        print(currentOption)
    
     local args = {
@@ -1271,7 +1258,7 @@ end)
 
 
 
-TrollSection:NewButton("BBC Emoji", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("BBC Emoji", "Say how you really feel", function(currentOption)
        print(currentOption)
    
    --- BBC
@@ -1301,7 +1288,7 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
 end)
 
 
-TrollSection:NewButton("Black Face Emoji", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("Black Face Emoji", "Say how you really feel", function(currentOption)
        print(currentOption)
    
    local args = {
@@ -1345,7 +1332,7 @@ end)
 
 
 
-TrollSection:NewButton("Table Flip Emoji", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("Table Flip Emoji", "Say how you really feel", function(currentOption)
        print(currentOption)
 
     local args = {
@@ -1360,7 +1347,7 @@ end)
 
 
 
-TrollSection:NewButton("Lenny Emoji", "Say how you really feel", function(currentOption)
+ChatSection:NewButton("Lenny Emoji", "Say how you really feel", function(currentOption)
        print(currentOption)
        
 local args = {
