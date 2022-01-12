@@ -369,6 +369,280 @@ PlayerSection:NewSlider("Jumper Power", "Changes Your JumpPower", 500, 20, funct
  game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 
  end)
+ 
+ 
+ 
+ local Chat = Window:NewTab("Chat Bypass")
+    local ChatSection = Chat:NewSection("Chat Bypasser")
+            
+
+   ChatSection:NewButton("Fuck", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    
+    --- Fuck
+    local args = {
+    [1] = "ff\240\144\140\145\240\144\140\145\240\144\140\145u\240\144\140\145\240\144\140\145\240\144\140\145c" ..
+        "\240\144\140\145\240\144\140\145\240\144\140\145k ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+    ChatSection:NewButton("Faggot", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    --- Faggot
+    local args = {
+    [1] = "ff \240\144\140\145 \205\156 \205\163 agg \240\144\140\145 \205\156 \205\163 ot ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+  ChatSection:NewButton("Queer", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    --- Queer
+    local args = {
+    [1] = " Qu \240\144\140\145 \205\156 \205\163 ee  \240\144\140\145 \205\156 \205\163 r ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+   ChatSection:NewButton("Shit", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    
+    --- Shit 
+    local args = {
+    [1] = " Sh \240\144\140\145 \205\156 \205\163 it ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+       ChatSection:NewButton("Cunt", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+    --- Cunt
+    local args = {
+    [1] = "c \240\144\140\145 \205\156 \205\163 unt ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+ChatSection:NewButton("Bitch", "Say how you really feel", function(currentOption)
+       print(currentOption)
+     
+    --- Bitch
+    local args = {
+    [1] = " Bi \240\144\140\145 \205\156 \205\163 tc  \240\144\140\145 \205\156 \205\163 h ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+   
+end)
+
+
+
+
+ChatSection:NewButton("Fuck You", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+    --- Fuck You
+    local args = {
+    [1] = "ff\240\144\140\145\240\144\140\145\240\144\140\145u\240\144\140\145\240\144\140\145\240\144\140\145c" ..
+        "\240\144\140\145\240\144\140\145\240\144\140\145k  Yo  \240\144\140\145 \205\156 \205\163" ..
+        " u ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+ChatSection:NewButton("Nigger", "Say how you really feel", function(currentOption)
+       print(currentOption)
+   
+    --- Nigger
+    local args = {
+    [1] = "ni \240\144\140\145 \205\156 \205\163 gge \240\144\140\145 \205\156 \205\163 r ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+ChatSection:NewButton("Piss", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+    --- Piss
+    local args = {
+    [1] = " Pi \240\144\140\145 \205\156 \205\163 ss ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+ChatSection:NewButton("Boobs", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+     --- Boobs
+    local args = {
+    [1] = " Bo \240\144\140\145 \205\156 \205\163 ob  \240\144\140\145 \205\156 \205\163 s ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+ChatSection:NewButton("Gay Niggers", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+    --- Gay Niggers 
+    local args = {
+    [1] = " Ga  \240\144\140\145 \205\156 \205\163 y n \240\144\140\145 \205\156 \205\163 igg \240\144\140\145 " ..
+        "\205\156 \205\163 ers ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+ChatSection:NewButton("Tits", "Say how you really feel", function(currentOption)
+       print(currentOption)
+   
+    --- Tits 
+    local args = {
+    [1] = " Ti \240\144\140\145 \205\156 \205\163 ts ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+   
+end)
+
+
+
+
+ChatSection:NewButton("Dick", "Say how you really feel", function(currentOption)
+       print(currentOption)
+       
+   ---Dick
+     local args = {
+    [1] = " Di \240\144\140\145 \205\156 \205\163 ck ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+ChatSection:NewButton("Slut", "Say how you really feel", function(currentOption)
+       print(currentOption)
+       
+-- Slut
+
+local args = {
+    [1] = " Sl \240\144\140\145 \205\156 \205\163 ut ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+   
+end)
+
+
+
+ChatSection:NewButton("Hoe", "Say how you really feel", function(currentOption)
+       print(currentOption)
+       
+  -- Hoe
+
+local args = {
+    [1] = " Ho  \240\144\140\145 \205\156 \205\163 e ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+
+ChatSection:NewButton("Titties", "Say how you really feel", function(currentOption)
+       print(currentOption)
+      
+ -- Titties
+
+local args = {
+    [1] = " Ti \240\144\140\145 \205\156 \205\163 tt \240\144\140\145 \205\156 \205\163 ie  \240\144\140\145 \205" ..
+        "\156 \205\163 s ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+  
+end)
+
+
+ChatSection:NewButton("Clit", "Say how you really feel", function(currentOption)
+       print(currentOption)
+    
+  --Clit
+
+local args = {
+    [1] = " Cl \240\144\140\145 \205\156 \205\163 it ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
  -- Credits Info
  local Credits = Window:NewTab("Credits")
