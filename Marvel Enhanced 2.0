@@ -307,10 +307,10 @@ end)
 
 
 
-    PlayerSection:NewButton("0  Cooldown BEING FIXED", "Cooldown been bypassed Enjoy", function()
+    PlayerSection:NewButton("*NEW* Bypass Shields and Outbursts attacks", " been bypassed Enjoy", function()
     print(currentOption)
  
-
+              game.WorkSpace.SoonToBeDeleted:destroy()
     
 end)
 
