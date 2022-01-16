@@ -372,7 +372,7 @@ PlayerSection:NewSlider("Jumper Power", "Changes Your JumpPower", 500, 20, funct
  
  
  
- l local Chat = Window:NewTab("Chat Bypass")
+ local Chat = Window:NewTab("Chat Bypass")
  local ChatSection = Chat:NewSection("Pre-Made Chat Words & Emojis")
  
  ChatSection:NewButton("Laughing Emoji", "Say how you really feel", function(currentOption)
