@@ -53,7 +53,7 @@ print("txt")
  local Event = game:GetService("Workspace").Teleport19.RemoteFunction
  Event:InvokeServer()
 
- end)
+ end) 
 
 
 
