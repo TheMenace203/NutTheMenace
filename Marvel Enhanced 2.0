@@ -1456,10 +1456,17 @@ game:GetService("Workspace").Map["Lil House 1"]:destroy()
 
 game.Workspace.Map.TreesPack:destroy()
 
-while true do
+end)
+
+
+ MiscSection:NewButton("Destory Buildings part2", "Breaks The Barriers that teleport you back", function(currentOption)
+       print(currentOption)
+       
+         while true do
     
     game.Workspace.Map.Model:destroy()
-end
+end     
+   
 end)
 
  MiscSection:NewButton("Destory Teleport Barriers", "Breaks The Barriers that teleport you back", function(currentOption)
