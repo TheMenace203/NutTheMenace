@@ -578,10 +578,24 @@ end)
  
 local Player = Window:NewTab("Player")
 local PlayerSection = Player:NewSection("Player Menu")
+
 PlayerSection:NewSlider("Walkspeed", "Run Like Speed", 70, 16, function(v)
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
     
 end)
+
+PlayerSection:NewButton("Invisiblity (for 25 seconds) Equip Ghost Glove", "", function()
+print("Clicked")
+
+game:GetService("ReplicatedStorage").Ghostinvisibilityactivated:FireServer()
+
+wait(25)
+
+game:GetService("ReplicatedStorage").Ghostinvisibilitydeactivated:FireServer()
+
+end)
+    
+
  
 PlayerSection:NewButton("EMP (Loop) Equip Emp Glove", "", function()
 print("Clicked")
@@ -596,8 +610,7 @@ local args = {
 game:GetService("ReplicatedStorage").StunR:FireServer(unpack(args))
 
 end
-    
-    
+      
 end)
  
  
