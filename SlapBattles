@@ -53,7 +53,7 @@ MainSection:NewLabel("Extended GUI")
 MainSection:NewButton("Gui Part2 for Glove Reach", "GUI PART2", function()
     print("Clicked")
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
-local w = library:CreateWindow("By Nut The Menace  ")
+local w = library:CreateWindow("By Nut The Menace | Discord Claudev0#8849 ")
 
 local tab1 = w:CreateFolder("Combat")
 local tab2 = w:CreateFolder("Visuals")
