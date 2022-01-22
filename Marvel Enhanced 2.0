@@ -1435,6 +1435,43 @@ end)
     local MiscSection = Misc:NewSection("Misc Options")
 
 
+MiscSection:NewButton("Destroy Buildings", "Add More if you like", function(currentOption)
+       print(currentOption)
+       
+game:GetService("Workspace").Map["Sanctum Sanctorum"]:destroy()
+
+game:GetService("Workspace").Map["Baxter Building"]:destroy()
+
+game:GetService("Workspace").Map["Random Building"]:destroy()
+
+game:GetService("Workspace").Map["Pizza And Hero Shop"]:destroy()
+
+game:GetService("Workspace").Map["Aunt Mays House"]:destroy()
+
+game:GetService("Workspace").Map["Baxter Building"]:destroy()
+
+game:GetService("Workspace").Map["Random Building"]:destroy()
+
+game:GetService("Workspace").Map["Lil House 1"]:destroy()
+
+game.Workspace.Map.TreesPack:destroy()
+
+while true do
+    
+    game.Workspace.Map.Model:destroy()
+end
+end)
+
+ MiscSection:NewButton("Destory Teleport Barriers", "Breaks The Barriers that teleport you back", function(currentOption)
+       print(currentOption)
+       
+       game.WorkSpace.Barriers:Destroy()       
+   
+end)
+
+
+
+
     MiscSection:NewButton("Nut The Menace's Remote Spy", "Add More if you like", function(currentOption)
        print(currentOption)
        
@@ -3585,12 +3622,7 @@ newButton(
 end)
 
    
-   MiscSection:NewButton("Destory Teleport Barriers", "Breaks The Barriers that teleport you back", function(currentOption)
-       print(currentOption)
-       
-       game.WorkSpace.Barriers:Destroy()       
-   
-end)
+  
    
    
    MiscSection:NewDropdown("Turn Music Off", "Reset character after you spawned for it to work", { "No Music"}, function(currentOption)
