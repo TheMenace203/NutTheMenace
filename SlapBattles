@@ -569,9 +569,23 @@ end)
 end)             
  
 
+                                MainSection:NewLabel("Teleports")
 
  
- 
+MainSection:NewButton("Teleport to Arena", "go to Arena", function()
+print("Clicked")
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(59, 0, -49, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+end)
+
+
+MainSection:NewButton("Teleport to Lobby", "go to Lobby", function()
+print("Clicked")
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-346.391296, 325.854828, -3.05510497, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+
+end)
  
  
 
