@@ -1,0 +1,609 @@
+if game.PlaceId == 6510136667 then
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Heroes: Multiverse GUI by Nut The Menace", "DarkTheme")
+ 
+ local Main = Window:NewTab("Main")
+ local MainSection = Main:NewSection("Main Menu")
+ 
+ 
+ MainSection:NewButton("Teleport to Main Area", "go to Main Area", function()
+    print("Clicked")
+
+--Main Area
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(31.6734467, 4.48320818, -36.4655228, 0.137778997, 8.60039648e-08, -0.990463018, 2.85523001e-08, 1, 9.08038658e-08, 0.990463018, -4.07908622e-08, 0.137778997)
+
+
+end)
+
+                            MainSection:NewLabel("Abilities")
+ 
+ 
+  MainSection:NewButton("*New* Invisible Mode with troll", "Invis Tp", function()
+    print("Clicked")
+    
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-990.234558, -124.59021, 641.530884, -0.0947015435, 7.6300303e-08, 0.995505691, 8.32636431e-08, 1, -6.87239776e-08, -0.995505691, 7.63811627e-08, -0.0947015435)
+wait(1,2)
+game.Players.LocalPlayer.Character.LowerTorso:destroy()
+game.StarterGui:SetCore("SendNotification", { 
+    Title = "Enerting Invis Mode";
+    Text = "~~~~ Now Active ~~~~";
+    Icon = "rbxthumb://type=Asset&id=7770638479&w=150&h=150";
+    Duration = "30";
+    Button1 = "EXIT";
+})
+
+game.Players.LocalPlayer.Character.Head.Mesh:destroy()
+    game.Players.LocalPlayer.Character.Head.Face:destroy()
+    game.Players.LocalPlayer.Character.LeftUpperLeg:destroy()
+    game.Players.LocalPlayer.Character.RightUpperLeg:destroy()
+    game.Players.LocalPlayer.Character.LeftUpperArm:destroy()
+    game.Players.LocalPlayer.Character.RightUpperArm:destroy()
+    game.Players.LocalPlayer.Character.Humanoid.BodyDepthScale:destroy()
+    game.Players.LocalPlayer.Character.Humanoid.BodyHeightScale:destroy()
+    game.Players.LocalPlayer.Character.Humanoid.BodyWidthScale:destroy()
+    game.Players.LocalPlayer.Character.Humanoid.HeadScale:destroy()
+    
+wait(2)
+game.StarterGui:SetCore("SendNotification", { 
+    Title = "Invis Mode On !";
+    Text = "Teleporting to Main Area";
+    Icon = "rbxthumb://type=Asset&id=7770638479&w=150&h=150";
+    Duration = "30";
+    Button1 = "EXIT";
+})
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(31.6734467, 4.48320818, -36.4655228, 0.137778997, 8.60039648e-08, -0.990463018, 2.85523001e-08, 1, 9.08038658e-08, 0.990463018, -4.07908622e-08, 0.137778997)
+
+
+
+Float_Height = "2" -- Your float height | 5 is default
+
+local i=1
+G=game;
+_=wait;
+p=G:GetService("Players").LocalPlayer.Character
+p:FindFirstChild("Humanoid").HipHeight = Float_Height
+_(1.5);
+t=.4;
+n=2;
+for i=1,i do
+repeat p:FindFirstChild("Humanoid").HipHeight=Float_Height-n _(t)p:FindFirstChild("Humanoid").HipHeight=Float_Height+n _(t) until
+p:FindFirstChild("Humanoid").Health == 0
+end
+
+
+
+
+end)
+ 
+ 
+ 
+ MainSection:NewButton("Regular Invisible Mode", "Invis Tp", function()
+    print("Clicked")
+    
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-990.234558, -124.59021, 641.530884, -0.0947015435, 7.6300303e-08, 0.995505691, 8.32636431e-08, 1, -6.87239776e-08, -0.995505691, 7.63811627e-08, -0.0947015435)
+wait(1,2)
+game.Players.LocalPlayer.Character.LowerTorso:destroy()
+game.StarterGui:SetCore("SendNotification", { 
+    Title = "Enerting Invis Mode";
+    Text = "~~~~ Now Active ~~~~";
+    Icon = "rbxthumb://type=Asset&id=7770638479&w=150&h=150";
+    Duration = "30";
+    Button1 = "EXIT";
+})
+ 
+wait(2)
+game.StarterGui:SetCore("SendNotification", { 
+    Title = "Invis Mode On !";
+    Text = "Teleporting to Main Area";
+    Icon = "rbxthumb://type=Asset&id=7770638479&w=150&h=150";
+    Duration = "30";
+    Button1 = "EXIT";
+})
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(31.6734467, 4.48320818, -36.4655228, 0.137778997, 8.60039648e-08, -0.990463018, 2.85523001e-08, 1, 9.08038658e-08, 0.990463018, -4.07908622e-08, 0.137778997)
+
+
+
+Float_Height = "2" -- Your float height | 5 is default
+
+local i=1
+G=game;
+_=wait;
+p=G:GetService("Players").LocalPlayer.Character
+p:FindFirstChild("Humanoid").HipHeight = Float_Height
+_(1.5);
+t=.4;
+n=2;
+for i=1,i do
+repeat p:FindFirstChild("Humanoid").HipHeight=Float_Height-n _(t)p:FindFirstChild("Humanoid").HipHeight=Float_Height+n _(t) until
+p:FindFirstChild("Humanoid").Health == 0
+end
+
+
+
+
+end)
+ 
+ 
+ 
+ 
+ 
+ 
+  MainSection:NewButton("QuickSilver's Speed", "Run Fast as Speed", function()
+    print(currentOption)
+    while true do 
+    wait(0,5)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 121
+
+end
+  
+    
+ end)
+
+
+
+MainSection:NewButton("Jump Power", "JumpPower", function()
+    print(currentOption)
+    
+    while true do 
+    wait(0,5)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 250
+    end
+    
+    end)
+  
+  
+  
+
+
+ 
+ local Player = Window:NewTab("Player")
+ local PlayerSection = Player:NewSection("Player Menu")
+ 
+
+ 
+ PlayerSection:NewButton("Ultimate Troll", "Makes your player Blockhead & Etc..", function()
+    print("Clicked")
+    -- Removes Face, Mesh, MorphParts
+    game.Players.LocalPlayer.Character.Head.Mesh:destroy()
+    game.Players.LocalPlayer.Character.Head.Face:destroy()
+    game.Players.LocalPlayer.Character.LeftUpperLeg:destroy()
+    game.Players.LocalPlayer.Character.RightUpperLeg:destroy()
+    game.Players.LocalPlayer.Character.LeftUpperArm:destroy()
+    game.Players.LocalPlayer.Character.RightUpperArm:destroy()
+    game.Players.LocalPlayer.Character.Humanoid.BodyDepthScale:destroy()
+    game.Players.LocalPlayer.Character.Humanoid.BodyHeightScale:destroy()
+    game.Players.LocalPlayer.Character.Humanoid.BodyWidthScale:destroy()
+    game.Players.LocalPlayer.Character.Humanoid.HeadScale:destroy()
+end)
+
+ 
+ PlayerSection:NewButton("Remove Limbs", "Hides Name", function()
+    print("Clicked")
+    --- Remove Names
+    game.Players.LocalPlayer.Character.LeftUpperLeg:destroy()
+    game.Players.LocalPlayer.Character.RightUpperLeg:destroy()
+    game.Players.LocalPlayer.Character.LeftUpperArm:destroy()
+    game.Players.LocalPlayer.Character.RightUpperArm:destroy()
+    
+    
+end)
+ 
+ 
+ 
+ PlayerSection:NewButton("Block Head", "Makes your player Blockhead & Etc..", function()
+    print("Clicked")
+    -- Removes Face, Mesh, MorphParts
+    game.Players.LocalPlayer.Character.Head.Mesh:destroy()
+    game.Players.LocalPlayer.Character.Head.Face:destroy()
+end)
+
+ 
+ 
+   
+    
+local Admin = Window:NewTab("Admin")
+local AdminSection = Admin:NewSection("Admins")
+
+AdminSection:NewButton("Nut The Menace Admin", "Enjoy", function()
+    print("Clicked")
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TheAdminUKnow/NutTheMenace/main/NutTheMenaceAdmin",true))();
+
+end)
+
+AdminSection:NewButton("Infinite Yield Admin", "Enjoy", function()
+    print("Clicked")
+
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    
+end)
+
+
+
+
+
+
+
+ local Chat = Window:NewTab("Chat Bypass")
+ local ChatSection = Chat:NewSection("Pre-Made Chat Words & Emojis")
+ 
+ ChatSection:NewButton("Laughing Emoji", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    --- Laugh Emoji
+    local args = {
+    [1] = "\240\159\152\130\240\159\152\130\240\159\152\130",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+
+
+
+
+
+ChatSection:NewButton("Yawning Emoji", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    --- Yawning Emoji
+
+local args = {
+    [1] = "\240\159\165\177\240\159\165\177\240\159\165\177",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+
+end)
+
+ChatSection:NewButton("Nails Emoji", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    -- Nails Emoji
+local args = {
+    [1] = "\240\159\146\133\240\159\143\189\240\159\146\133\240\159\143\189\240\159\146\133\240\159\143\189",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+
+
+ChatSection:NewButton("Clown Emoji", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    --- Clown Emoji
+
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = "\240\159\164\161\240\159\164\161\240\159\164\161",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+
+
+end)
+ 
+ 
+ 
+ 
+ 
+               ChatSection:NewLabel("Words")
+               
+  ChatSection:NewButton("Fuck", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    
+    --- Fuck
+    local args = {
+    [1] = "ff\240\144\140\145\240\144\140\145\240\144\140\145u\240\144\140\145\240\144\140\145\240\144\140\145c" ..
+        "\240\144\140\145\240\144\140\145\240\144\140\145k ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+    ChatSection:NewButton("Faggot", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    --- Faggot
+    local args = {
+    [1] = "ff \240\144\140\145 \205\156 \205\163 agg \240\144\140\145 \205\156 \205\163 ot ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+  ChatSection:NewButton("Queer", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    --- Queer
+    local args = {
+    [1] = " Qu \240\144\140\145 \205\156 \205\163 ee  \240\144\140\145 \205\156 \205\163 r ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+   ChatSection:NewButton("Shit", "Say how you really feel", function(currentOption)
+    print(currentOption)
+    
+    --- Shit 
+    local args = {
+    [1] = " Sh \240\144\140\145 \205\156 \205\163 it ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+       ChatSection:NewButton("Cunt", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+    --- Cunt
+    local args = {
+    [1] = "c \240\144\140\145 \205\156 \205\163 unt ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+ChatSection:NewButton("Bitch", "Say how you really feel", function(currentOption)
+       print(currentOption)
+     
+    --- Bitch
+    local args = {
+    [1] = " Bi \240\144\140\145 \205\156 \205\163 tc  \240\144\140\145 \205\156 \205\163 h ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+   
+end)
+
+
+
+
+ChatSection:NewButton("Fuck You", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+    --- Fuck You
+    local args = {
+    [1] = "ff\240\144\140\145\240\144\140\145\240\144\140\145u\240\144\140\145\240\144\140\145\240\144\140\145c" ..
+        "\240\144\140\145\240\144\140\145\240\144\140\145k  Yo  \240\144\140\145 \205\156 \205\163" ..
+        " u ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+ChatSection:NewButton("Nigger", "Say how you really feel", function(currentOption)
+       print(currentOption)
+   
+    --- Nigger
+    local args = {
+    [1] = "ni \240\144\140\145 \205\156 \205\163 gge \240\144\140\145 \205\156 \205\163 r ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+ChatSection:NewButton("Piss", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+    --- Piss
+    local args = {
+    [1] = " Pi \240\144\140\145 \205\156 \205\163 ss ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+ChatSection:NewButton("Boobs", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+     --- Boobs
+    local args = {
+    [1] = " Bo \240\144\140\145 \205\156 \205\163 ob  \240\144\140\145 \205\156 \205\163 s ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+ChatSection:NewButton("Gay Niggers", "Say how you really feel", function(currentOption)
+       print(currentOption)
+
+    --- Gay Niggers 
+    local args = {
+    [1] = " Ga  \240\144\140\145 \205\156 \205\163 y n \240\144\140\145 \205\156 \205\163 igg \240\144\140\145 " ..
+        "\205\156 \205\163 ers ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+ChatSection:NewButton("Tits", "Say how you really feel", function(currentOption)
+       print(currentOption)
+   
+    --- Tits 
+    local args = {
+    [1] = " Ti \240\144\140\145 \205\156 \205\163 ts ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+   
+end)
+
+
+
+
+ChatSection:NewButton("Dick", "Say how you really feel", function(currentOption)
+       print(currentOption)
+       
+   ---Dick
+     local args = {
+    [1] = " Di \240\144\140\145 \205\156 \205\163 ck ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+ChatSection:NewButton("Slut", "Say how you really feel", function(currentOption)
+       print(currentOption)
+       
+-- Slut
+
+local args = {
+    [1] = " Sl \240\144\140\145 \205\156 \205\163 ut ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+   
+end)
+
+
+
+ChatSection:NewButton("Hoe", "Say how you really feel", function(currentOption)
+       print(currentOption)
+       
+  -- Hoe
+
+local args = {
+    [1] = " Ho  \240\144\140\145 \205\156 \205\163 e ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+
+
+
+
+ChatSection:NewButton("Titties", "Say how you really feel", function(currentOption)
+       print(currentOption)
+      
+ -- Titties
+
+local args = {
+    [1] = " Ti \240\144\140\145 \205\156 \205\163 tt \240\144\140\145 \205\156 \205\163 ie  \240\144\140\145 \205" ..
+        "\156 \205\163 s ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+  
+end)
+
+
+ChatSection:NewButton("Clit", "Say how you really feel", function(currentOption)
+       print(currentOption)
+    
+  --Clit
+
+local args = {
+    [1] = " Cl \240\144\140\145 \205\156 \205\163 it ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+end)
+             
+               
+               
+               
+               
+               
+               
+               
+               
+ 
+ 
+    
+    
+ local Miscc = Window:NewTab("Misc")
+ local MisccSection = Miscc:NewSection("Misc Options")
+ 
+ 
+ 
+MisccSection:NewButton("Destroy Buildings & Etc...", "destroy", function(currentOption)
+       print(currentOption)
+    
+    game.Workspace.Map.MapBorder:destroy()
+    game.Workspace.Map.Props:destroy()
+    wait(0,5)
+    game.Workspace.Map.Building:destroy()
+
+end)
+
+ MisccSection:NewDropdown("Sound Options", "No Music", {"SOUNDS OFF"}, function(s)
+   
+   game.ReplicatedStorage.GUI.City:destroy()
+    game.ReplicatedStorage.GUI.Music:destroy()
+    print(currentOption)
+    
+end)
+
+    
+    
+ local Credits = Window:NewTab("Credits")
+ local CreditsSection = Credits:NewSection("~~ Credits ~~")
+ CreditsSection:NewLabel("Created by Nut The Menace")
+ CreditsSection:NewLabel("Discord: Claudev0#8849")
+ CreditsSection:NewLabel("TikTok: @DatExploiter")
+ CreditsSection:NewLabel("Twitter: @DatExploiter")
+ 
+end 
+
+
+wait(0)
+game.StarterGui:SetCore("SendNotification", { 
+    Title = "Nut The Menace <3";
+    Text = "HEROES: Multiverse GUI                       ~~~~ Now Active ~~~~";
+    Icon = "rbxthumb://type=Asset&id=7770638479&w=150&h=150";
+    Duration = "30";
+    Button1 = "Enjoy :)";
+})
