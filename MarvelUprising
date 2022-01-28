@@ -1364,7 +1364,7 @@ end
 
  -- Farm
     local Farming = Window:NewTab("Farm")
-    local FarmingSection = Player:NewSection("AUTO FARM COINS")
+    local FarmingSection = Farming:NewSection("AUTO FARM COINS")
     FarmingSection:NewButton("Auto Farm Currency", "", function()
     print(currentOption)
     
