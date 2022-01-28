@@ -1359,6 +1359,34 @@ end
   end)
 
 
+
+
+
+ -- Farm
+    local Farming = Window:NewTab("Farm")
+    local PlayerSection = Player:NewSection("AUTO FARM COINS")
+    PlayerSection:NewButton("Auto Farm Currency", "", function()
+    print(currentOption)
+    
+    local args = {
+    [1] = 100000000,
+}
+
+game:GetService("ReplicatedStorage").UpdateCurrency:FireServer(unpack(args))
+
+end)
+  
+FarmingSection:NewLabel("CREDIT TO xxxxxxx#3164 ON DISCORD")
+
+
+
+
+
+
+
+
+
+
    
 
    
