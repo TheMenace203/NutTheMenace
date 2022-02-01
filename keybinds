@@ -1,0 +1,66 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+local w = library:CreateWindow("TVL Keys BY Nut ")
+
+local tab1 = w:CreateFolder("Witches Keybinds")
+local tab2 = w:CreateFolder("Vampire Key Binds")
+local tab3 = w:CreateFolder("Misc")
+
+local LocalPlayer = game:GetService("Players").LocalPlayer;
+local debounce = false;
+local ragdoll_debounce = false;
+local ragdoll_debounce_1 = 0;
+
+_G.AdminNotifier = true;
+
+tab1:Bind("Motus",Enum.KeyCode.Q,function()
+
+local ohTable1 = {
+	["Incant"] = "motus"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.WitchSpell:FireServer(ohTable1)
+end)
+
+tab1:Bind("Twist Limbs",Enum.KeyCode.Z,function()
+
+
+local ohTable1 = {
+	["Incant"] = "ad somnum",
+	["Target"] = ("Players")
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.WitchSpell:FireServer(ohTable1)
+
+end)
+
+tab1:Bind("Invisique",Enum.KeyCode.P,function()
+    
+local ohTable1 = {
+	["Incant"] = "invisique"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.WitchSpell:FireServer(ohTable1)
+end)
+
+
+tab1:Bind("Protective Barrier",Enum.KeyCode.R,function()
+    
+  local ohTable1 = {
+	["Incant"] = "dictionum vis sera portus"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.WitchSpell:FireServer(ohTable1)
+
+end)
+
+
+ 
+  
+        
+    pcall(function()
+        if _G.AdminNotifier then
+            if game:GetService("Players"):FindFirstChild("Avery_lyfe") or game:GetService("Players"):FindFirstChild("snowbeaxr") or game:GetService("Players"):FindFirstChild("Zureilia") or game:GetService("Players"):FindFirstChild("DeceptiveInsidious") or game:GetService("LadyDavina"):FindFirstChild("xuefei123") or game:GetService("Players"):FindFirstChild("DataSigh") or game:GetService("Players"):FindFirstChild("GospodinDeveloper") or game:GetService("Players"):FindFirstChild("M0onhead") or game:GetService("Players"):FindFirstChild("NickInsidious") or game:GetService("Players"):FindFirstChild("VampireLegacyUpload") then
+                LocalPlayer:Kick("Admin joined! Join on other server. ")
+            end
+        end
+    end)
