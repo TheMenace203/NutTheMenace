@@ -2,8 +2,7 @@ local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aika
 local w = library:CreateWindow("TVL Keys BY Nut ")
 
 local tab1 = w:CreateFolder("Witches Keybinds")
-local tab2 = w:CreateFolder("Vampire Key Binds")
-local tab3 = w:CreateFolder("Misc")
+local tab3 = w:CreateFolder("Lovely Boosters")
 
 local LocalPlayer = game:GetService("Players").LocalPlayer;
 local debounce = false;
@@ -21,36 +20,305 @@ local ohTable1 = {
 game:GetService("ReplicatedStorage").RemoteEvents.WitchSpell:FireServer(ohTable1)
 end)
 
-tab1:Bind("Twist Limbs",Enum.KeyCode.Z,function()
-
-
-local ohTable1 = {
-	["Incant"] = "ad somnum",
-	["Target"] = ("Players")
-}
-
-game:GetService("ReplicatedStorage").RemoteEvents.WitchSpell:FireServer(ohTable1)
+tab1:Bind("Twist Limbs",Enum.KeyCode.T,function()
+local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue 
+                end
+                return x
+            end
+        end
+        return false
+    end
+    
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+     if key == "t" then
+    local player = getPlayer()
+     if player then
+    local args = {
+        [1] = {
+            ["Incant"] = "errox femus",
+            ["Target"] = player.Character
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.WitchSpell:FireServer(unpack(args))
+    end
+    end
+    end)
 
 end)
 
-tab1:Bind("Invisique",Enum.KeyCode.P,function()
-    
-local ohTable1 = {
-	["Incant"] = "invisique"
-}
 
-game:GetService("ReplicatedStorage").RemoteEvents.WitchSpell:FireServer(ohTable1)
+tab1:Bind("Ossox",Enum.KeyCode.U,function()
+    
+local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue 
+                end
+                return x
+            end
+        end
+        return false
+    end
+    
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+     if key == "u" then
+    local player = getPlayer()
+     if player then
+    local args = {
+        [1] = {
+            ["Incant"] = "ossox",
+            ["Target"] = player.Character
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.WitchSpell:FireServer(unpack(args))
+    end
+    end
+    end)
+
 end)
 
 
-tab1:Bind("Protective Barrier",Enum.KeyCode.R,function()
+tab1:Bind("Ictus",Enum.KeyCode.K,function()
+
+local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue 
+                end
+                return x
+            end
+        end
+        return false
+    end
     
-  local ohTable1 = {
-	["Incant"] = "dictionum vis sera portus"
-}
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+     if key == "k" then
+    local player = getPlayer()
+     if player then
+    local args = {
+        [1] = {
+            ["Incant"] = "ictus",
+            ["Target"] = player.Character
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.WitchSpell:FireServer(unpack(args))
+    end
+    end
+    end)
 
-game:GetService("ReplicatedStorage").RemoteEvents.WitchSpell:FireServer(ohTable1)
+end)
 
+
+
+tab1:Bind("Incendia",Enum.KeyCode.G,function()
+    
+local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue 
+                end
+                return x
+            end
+        end
+        return false
+    end
+    
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+     if key == "g" then
+    local player = getPlayer()
+     if player then
+    local args = {
+        [1] = {
+            ["Incant"] = "incendia",
+            ["Target"] = player.Character
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.WitchSpell:FireServer(unpack(args))
+    end
+    end
+    end)
+
+end)
+
+tab1:Bind("Ad Somnum",Enum.KeyCode.J,function()
+    
+local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue 
+                end
+                return x
+            end
+        end
+        return false
+    end
+    
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+     if key == "j" then
+    local player = getPlayer()
+     if player then
+    local args = {
+        [1] = {
+            ["Incant"] = "ad somnum",
+            ["Target"] = player.Character
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.WitchSpell:FireServer(unpack(args))
+    end
+    end
+    end)
+
+end)
+
+tab3:Button("Vogue#9999", function()
+    
+end)
+
+tab3:Button("Josh.#6999", function()
+    
+end)
+
+tab3:Button(";kenny#6666", function()
+    
+end)
+
+
+tab3:Button("dominic#4455", function()
+    
+end)
+
+
+tab3:Button("Astelia#6000", function()
+    
+end)
+
+
+tab3:Button("Cruella#6666", function()
+    
+end)
+
+
+
+tab3:Button("PhobesSlut#4440", function()
+    
 end)
 
 
@@ -64,3 +332,5 @@ end)
             end
         end
     end)
+
+
