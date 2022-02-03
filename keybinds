@@ -479,6 +479,10 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
     
 end)
 
+tab3:Button("scottie#5242", function()
+    
+end)
+
 
 tab3:Button("Vogue#9999", function()
     
