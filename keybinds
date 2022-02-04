@@ -3,7 +3,8 @@ local w = library:CreateWindow("TVL Keys BY Nut ")
 
 local tab1 = w:CreateFolder("Witches Keybinds")
 local tab2 = w:CreateFolder("Custom Spells")
-local tab3 = w:CreateFolder("Lovely Boosters")
+local tab3 = w:CreateFolder("Ban Protection")
+local tab4 = w:CreateFolder("Lovely Boosters")
 
 local LocalPlayer = game:GetService("Players").LocalPlayer;
 local debounce = false;
@@ -11,6 +12,14 @@ local ragdoll_debounce = false;
 local ragdoll_debounce_1 = 0;
 
 _G.AdminNotifier = false;
+
+
+
+tab3:Toggle("Leave on Admin's join",function(bool)
+    shared.toggle = bool;
+    _G.AdminNotifier = bool;
+    
+end)
 
 tab1:Bind("Motus",Enum.KeyCode.One,function()
 
@@ -343,6 +352,61 @@ local function getPlayer()
 end)
 
 
+tab1:Bind("Poena Doloris",Enum.KeyCode.P,function()
+    
+
+local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue 
+                end
+                return x
+            end
+        end
+        return false
+    end
+    
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+     if key == "p" then
+    local player = getPlayer()
+     if player then
+    local args = {
+        [1] = {
+            ["Incant"] = "poena doloris",
+            ["Target"] = player.Character
+        }
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.WitchSpell:FireServer(unpack(args))
+    end
+    end
+    end)
+
+
+end)
+
 tab1:Bind("Invisique",Enum.KeyCode.Two,function()
     
 
@@ -498,53 +562,76 @@ end)
 
 
 
-tab3:Button("Sopas#3300", function()
+tab2:Button("Credit to", function()
+
+
+
+
+end)
+
+
+tab2:Button("notzuv#6001", function()
+    
+
+
+
+end)
+
+tab2:Button("For the mega help", function()
+    
+
+
+
+end)
+
+
+tab4:Button("Sopas#3300", function()
     
 end)
 
 
-tab3:Button("K !#8484", function()
+tab4:Button("K !#8484", function()
     
 end)
 
-tab3:Button("Issac#0999", function()
+tab4:Button("Issac#0999", function()
     
 end)
 
-tab3:Button("scottie#5242", function()
+tab4:Button("scottie#5242", function()
     
 end)
 
-tab3:Button("Vogue#9999", function()
+tab4:Button("Vogue#9999", function()
     
 end)
 
-tab3:Button("Josh.#6999", function()
+tab4:Button("Josh.#6999", function()
     
 end)
 
-tab3:Button(";kenny#6666", function()
-    
-end)
-
-
-tab3:Button("dominic#4455", function()
+tab4:Button(";kenny#6666", function()
     
 end)
 
 
-tab3:Button("Astelia#6000", function()
+tab4:Button("dominic#4455", function()
     
 end)
 
 
-tab3:Button("Cruella#6666", function()
+tab4:Button("Astelia#6000", function()
+    
+end)
+
+
+tab4:Button("Cruella#6666", function()
     
 end)
 
 
 
-tab3:Button("PhobesSlut#4440", function()
+tab4:Button("PhobesSlut#4440", function()
     
 end)
 
@@ -553,9 +640,9 @@ end)
   
         
     pcall(function()
-        if _G.AdminNotifier then
-            if game:GetService("Players"):FindFirstChild("snowbeaxr") or game:GetService("Players"):FindFirstChild("Zureilia") or game:GetService("Players"):FindFirstChild("DeceptiveInsidious") or game:GetService("LadyDavina"):FindFirstChild("xuefei123") or game:GetService("Players"):FindFirstChild("DataSigh") or game:GetService("Players"):FindFirstChild("GospodinDeveloper") or game:GetService("Players"):FindFirstChild("M0onhead") or game:GetService("Players"):FindFirstChild("NickInsidious") or game:GetService("Players"):FindFirstChild("VampireLegacyUpload") then
-                LocalPlayer:Kick("Admin joined! Join on other server. ")
+        if _G.AdminNotifier then                                                                                                                                                                                                                                                                      ---test
+            if game:GetService("Players"):FindFirstChild("DeceptiveInsidious") or game:GetService("Players"):FindFirstChild("Teletubbieshoi") or game:GetService("Players"):FindFirstChild("snowbeaxr") then
+                LocalPlayer:Kick("NutTheMenace Saved You An Admin joined! Join on other server. ")
             end
         end
     end)
