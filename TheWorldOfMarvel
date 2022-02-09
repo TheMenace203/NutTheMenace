@@ -476,7 +476,7 @@ game:GetService("Players").LocalPlayer.Character.Desintegration.Fire:FireServer(
 end)
 
     
-    PowerKeysSection:NewLabel(Unversal Keybinds")
+    PowerKeysSection:NewLabel("Unversal Keybinds")
 
 PowerKeysSection:NewKeybind("Telekinesis", "MOTUS OP", Enum.KeyCode.R, function()
 	print("You just clicked the bind")
