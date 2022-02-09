@@ -6,7 +6,7 @@
     local Window = Library.CreateLib("Marvel Enhanced V.2 GUI + More by Nut The Menace", "DarkTheme")
    
      -- Character Change
-    local InvisibleWoman = Window:NewTab("Invisible Woman")
+    local InvisibleWoman = Window:NewTab("Powers")
     local InvisibleWomanSection = InvisibleWoman:NewSection("Invisible Woman's & Scarlet Witch's Power Spam")
      
     InvisibleWomanSection:NewButton("Force Bash", "Power 1", function(txt)
@@ -91,8 +91,8 @@ end)
 
 
 
-local Playerzz = Window:NewTab("Tk & Forcefield")
-local PlayerzzSection = Playerzz:NewSection("Power Keybinds")
+local Playerzz = Window:NewTab("Keybinds")
+local PlayerzzSection = Playerzz:NewSection("Universal Power Keybinds")
 
 PlayerzzSection:NewKeybind("ForceField Someone", "MOTUS OP", Enum.KeyCode.E, function()
 	print("You just clicked the bind")
@@ -206,6 +206,125 @@ game:GetService("ReplicatedStorage").Remotes.WandaAbilities:InvokeServer(unpack(
 
 end)
 
+
+
+
+PlayerzzSection:NewKeybind("Mystic's Shape Shift into someone", "MOTUS OP", Enum.KeyCode.T, function()
+	print("You just clicked the bind")
+local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue 
+                end
+                return x
+            end
+        end
+        return false
+    end
+    
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+     if key == "t" then
+    local player = getPlayer()
+     if player then
+
+local args = {
+    [1] = "Morph",
+    [2] = player.character.Humanoid
+}
+
+game:GetService("ReplicatedStorage").Remotes.MystiqueAbilities:InvokeServer(unpack(args))
+
+
+
+    end
+    end
+    end)
+
+end)
+
+
+PlayerzzSection:NewLabel("Be Normal Mystique for this work")
+
+PlayerzzSection:NewKeybind("Gun Damage someone", "MOTUS OP", Enum.KeyCode.Y, function()
+	print("You just clicked the bind")
+local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue 
+                end
+                return x
+            end
+        end
+        return false
+    end
+    
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+     if key == "y" then
+    local player = getPlayer()
+     if player then
+  
+  local args = {
+    [1] = "Shoot",
+    [2] = player.character.Humanoid,
+    [3] = game:GetService("Players").LocalPlayer.Character.MystiqueGun
+}
+
+game:GetService("ReplicatedStorage").Remotes.MystiqueAbilities:InvokeServer(unpack(args))
+
+    end
+    end
+    end)
+
+end)
+
+
+
           
 
      -- PLAYER
@@ -244,12 +363,13 @@ end
    
 
    
-    -- Credits Info
-    local Information = Window:NewTab("Info")
-    local InformationSection = Information:NewSection("Information")
-
-
-
+    local Credits = Window:NewTab("Credits")
+ local CreditsSection = Credits:NewSection("~~ Credits ~~")
+ CreditsSection:NewLabel("Created by Nut The Menace")
+ CreditsSection:NewLabel("Discord: Claudev0#8849")
+ CreditsSection:NewLabel("Discord Server: discord.gg/DatExploiter")
+ CreditsSection:NewLabel("TikTok: @DatExploiter")
+ CreditsSection:NewLabel("Twitter: @DatExploiter")
 
     
 end 
