@@ -202,7 +202,7 @@ KeybindszSection:NewKeybind("Jean Grey's TK Warp", "MOTUS OP", Enum.KeyCode.Five
         return set
     end
     game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
-     if key == "q" then
+     if key == "5" then
     local player = getPlayer()
      if player then
      local args = {
