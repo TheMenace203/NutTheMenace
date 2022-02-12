@@ -1,0 +1,517 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+local w = library:CreateWindow("FlopVerse-Unlocker")
+
+
+local tab4 = w:CreateFolder("Get Heroes")
+
+
+
+
+tab4:Button("Unlock Heroes", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMenace203/Menace/main/Heroes'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMenace203/Menace/main/heroes2'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMenace203/Menace/main/Heroes3'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMenace203/Menace/main/Heroes4'),true))() 
+    
+    
+local CharactersMod = require(game:GetService("ReplicatedStorage").Modules.Characters)
+       
+      CharactersMod.Placeholder = {
+		Offsale = false, 
+		Info = {}
+	} 
+      CharactersMod.DarkPhoenixXMen = {
+		Offsale = false, 
+		Parent = "DarkPhoenix", 
+	
+		}
+		
+		CharactersMod.DarkPhoenix = {
+		Offsale = false, 
+		Limit = 3, 
+		Skins = { "Bloom", "DarkBloom", "DarkPhoenixXMen" }, 
+		 
+	
+		}
+		
+		
+    CharactersMod.Storm = {
+		ID = 8435107, 
+		
+		}
+		
+		CharactersMod.Zatanna = {
+		Offsale = false, 
+		Skins = { "ZatannaJustice" }, 
+		
+		}
+		
+		CharactersMod.ScarletWitch = {
+	
+		ID = 1205214792, 
+		
+		}
+		
+		
+		CharactersMod.StormBride = {
+		  
+		Parent = "Storm", 
+		Limit = 3
+	} 
+	
+	CharactersMod.AgathaHarkness = {
+		
+		
+	}
+	
+	CharactersMod.InvisibleWomanViolet = {
+		Limit = 3, 
+		Offsale = false, 
+		Parent = "InvisibleWoman", 
+		
+	}
+	
+	CharactersMod.ScarletWitchZombieVariant = {
+		Offsale = false, 
+		Secondary = "ScarletWitchZombie", 
+		Parent = "ScarletWitchVariant", 
+		ID = 1214049566, 
+		
+	} 
+	CharactersMod.ScarletUltron = { 
+		ID = 1228800751, 
+		Parent = "ScarletWitch", 
+		Secondary = "ScarletWitchVariantUltron", 
+		
+	} 
+	CharactersMod.WandaVision = {
+		Offsale = false, 
+		Limit = 3, 
+		Parent = "ScarletWitch", 
+		
+	} 
+
+	CharactersMod.WandaVisionWardrobe = {
+		 
+		Parent = "ScarletWitch", 
+		Secondary = "WandaVisionWardrobeVariant", 
+		
+	}
+ 
+	CharactersMod.WandaVisionWardrobeVariant = {
+		 
+		Parent = "ScarletWitchVariant", 
+		Secondary = "WandaVisionWardrobe", 
+		
+	}
+ 
+	CharactersMod.ScarletWitchVariantUltron = {
+		
+		ID = 1228800751, 
+		Parent = "ScarletWitchVariant", 
+		Secondary = "ScarletUltron", 
+		
+
+	} 
+
+	CharactersMod.ScarletWitchZombie = {
+		Offsale = false, 
+		Secondary = "ScarletWitchZombieVariant", 
+		ID = 1214049710, 
+	}
+	
+
+	CharactersMod.InvisibleWoman = {
+		 
+ 
+		ID = 1218022928, 
+		
+	}
+
+	CharactersMod.InvisibleWomanFuture = {
+		Offsale = false, 
+		Limit = 6, 
+		Parent = "InvisibleWoman", 
+		
+	} 	
+	
+	CharactersMod.HumanTorch = {
+		
+		ID = 1204882311, 
+		
+	} 
+	CharactersMod.BlackWidow = {
+		 
+		ID = 1204883023, 
+		
+	} 
+	
+	
+	CharactersMod.Polaris = {
+		 
+		ID = 1232159739, 
+		Skins = { "PolarisTheGifted" }, 
+		
+	} 
+	CharactersMod.PolarisTheGifted = {
+		 
+		ID = 1234986942, 
+		Parent = "Polaris", 
+
+		}
+	
+	CharactersMod.Psylocke = {
+	 
+		ID = 1204882530, 
+		
+	} 
+	CharactersMod.ScarletWitchVariant = {
+		 
+		ID = 1204882740, 
+		
+	}
+	
+	
+	CharactersMod.LaurenStrucker = {
+		
+		ID = 1207159463, 
+		
+	} 
+	CharactersMod.EmmaFrost = {
+		 
+		ID = 1208396289, 
+		
+	} 
+	
+	CharactersMod.Stella = {
+		Offsale = false, 
+		ID = 1211251928, 
+		Parent = "HumanTorch", 
+		
+	} 
+	CharactersMod.RobotDoll = {
+		Offsale = false, 
+		ID = 1211549616, 
+		Parent = "Psylocke", 
+		
+	} 
+	CharactersMod.SquidSoldier = {
+		Offsale = false, 
+		Parent = "Placeholder", 
+		
+	} 
+	CharactersMod.SquidWorker = {
+		Offsale = false, 
+		Parent = "Placeholder", 
+		
+	}
+	CharactersMod.SquidManager = { 
+		Parent = "BlackWidow", 
+		
+	} 
+	CharactersMod.EmmaFrostIceQueen = {
+		Offsale = false, 
+		Parent = "EmmaFrost", 
+		
+	}
+	CharactersMod.Katara = {
+		Offsale = false, 
+		ID = 1211771927, 
+		Parent = "EmmaFrost", 
+		}
+	CharactersMod.Loki = {
+		 
+		ID = 1214312339, 
+		
+	} 
+	CharactersMod.SylvieX = {
+		 
+		ID = 1214750872, 
+		Parent = "Loki", 
+		
+	} 
+	CharactersMod.Player067 = {
+		Offsale = false, 
+		ID = 1212062125, 
+		Parent = "BlackWidow", 
+		
+	} 
+	
+	
+	CharactersMod.Superman = {
+		
+		ID = 1218023370, 
+		
+	} 
+	CharactersMod.Bloom = {
+		Offsale = false, 
+		ID = 1218746232, 
+		Secondary = "DarkBloom", 
+		Parent = "DarkPhoenix", 
+		
+	} 
+	CharactersMod.DarkBloom = {
+		Offsale = false, 
+		ID = 1218746524, 
+		Secondary = "Bloom", 
+		Parent = "DarkPhoenix", 
+		
+	} 
+	
+	CharactersMod.SupermanInjustice = {
+		 
+		ID = 1218747298, 
+		Parent = "Superman", 
+		
+	} 
+	CharactersMod.HumanTorchFuture = {
+		 
+		ID = 1219510989, 
+		Parent = "HumanTorch", 
+		
+	} 
+	CharactersMod.Supergirl = {
+		 
+		ID = 1220577332, 
+		}
+	 
+	
+	CharactersMod.GwenBen10 = {
+		Offsale = false, 
+		Parent = "LaurenStrucker", 
+	         
+	} 
+	CharactersMod.Ikaris = {
+		Offsale = false, 
+		Parent = "Superman", 
+		
+	} 
+	CharactersMod.StormXSkin = {
+		Offsale = false, 
+		Parent = "Storm", 
+		
+	} 
+	
+	
+	
+	CharactersMod.Magik = {
+		 
+		ID = 1224603972, 
+		Skins = { "MagikXMen" }, 
+		Limit = 6, 
+		
+	} 
+	CharactersMod.Powergirl = {
+		Offsale = false, 
+		Parent = "Supergirl", 
+		
+	} 
+	CharactersMod.MagikXMen = {
+		 
+		ID = 1226199485, 
+		Parent = "Magik", 
+		
+	} 
+	
+	
+	CharactersMod.KingBlackPanther = {
+		Parent = "Placeholder", 
+		}
+	 
+	CharactersMod.InvisibleWomanXmas = {
+		Offsale = false, 
+		ID = 1229965519, 
+		Parent = "InvisibleWoman", 
+		
+	} 
+	CharactersMod.SupergirlXmas = {
+		Offsale = false, 
+		ID = 1229968011, 
+		Parent = "Supergirl", 
+		
+	} 
+	CharactersMod.LokiXmas = {
+		Offsale = false, 
+		ID = 1229967978, 
+		Parent = "Loki", 
+	
+	} 
+	CharactersMod.ScarletWitchXmas = {
+		Offsale = false, 
+		ID = 1229965473, 
+		Parent = "ScarletWitch", 
+		
+	} 
+	
+	CharactersMod.ZatannaJustice = {
+		 
+		Parent = "Zatanna", 
+	
+	} 
+	 
+	
+	CharactersMod.Products = {
+		[1204882311] = "HumanTorch", 
+		[1204882530] = "Psylocke", 
+		[1204882740] = "ScarletWitchVariant", 
+		[1204883023] = "BlackWidow", 
+		[1205214792] = "ScarletWitch", 
+		[1207159463] = "LaurenStrucker", 
+		[1208396289] = "EmmaFrost", 
+		[1211192876] = "Storm", 
+		[1211251928] = "Stella", 
+		[1211549616] = "RobotDoll", 
+		[1211771927] = "Katara", 
+		[1212062125] = "Player067", 
+		[1214049566] = "ScarletWitchZombieVariant", 
+		[1214049710] = "ScarletWitchZombie", 
+		[1214312339] = "Loki", 
+		[1214750872] = "SylvieX", 
+		[1218022928] = "InvisibleWoman", 
+		[1218023370] = "Superman", 
+		[1218746232] = "Bloom", 
+		[1218746524] = "DarkBloom", 
+		[1218747298] = "SupermanInjustice", 
+		[1219510989] = "HumanTorchFuture", 
+		[1220577332] = "Supergirl", 
+		[1222265336] = "GwenBen10", 
+		[1235016695] = "InvisibleWomanViolet", 
+		[1222636366] = "Ikaris", 
+		[1222636510] = "StormXSkin", 
+		[1224603972] = "Magik", 
+		[1226199485] = "MagikXMen", 
+		[1228800751] = "ScarletUltron", 
+		[1229965473] = "ScarletWitchXmas", 
+		[1229965519] = "InvisibleWomanXmas", 
+		[1229967978] = "LokiXmas", 
+		[1229968011] = "SupergirlXmas", 
+		[1232159739] = "Polaris", 
+		[1234986942] = "PolarisTheGifted"
+	} 
+	CharactersMod.Gamepasses = {
+		[11172904] = "ScarletWitch", 
+		[8435031] = "EmmaFrost", 
+		[25514052] = "DarkPhoenix", 
+		[22973302] = "DarkPhoenixXMen", 
+		[8435107] = "Storm", 
+		[23937432] = "ScarletWitchZombieVariant", 
+		[11247167] = "InvisibleWoman", 
+		[24488323] = "InvisibleWomanFuture", 
+		[24981812] = { "StormXSkin", "Ikaris" }, 
+		[25166345] = "Zatanna", 
+		[26267595] = "WandaVision", 
+		[16460796] = "WandaVision", 
+		[27074848] = "InvisibleWomanViolet"
+	}
+	
+
+
+	
+	game.StarterGui:SetCore("SendNotification", { 
+    Title = "HEROES UNLOCKED";
+    Text = "ADONIS BYPASSED";
+    Icon = "rbxthumb://type=Asset&id=7770638479&w=150&h=150";
+    Duration = "30";
+    Button1 = "Enjoy :)";
+})	
+
+end)
+
+local tab3 = w:CreateFolder("Coin Farm")
+tab3:Button("Redeem ALL Codes", function()
+
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = "MAINTENANCE"
+}
+
+game:GetService("ReplicatedStorage").Knit.Services.CodesService.RF.Redeem:InvokeServer(unpack(args))
+
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = "17KLIKES"
+}
+
+game:GetService("ReplicatedStorage").Knit.Services.CodesService.RF.Redeem:InvokeServer(unpack(args))
+
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = "STORMXBLACKPANTHER"
+}
+
+game:GetService("ReplicatedStorage").Knit.Services.CodesService.RF.Redeem:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "COINSTODAY"
+}
+
+game:GetService("ReplicatedStorage").Knit.Services.CodesService.RF.Redeem:InvokeServer(unpack(args))
+end)
+
+local tab2 = w:CreateFolder("Combat")
+tab2:Bind("Aura Attack",Enum.KeyCode.Two,function()
+local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue 
+                end
+                return x
+            end
+        end
+        return false
+    end
+    
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+     if key == "2" then
+    local player = getPlayer()
+     if player then
+   -- This script was generated by Hydroxide's RemoteSpy: https://github.com/Upbolt/Hydroxide
+
+local ohTable1 = {
+	[1] = player.character
+}
+local ohNumber2 = 3
+
+game:GetService("ReplicatedStorage").Knit.Services.MeleeService.RE.Hit:FireServer(ohTable1, ohNumber2)
+    end
+    end
+    end)
+
+end)
+
+ game.StarterGui:SetCore("SendNotification", { 
+    Title = "Nut The Menace <3";
+    Text = "Heroes: Multiverse                 Heroes Unlocker              ";
+    Icon = "rbxthumb://type=Asset&id=7770638479&w=150&h=150";
+    Duration = "30";
+    Button1 = "Enjoy :)";
+})
+  
+
+
