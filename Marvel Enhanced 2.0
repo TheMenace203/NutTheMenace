@@ -164,7 +164,7 @@ end)
 
 local Keybindsz = Window:NewTab("Power Keybinds")
 local KeybindszSection = Keybindsz:NewSection("Jean Grey Keybinds Only ")
-KeybindszSection:NewKeybind("Jean Grey's TK Warp", "MOTUS OP", Enum.KeyCode.Q, function()
+KeybindszSection:NewKeybind("Jean Grey's TK Warp", "MOTUS OP", Enum.KeyCode.Five, function()
 	print("You just clicked the bind")
 	
 	local function getPlayer()
