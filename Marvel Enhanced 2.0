@@ -164,6 +164,114 @@ end)
 
 local Keybindsz = Window:NewTab("Power Keybinds")
 local KeybindszSection = Keybindsz:NewSection("Jean Grey Keybinds Only ")
+KeybindszSection:NewKeybind("Jean Grey's TK Warp", "MOTUS OP", Enum.KeyCode.Q, function()
+	print("You just clicked the bind")
+	
+	local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue 
+                end
+                return x
+            end
+        end
+        return false
+    end
+    
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+     if key == "q" then
+    local player = getPlayer()
+     if player then
+     local args = {
+    [1] = "\0Jean Grey Start Telekinesis\0\0",
+    [2] = player.character.UpperTorso
+}
+
+game:GetService("ReplicatedStorage").Network.RemoteEvent:FireServer(unpack(args))
+    
+player.character.RagdollConstraints:destroy()
+
+    end
+    end
+    end)
+end)
+
+KeybindszSection:NewKeybind("Tk 25 Damage Someone", "MOTUS OP", Enum.KeyCode.One, function()
+	print("You just clicked the bind")
+	
+	local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue 
+                end
+                return x
+            end
+        end
+        return false
+    end
+    
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+     if key == "1" then
+    local player = getPlayer()
+     if player then
+local args = {
+    [1] = "\0Scarlet Witch TK Throw\0\0",
+    [2] = player.character.RightUpperArm
+}
+
+game:GetService("ReplicatedStorage").Network.RemoteEvent:FireServer(unpack(args))
+    end
+    end
+    end)
+
+	
+end)
 
 
 
@@ -367,12 +475,7 @@ end)
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player Menu")
     
-    PlayerSection:NewButton("TK Warp (Still Working on it)", "Instant Kills Anyone & Warps Body", function()
-    print(currentOption)
-    
-    
-    end)
-
+  
 
     PlayerSection:NewButton("TK Space (Tk someone after click)", "Your Tk allow you to take people to space", function()
     print(currentOption)
