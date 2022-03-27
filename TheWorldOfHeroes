@@ -1,4 +1,3 @@
-
  if game.PlaceId == 6467279520 then
  local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
  local Window = Library.CreateLib("The World Of Heroes GP Bypass + More by Nut The Menace", "BloodTheme")
@@ -762,7 +761,7 @@ PowerSpamSection:NewLabel("Thanos Powers")
 
 
 
-PowerSpamSection:NewKeybind(Spam Meteors", " OP", Enum.KeyCode.F, function()
+PowerSpamSection:NewKeybind("Spam Meteors", "OP", Enum.KeyCode.F, function()
 	print("You just clicked the bind")
 
 
@@ -1550,4 +1549,3 @@ game.StarterGui:SetCore("SendNotification", {
     Duration = "30";
     Button1 = "Enjoy :)";
 })
- 
