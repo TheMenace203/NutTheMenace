@@ -760,7 +760,10 @@ game:GetService("Players").LocalPlayer.Character.Hell.Fire:FireServer(unpack(arg
 
 PowerSpamSection:NewLabel("Thanos Powers")
 
-PowerSpamSection:NewButton("Meteors", "This is on a loop", function(txt)
+
+
+PowerSpamSection:NewKeybind(Spam Meteors", " OP", Enum.KeyCode.F, function()
+	print("You just clicked the bind")
 
 
 local args = {
