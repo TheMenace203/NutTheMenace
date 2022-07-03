@@ -1,3 +1,4 @@
+
  if game.PlaceId == 6467279520 then
  local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
  local Window = Library.CreateLib("NTM | Crossover Legends", "BloodTheme")
@@ -152,7 +153,7 @@ end)
 ChangeCharacterSection:NewLabel("New Heroes")
 
 
-ChangeCharacterSection:NewButton("The Collector, "GamePass been Bypassed", function(txt)
+ChangeCharacterSection:NewButton("The Collector", "GamePass been Bypassed", function(txt)
 local args = {
     [1] = "TheCollector"
 }
