@@ -158,6 +158,20 @@ end)
 
 ChangeCharacterSection:NewLabel("Latest Heroes")
 
+
+ChangeCharacterSection:NewButton("Maleficent", "GamePass been Bypassed", function(txt)
+local Character = "Maleficent"
+local MalSpawn = workspace.Teleport49.RemoteFunction
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(Character)
+
+MalSpawn:InvokeServer()
+end)
+
+
+
+
+
 ChangeCharacterSection:NewButton("Boa Hancock", "GamePass been Bypassed", function(txt)
 local args = {
     [1] = "BoaHancock"
