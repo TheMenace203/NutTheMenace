@@ -159,6 +159,16 @@ end)
 
 ChangeCharacterSection:NewLabel("Latest Heroes")
 
+ChangeCharacterSection:NewButton("Klarion", "GamePass been Bypassed", function(txt)
+local Character = "Klarion"
+local TwinkSpawn = workspace.Teleport50.RemoteFunction
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(Character)
+
+TwinkSpawn:InvokeServer()
+end)
+
+
 
 ChangeCharacterSection:NewButton("Maleficent", "GamePass been Bypassed", function(txt)
 local Character = "Maleficent"
