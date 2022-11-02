@@ -159,6 +159,50 @@ end)
 
 ChangeCharacterSection:NewLabel("Latest Heroes")
 
+
+ChangeCharacterSection:NewButton("Winifred Sanderson", "GamePass been Bypassed", function(txt)
+local Character = "WinifredSanderson"
+local wsan = workspace.Teleport52.RemoteFunction
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(Character)
+
+wsan:InvokeServer()
+end)
+
+ChangeCharacterSection:NewButton("Mary Sanderson", "GamePass been Bypassed", function(txt)
+local Character = "MarySanderson"
+local msan = workspace.Teleport53.RemoteFunction
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(Character)
+
+msan:InvokeServer()
+end)
+
+ChangeCharacterSection:NewButton("Sarah Sanderson", "GamePass been Bypassed", function(txt)
+local Character = "SarahSanderson"
+local ssan = workspace.Teleport54.RemoteFunction
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(Character)
+
+ssan:InvokeServer()
+end)
+---------
+
+
+ChangeCharacterSection:NewButton("Zombie Wanda", "GamePass been Bypassed", function(txt)
+local Character = "WandaZombie"
+local zombiew = workspace.Teleport51.RemoteFunction
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(Character)
+
+zombiew:InvokeServer()
+end)
+
+
+
+
+------------
+
 ChangeCharacterSection:NewButton("Klarion", "GamePass been Bypassed", function(txt)
 local Character = "Klarion"
 local TwinkSpawn = workspace.Teleport50.RemoteFunction
