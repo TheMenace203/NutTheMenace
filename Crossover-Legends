@@ -160,36 +160,6 @@ end)
 ChangeCharacterSection:NewLabel("Latest Heroes")
 
 
-ChangeCharacterSection:NewButton("Sailor Moon", "GamePass been Bypassed", function(txt)
-local Character = "Morgana"
-local SALM = workspace.Teleport59.RemoteFunction
-
-game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(Character)
-
-SALM:InvokeServer()
-end)
-
-ChangeCharacterSection:NewButton("Morgana", "GamePass been Bypassed", function(txt)
-local Character = "Morgana"
-local MORG = workspace.Teleport58.RemoteFunction
-
-game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(Character)
-
-MORG:InvokeServer()
-end)
-
-
-ChangeCharacterSection:NewButton("Emma Frost", "GamePass been Bypassed", function(txt)
-local Character = "EmmaFrost"
-local EMF = workspace.Teleport57.RemoteFunction
-
-game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(Character)
-
-EMF:InvokeServer()
-end)
-
-
-
 ChangeCharacterSection:NewButton("Winifred Sanderson", "GamePass been Bypassed", function(txt)
 local Character = "WinifredSanderson"
 local wsan = workspace.Teleport52.RemoteFunction
@@ -780,7 +750,7 @@ local args = {
     [2] = Vector3.new(-2274.140625, 904.6631469726562, 235.2376251220703)
 }
 
-game:GetService("Players").LocalPlayer.Character.Desintegration.Fire:FireServer(unpack(args))
+game:GetService("Players").LocalPlayer.Character.Skills.Desintegration.Fire:FireServer(unpack(args))
 
 
 end
